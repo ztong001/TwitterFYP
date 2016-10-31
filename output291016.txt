@@ -1,0 +1,24 @@
+{
+    "created_at": "Sat Oct 29 03:56:51 +0000 2016",
+    "id_str": "792213583841157120",
+    "lang": "en",
+    "text": "RT @kenlewlew: wow i don't even fuck with drake like that anymore, kid cudi is a legendary human being"
+}
+{
+    "created_at": "Sat Oct 29 03:56:51 +0000 2016",
+    "id_str": "792213583832559616",
+    "lang": "en",
+    "text": "RT @Travelsvibe: late night vibes https://t.co/DUmBoWm1XH"
+}
+{
+    "created_at": "Sat Oct 29 03:56:51 +0000 2016",
+    "id_str": "792213583861915648",
+    "lang": "en",
+    "text": "RT @SoleCollector: Doernbecher Air Jordan 7 signed by Michael Jordan just auctioned off for an event record $46,000. https://t.co/TfK9DWaeu1"
+}
+{
+    "created_at": "Sat Oct 29 03:56:51 +0000 2016",
+    "id_str": "792213583832678400",
+    "lang": "en",
+    "text": "@lkkyus shinobu is a good i love u emmy so much ur so amazing ily"
+}
