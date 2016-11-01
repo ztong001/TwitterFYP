@@ -60,7 +60,7 @@ def main():
     number = 0
     filename= "output{:%d%m%y}.txt".format(datetime.date.today())
     logging.debug("Opening twitter stream")
-    with open(filename, 'w') as output:
+    with open(filename, 'a') as output:
         try:
             for line in twitterapi.GetStreamSample(stall_warnings=True):
                 #logging.debug(type(line))
@@ -72,8 +72,8 @@ def main():
                     #logging.debug("%s tweets are in!" % number)
                     #break
         except:
-            error = ''.join(sys.exc_info()[0:])
-            logging.error("Error: %s"%(error))
+            error = str(sys.exc_info())
+            logging.exception("Error: %s"%(error))
         finally:
             output.close()
             logging.debug("Closing twitter stream")
