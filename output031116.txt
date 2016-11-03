@@ -1,0 +1,719 @@
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:06 +0000 2016", "id_str": "794197217011646464", "lang": "ja", "text": "@non_95_R \u306f\u3044\uff01\uff01\u5168\u7136\ud83d\udc4d\ud83c\udffe\ud83d\udcab"}
+{"created_at": "Thu Nov 03 15:19:06 +0000 2016", "id_str": "794197217007415297", "lang": "en", "text": "Review and boxing of the #November @thefabbag  is up on https://t.co/YHZK7EC5H0 #IndianYoutuber #InMyFabbag #bblogger"}
+{"created_at": "Thu Nov 03 15:19:06 +0000 2016", "id_str": "794197216986468353", "lang": "en", "text": "RT @pannchoa: Pentagon member says he's a BTS Jimin fan?? https://t.co/Dm802xrKfZ #KPOP #BTS #Pentagon https://t.co/wd9eB1R0Uq"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:08 +0000 2016", "id_str": "794197225412800512", "lang": "ja", "text": "\u7206\u7b11 https://t.co/chv2zVKAZL"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229569347584", "lang": "ja", "text": "@mukkun0syotakon @rnq96 \u904e\u53bb\u306e\u904e\u3061\u306f\u7e70\u308a\u8fd4\u3057\u3066\u306f\u306a\u3089\u306a\u3044(\u6539\u3081)"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229569331200", "lang": "th", "text": "RT @Timetopooh: @MisterHeartz \u0e01\u0e2d\u0e14\u0e46\u0e19\u0e30\u0e1e\u0e35\u0e48\u0e40\u0e2d\u0e01 \u0e2d\u0e40\u0e25\u0e47\u0e01\u0e2e\u0e31\u0e19\u0e40\u0e15\u0e2d\u0e08\u0e30\u0e40\u0e22\u0e35\u0e22\u0e27\u0e22\u0e32\u0e17\u0e38\u0e01\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e40\u0e2d\u0e07 \u0e1b\u0e48\u0e30 \u0e40\u0e25\u0e48\u0e19"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229594492929", "lang": "ja", "text": "RT @HALMIhalmi: \u52c7\u6c17\u51fa\u3057\u3066\u6765\u3066\u304f\u308c\u305f\u3093\u3082\n\u58f0\u304b\u3051\u3066\u304f\u308c\u305f\u3093\u3082\u77e5\u3063\u3066\u308b\u3088\n\u3042\u308a\u304c\u3068\u3046\u307e\u305f\u304d\u3066\u306d\ud83d\ude3d\ud83c\udf1f\n\n\u660e\u65e5\u304b\u30892\u65e5\u9593\u306f\u3001\u4eac\u90fd\u3058\u3083\u30fc\ud83c\udf41\n\nhttps://t.co/3OlY3LJruW"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229581975553", "lang": "ja", "text": "P5\u3084\u3063\u3068\u53cc\u8449\u3061\u3083\u3093\u30b3\u30fc\u30d7\u3067\u304d\u308b\u3088\u3046\u306b\u306a\u3063\u305f\u305e\u3044"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229598687233", "lang": "ko", "text": "\uc6d0\ub798 \uc2e4\uce5c\uc740 \ube14\ub77d\ud558\ub294\uac70\ub7ac\uc5b4&lt;&lt;\uc544\ub2d8"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229602885632", "lang": "ja", "text": "\u9023\u6483\u3058\u3083\u306a\u3044\u304b\u3089\u3060\u3068\u601d\u3046\u3051\u3069\u30ae\u30eb\u30c83\u30684\u306eMAX\u6642\u306b\u3053\u308c\u3060\u3051\u3057\u304b\u5dee\u304c\u306a\u3044\u3068\u601d\u3046\u3068\u653b\u6483\u9762\u3067\u4f7f\u3046\u308f\u3051\u3058\u3083\u306a\u304f\u3066\u30b5\u30dd\u30fc\u30c8\u3068\u3057\u3066\u7b92\u306f\u3068\u3063\u3068\u3044\u305f\u65b9\u304c\u3088\u3055\u305d\u3046\u304b\u306a"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229581975552", "lang": "ja", "text": "RT @muramura6602: @SinnerofG2 \u3059\u3043\u307e\u305b\u3093\u3067\u3057\u305f(\uff1b\u0c6a\uff1b) https://t.co/AsFaYps0LS"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229573550080", "lang": "ko", "text": "RT @tldh1008: \ud604\uc2e4\uc5d0\uc11c \ub9d0\uc5c6\ub294 \uc0ac\ub78c\uc774 \ub137\uc0c1\uc5d0\uc11c \ub9d0\uc774 \ub9ce\uc544\uc9c0\ub294\uac8c \uc774\uc0c1\ud558\uc9c0\uc54a\ub2e4\uace0 \uc0dd\uac01\ud568\n\ub137\uc0c1\uc5d0\uc11c\ub294 \ubc1c\uc74c\uc774\ub098 \ubaa9\uc18c\ub9ac \uc678\ubaa8\uac00\uc9c0\uace0 \uc870\ub871\ud558\uba74\uc11c \ub9d0\ub3c4 \ubabb\uaebc\ub0b4\uaca0\uae08 \ud558\ub294 \uc0ac\ub78c\uc774 \uc801\uc74c"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229607100416", "lang": "ja", "text": "@BNR32_JZA80 \n\u3084\u3063\u3071\u305d\u3046\u3067\u3059\u3088\u306d\u3001\n\u304a\u308c\u306f\u3053\u306e\u8eca\u305f\u3061\u3092\u4f7f\u3046\u3053\u3068\u306b\u697d\u3057\u307f\u3092\u611f\u3058\u306f\u3058\u3081\u3066\u307e\u3059\u3088"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229594558465", "lang": "en", "text": "RT @TropALDUBILIGAN: 28.  (I do/I don't) I always give my best effort and that is good enough.\n\n@TropALDUBHAVEN @ILIGANBackup\n#ALDUB68thWee\u2026"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229590319104", "lang": "ja", "text": "@mint_alpaca \u3058\u3083\u3042\u307f\u3093\u3068\u3061\u3083\u3093\u3063\u3066\u547c\u3076\u306d(\u0dc6`\ua4b3\u00b4\u0dc6)"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229586132992", "lang": "es", "text": "@Kambucha_ Jajaja Lo siento Leslie Para la Pr\u00f3xima Nos ponemos de acuerdo\ud83d\ude02\ud83d\ude02\ud83d\ude02\ud83d\ude0f\ud83d\ude02"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229602902016", "lang": "und", "text": "RT @bl_iceblog: #BL\u753b\u50cf #YuriOnIce https://t.co/BpiXiGrsxp"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229602947072", "lang": "ko", "text": "RT @cookiev0912: \uc720\uce58\uc6d0\uc0dd \uc778\uc0ac\ubc95\uc774\ub791 \ubb50\uac00 \ub2ec\ub77c!!!! \ubb50\uac00 \ub2e4\ub974\ub0d0\uace0!!!!!!!!(\ubbf8\uce5c\uc0c8\ub7fc\uc785\ub2c8\ub2e4 \uc9c0\ub098\uac00\uc8fc\uc138\uc694) https://t.co/QhmD3pszau"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229602934784", "lang": "de", "text": "RT @ydh2101: RKGK https://t.co/e5blxjZ7E7"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229590302720", "lang": "ja", "text": "RT @freeride1173: \u3042\u3084\u306b\u3083\u3093 \u3042\u308a\u304c\u3068\u3046(^o^)\n#\u5bae\u5cf6\u4e9c\u5f25 https://t.co/D7owWhHZBj"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229598707712", "lang": "ko", "text": "RT @Flower_maa: \uc6b0\ub9ac \uc9d1 \uc218\uc138\ubbf8 \ud799\ud55c\uac70 \ubcfc \uc0c8\ub7fc https://t.co/givn6NfoBh"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229590282240", "lang": "ja", "text": "\u3010#\u5742\u53e3\u8b39\u4e00\u90ce\u3011\u767a\u9175\u3001\u91b8\u9020\u306b\u95a2\u3059\u308b\u7814\u7a76\u3067\u306f\u4e16\u754c\u7684\u6a29\u5a01\u306e\u4e00\u4eba\u3067\u3001\u300c\u9152\u306e\u535a\u58eb\u300d\u3068\u3057\u3066\u77e5\u3089\u308c\u305f\u3002\u6771\u4eac\u5927\u5b66\u5fdc\u7528\u5fae\u751f\u7269\u7814\u7a76\u6240\u521d\u4ee3\u6240\u9577\u304a\u3088\u3073\u540c\u5927\u5b66\u540d\u8a89\u6559\u6388\u3002"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229577781248", "lang": "en", "text": "RT @CheapVacationss: New drivers $100 to get started. Good part time money with #Uber... Sign up and learn more here\u2026 "}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229569507329", "lang": "es", "text": "Cuando no tengo nada para hacer no me pregunta nadie, y cuando quiero dormir o tengo cosas que  hacer me preguntan"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229569507328", "lang": "es", "text": "Y cu\u00e9ntame de tu nueva ilusi\u00f3n,parte por parteee....\ud83c\udfa7\ud83c\udfa4\ud83c\udfb6"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229598810116", "lang": "en", "text": "RT @SportsCenter: This 81-year old Cubs fan can't believe it. (via @_claremoser) https://t.co/mutrfWCkET"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229569511428", "lang": "pt", "text": "Psicologas em Sete Lagoas, terapia de casais, terapeutas , Ansiedade, Panico TOC https://t.co/IKGTeST3rY  TY1585"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229573668864", "lang": "en", "text": "RT @SportsCenter: Kris Bryant was smiling before he even fielded the final out. https://t.co/A8h73EbJBu"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229590478848", "lang": "hi", "text": "@DaystarNG @Chude Laye laye"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229598806016", "lang": "tr", "text": "RT @aydinnn18: Asl\u0131nda iyi \u00e7ocuklar\u0131z mevzu Be\u015fikta\u015f olunca \u00e7irkinle\u015fiyoruz https://t.co/qtymMfoirU"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229594640384", "lang": "pt", "text": "RT @ojamestv: expectativa / realidade \nTROPA BELIEBERS #EMABiggestFansJustinBieber https://t.co/GWqS4ZuzZr"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229607223296", "lang": "pt", "text": "RT @frasesdebebada: Professor to com uma duvida aqui https://t.co/IkZQaqMQuk"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229582090240", "lang": "es", "text": "RT @CoraDeBardieri: MTV y Nickelodeon (V\u00edacom) acaban de comprar #TELEFE cuando estaba a punto de ser comprado por CNN (Ted Turner)"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229573668865", "lang": "en", "text": "RT @GirlNotes: this is the cutest thing ever https://t.co/Ikn4vE1ebK"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229594677249", "lang": "es", "text": "Perd\u00ed los fuegos con 62729 personas, la puta madre"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229594615809", "lang": "en", "text": "RT @JessicaMellott: @SnowCalmth @MotivibesMusic @MarcSolomon111 thank you!!"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229598670849", "lang": "en", "text": "@Vlet_Vendetta I'm sure anyone would! I mean no one can pull off your DP as well as you HAHA"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229603090433", "lang": "en", "text": "Here's the Best Time and Length to Schedule a Job Interview - https://t.co/iHaaDHDu4s"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229577891840", "lang": "en", "text": "RT @RiLyDo: \"Car 41?\" Yo, they told you they were going back to sleep. #ChicagoScanner"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229569474560", "lang": "en", "text": "409754 #joanne GAGA COME TO BRAZIL  \n#EMABiggestFansLadyGaga"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229586284544", "lang": "pt", "text": "- Mulher muito desejada nunca roubou minha aten\u00e7\u00e3o n\u00e3o vai ser agora que isso vai mudar rs \ud83d\ude18\u270c"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229594624001", "lang": "en", "text": "RT @miggymont26: Do you guys remember my BA in the regular season ? Who cares lmao"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229594615808", "lang": "pl", "text": "@hazzaangell napisz na dm"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229573505024", "lang": "ja", "text": "@18Miharu \n\u307f\u306f\u308b\u304a\u75b2\u308c\u69d8\u30fc\ud83d\udc95\u2728\n\u307e\u3058\u7206\u30a4\u30b1\u3060\u3063\u305f\u306e\u3088\u30fc\u30fc\u30fc\u30fc\ud83d\ude2d"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229602934785", "lang": "ko", "text": "\ub0a0\uc774 \uc2dc\ub824\uc694, \uac10\uae30 \ub4e4\uc9c0 \uc54a\uac8c \ub2e4\ub140\uc694."}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229607251969", "lang": "en", "text": "RT @IamAkademiks: Yeah... y'all still excited for the That's So Raven Spinoff show? \ud83d\udc40\ud83d\ude44 https://t.co/Tsqbn4Ebqf"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229581893632", "lang": "ja", "text": "@lunecouleur \u30a2\u30d5\u30ea\u30ab\u3067\u306f\u5b50\u3069\u3082\u305f\u3061\u304c1\u5206\u9593\u306b60\u79d2\u3092\u904e\u3054\u3057\u3066\u308b\u3093\u3060\u3088\u3001\u611f\u8b1d\u3057\u306a\u3044\u3068"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229603094528", "lang": "es", "text": "RT @ImagenesRojas: @CaiPublicas @Independiente @pablomoyano11 @elgrancai @marcerubiocai @ExJugadoresCAI @estadisticascai @marketingCAI\u2026 "}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229590310913", "lang": "en", "text": "Young ugly god https://t.co/8VtWLdkfSj"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229603000320", "lang": "en", "text": "Creative and crafty activity for keiki this season. https://t.co/zQj99HaPtR https://t.co/zQj99HaPtR"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229582032896", "lang": "en", "text": "RT @AAU_67: Concept Note for 5th Webinar -Promoting Continental Integration through the Harmonisation of Quality Assurance and\u2026 https://t.c\u2026"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229586108416", "lang": "ja", "text": "@eli___chika_ \u3067\u3075\u3088\u306d\u30fcww"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229594624000", "lang": "ru", "text": "RT @leprasorium: \u041e\u0447\u0435\u043d\u044c \u0431\u043e\u043b\u044c\u043d\u043e \u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c. \u041d\u0435 \u0434\u043b\u044f \u0441\u043b\u0430\u0431\u0430\u043a\u043e\u0432 https://t.co/rOVH3w3FmM"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229577895936", "lang": "ar", "text": "\u0627\u0644\u062d\u0645\u062f \u0644\u0644\u0647 \u0627\u0644\u0630\u064a \u0644\u0627 \u064a\u0631\u062c\u0649 \u0625\u0644\u0627 \u0641\u0636\u0644\u0647 \u060c \u0648\u0644\u0627 \u0631\u0627\u0632\u0642 \u063a\u064a\u0631\u0647 https://t.co/sMuyfOQ8qQ"}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229607276544", "lang": "en", "text": "409754 #joanne GAGA COME TO BRAZIL  \n#EMABiggestFansLadyGaga"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229569458176", "lang": "es", "text": ".@criscadominguez dejar\u00e1 fr\u00eda a @karlatarazona2 con esta revelaci\u00f3n \ud83d\ude31 https://t.co/Iuc11KzmSg https://t.co/AjsMW6pgKB"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229598887936", "lang": "en", "text": "RT @henchmenmusik: Need #Beats??? Check Out S-Ka-Paid's Official Beat Site For Over 500+ Instrumentals And Beats! - https://t.co/3dF4Al5YM8"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229590474752", "lang": "en", "text": "Orion Crew Module Underway Recovery Testing https://t.co/jL8T5iNA8r via @NASA https://t.co/VCDX2rOq9g"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:09 +0000 2016", "id_str": "794197229594521600", "lang": "ja", "text": "\u4e45\u3005\u306e\u663c\u98f2\u307f\u91ce\u6bdb\u3002\u697d\u3057\u3059\u304e\ud83d\ude06 https://t.co/vEMrcVAKbS"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233763631108", "lang": "ja", "text": "RT @imomochim: \u3010JUMP\u540d\u53e4\u5c4b 11/3 2\u90e8\u3011\u2192\n\u305d\u3063\u3061\u5074\u306f\u4f55\u3057\u3066\u305f\uff1f\u306b\n\u9ad8\u6728:\u4ffa\u3068\u3086\u30fc\u3066\u3043(\u30e6\u30fc\u30c6\u30a3\u547c\u3073\u3057\u305f\u6c17\u304c)\u572d\u4eba\u2026\n\u6709\u5ca1:\u4ffa\u306f\u771f\u3093\u4e2d\u3060\u306d\n\u85ae:\u5927\u3061\u3083\u3093\u30bd\u30ed\u5199\u771f\u306f\uff1f\u2190\u3053\u306e\u85ae\u304f\u3093\u597d\u304d\n\u6709\u5ca1:\u305d\u3063\u3061\u5074\u4f55\u3057\u3066\u305f\u306e\uff1f\n\u88d5\u7fd4:\u9ad8\u6728\u304f\u3093\u304c\u305a\u3063\u3068\u9069\u5f53\u306a\u3053\u3068\u8a00\u3063\u3066\u305f\u3088\u306d\u2026"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233784668160", "lang": "en", "text": "RT @totalgolfmove: The Cubs won another World Series so Tiger can win another major"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233780432896", "lang": "th", "text": "RT @mtuan93g7: \u0e43\u0e08\u0e08\u0e30\u0e27\u0e32\u0e22 - -"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233780408321", "lang": "ja", "text": "@kurofficial \u305d\u308c\u306a"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233793011712", "lang": "ja", "text": "\u5275\u4fa1\u5b66\u4f1a\u54e1\u306b\u3088\u308b\u591a\u6570\u306e\u6bba\u4eba\u4e8b\u4ef6https://t.co/haBZPKFl2Q\u5275\u4fa1\u5b66\u4f1a\u54e1\u306e\u606f\u5b50\u4e21\u89aa\u3092\u6bba\u5bb3https://t.co/kPU0NaWq0J\u5275\u4fa1\u5b66\u4f1a\u54e1\u306e\u4e21\u89aa\uff12\u4eba\u306f\u606f\u5b50\u306b\u6bba\u5bb3\u3055\u308c\u305f\u3042\u3068\u3001\u3058\u305f\u304f\u306e\u5bee\u3092\u7206\u7834\u3055\u308c\u308b\u3002\u6c60\u7530\u5927\u4f5c\u5275\u4fa1\u5927\u5b66\u5275\u4fa1\u5b66\u5712\u5e78\u798f\u306e\u79d1\u5b66"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233767882753", "lang": "en", "text": "RT @jounson_: Sporty Camel Toe to Make You Want to \"Grab Her By The P*ssy\"!!!!#!#!\n\n&gt;&gt;&gt;https://t.co/Es5ZZhULKW"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233780408320", "lang": "ja", "text": "@takuzooo_3 \n\u3048\u3063\uff01\u3048\u3063\u3001\u3048\u3048\u3048\u3048\u3063\u3063\u3063\uff01\uff01\uff01\u7b11\n\u3069\u3046\u3044\u3046\u3053\u3068\u3067\u3059\u304b\uff1f\u7b11"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233801404417", "lang": "ja", "text": "\u5168\u54e1\u3067\u3059\uff01"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233772032000", "lang": "und", "text": "RT @zevxlove: \ud83c\udf43\ud83c\udf33 https://t.co/zGB9defr0K"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233792991232", "lang": "th", "text": "@jayigotseven \u0e0b\u0e1a"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233801383936", "lang": "en", "text": "@AE_photograhy2 @levnojuice funny asf"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233763844096", "lang": "ja", "text": "RT @SeijiBanashi: \u305d\u3053\u3089\u8fba\u306b\u3042\u308b\u30c7\u30fc\u30bf\u3092\u898b\u308b\u3068\u3001\u65e5\u672c\u306e\u5973\u6027\u306f\u65e5\u672c\u56fd\u306e\u88ab\u5bb3\u8005\u3068\u3057\u304b\u3044\u3044\u3088\u3046\u304c\u306a\u3044\u3002\u5973\u5c0a\u7537\u5351\u306a\u3069\u3001\u3042\u308a\u3048\u306a\u3044\u306e\u306f\u8a00\u3046\u307e\u3067\u3082\u306a\u3044\u3002"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233780461568", "lang": "und", "text": "RT @memerobber: https://t.co/33fy6NTCP6"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233797398528", "lang": "en", "text": "@kyra_iyana_ you shouldn't have a problem though lol"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233776267264", "lang": "ja", "text": "@posuke0518 \u5185\u8535\u96fb\u6c60\u901d\u3063\u3066\u308b\u306e\u3067\u30d7\u30ea\u30bb\u30c3\u30c8\u6d88\u6ec5\u3057\u3066\u308b\u3093\u3067\u3059\u3051\u3069\u3069\u3046\u3084\u3063\u3066\u6cbb\u3057\u307e\u3057\u305f\u304b\u2026\uff1f\n\u3042\u3068\u30b3\u30fc\u30e9\u30b9\u306e\u30ce\u30a4\u30ba\u3069\u3046\u3057\u3066\u307e\u3059\u304b\u2026"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233780391936", "lang": "ja", "text": "@TmkrO_ \u305d\u308c\u306f\u672c\u5f53\u306b\u3057\u3093\u3069\u3044\u3060\u308d\u3046\u306a"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233763688448", "lang": "es", "text": "@jramiroMX  Tal vez esto les duela porque es peri\u00f3dico de EEUU, pero como carecen de verguenza y tienen exceso de cinismo se les resbalar\u00e1."}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233792995329", "lang": "ja", "text": "Lv75 \u30bb\u30ec\u30b9\u30c8\u30fb\u30de\u30b0\u30ca  I need backup!Battle ID: 7B6B3C32\nLvl 75 Celeste Omega\nhttps://t.co/mBcfxQRyoF"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233797214208", "lang": "en", "text": "RT @abevis_: but wait a minute lets all imagine all the selfies carol &amp; luke have on their phones with one another that we have\u2026 "}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233793056768", "lang": "ja", "text": "\u3010Kindle\u30b9\u30c8\u30a2\u306e\u30d2\u30c3\u30c8\u5546\u54c1\u3011 #6: \u5199\u771f\u30fb\u56f3\u89e3 \u65e5\u672c\u306e\u4ecf\u50cf \u3053\u306e\u4e00\u518a\u3067\u3059\u3079\u3066\u304c\u308f\u304b\u308b\uff01 https://t.co/y55vzebssO"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233793003525", "lang": "th", "text": "RT @_toTOP: \u0e1b\u0e35\u0e19\u0e35\u0e49\u0e01\u0e4730\u0e41\u0e25\u0e49\u0e27\u0e40\u0e19\u0e2d\u0e30 \u0e41\u0e1a\u0e1a\u0e19\u0e35\u0e49\u0e43\u0e0a\u0e48\u0e44\u0e2b\u0e21\u0e17\u0e35\u0e48\u0e40\u0e23\u0e35\u0e22\u0e01\u0e27\u0e48\u0e32 30 \u0e22\u0e31\u0e07\u0e41\u0e08\u0e4b\u0e27 \ud83d\ude0d#HAPPYTOPDAY https://t.co/U5MCXn1pHV"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233767837696", "lang": "ja", "text": "@jiro_46 \u304a\u3089\u306b\u8ca0\u3051\u3066\u308b\u304a\u0295\u2022\u032b\u0361\u2022\u0f72\u0294\u0f80\u4f59\u97fb\u305b\u3093\u305b\u30fc"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233788973057", "lang": "ar", "text": "RT @50j: #\u0627\u0644\u064a\u0648\u0645_63_stc_\u0631\u0627\u062d_\u0646\u0641\u0644\u0633\u0643\u0645\n\n#\u062a\u0633\u062f\u064a\u062f_\u0642\u0631\u0648\u0636\n\u0627\u0644\u0631\u0627\u062c\u062d\u064a\n\ud83d\udca0\u0627\u0644\u0627\u0647\u0644\u064a22\u0631\u0627\u062a\u0628\n\u0627\u0644\u0639\u0631\u0628\u064a\n\ud83d\udca0\u0627\u0644\u0625\u0646\u0645\u0627\u0621\n\u0633\u0627\u0645\u0628\u0627\n\ud83d\udca0\u0627\u0644\u0628\u0644\u0627\u062f\n\u0627\u0644\u0631\u064a\u0627\u0636\n\u0633\u062f\u0627\u062f\u0645\u062a\u0639\u062b\u0631\u0627\u062a \u0641\u064a \u0633\u0645\u0647\n\u0627\u0628\u0648\u0646\u0648\u0627\u0641\n053000\u2026"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233792995328", "lang": "ja", "text": "RT @0723_888: \u301c\u5199\u771f\u64ae\u3063\u305f\u5f8c\u301c\n\uff62\u306d\u3048\u306d\u3048\u4f55\u56de\u304b\u63e1\u624b\u3068\u304b\u516c\u6f14\u3068\u304b\u884c\u3063\u3066\u308b\u3093\u3060\u3051\u3069\u899a\u3048\u3066\u306a\u3044\u3088\u306d\uff1f\uff63\n\u300e\u899a\u3048\u3066\u308b\u3088\ud83d\ude0f\u300f\n\uff62\u5618\u3060\u30fc\uff01\uff63\n\u300e\u3048\u30fc\u3060\u3063\u3066\u3053\u306e\u9593\u306eAKB\u516c\u6f14\u306e\u6642\u3044\u305f\u3067\u3057\u3087\uff1f\u300f\n\n\u6607\u5929\ud83d\ude07\ud83d\ude07\ud83d\ude07\ud83d\ude07\ud83d\ude07\ud83d\udc97\ud83d\udc97\ud83d\udc97\ud83d\udc97\ud83d\udc97\n\u3057\u304b\u3082\u4fc2\u306e\u4eba\u306b\u304a\u6642\u9593\u3067\u3059\u3063\u3066\u8a00\u308f\u308c\u3066\u305f\u306e\u306b\u8a71\u3057\u3066\u304f\u308c\u305f\u2026"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233797369856", "lang": "und", "text": "RT @foxy1_fox: https://t.co/59HLb7CJ5w"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233780531200", "lang": "en", "text": "RT @lilmxrblbr: my fingers getting numb lol im so tired but  #EMABiggestFansJustinBieber"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233801560065", "lang": "en", "text": "RT @maichard21: You are a gift to this nation, @mainedcm. \ud83c\udf81  THANK YOU.\n\n#ALDUB68thWeeksary https://t.co/TC44nSb2Zv"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233788973056", "lang": "ro", "text": "Swansea pense \u00e0 Dimitar Berbatov https://t.co/gSLRtCh6Fs #123ActuSport #Info #sport"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233763807233", "lang": "en", "text": "409754 #joanne GAGA COME TO BRAZIL  \n#EMABiggestFansLadyGaga"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233788977156", "lang": "en", "text": "nude girls in woods #stickam nude girls https://t.co/LPJ2eVgrZA"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233793191936", "lang": "pt", "text": "RT @ladydems: monsta x cantando blood sweat and tears e tentando contar quantos \"mani\" aparecem scrr oftajhs \u2764\ufe0f https://t.co/EXxWmZNHJu"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233772204032", "lang": "und", "text": "RT @GRN_esports: Diumenge 18h pavell\u00f3 carrer Girona @CB_Granollers far\u00e0 presentaci\u00f3 dels seus equips nova temporada 2016/17  #somcbg\u2026 "}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233797304320", "lang": "und", "text": "@al4547aa1"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233797308416", "lang": "pl", "text": "Rrok dushaj"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233768009728", "lang": "fr", "text": "Signez la p\u00e9tition : Massacres \u00e0 Beni, l\u2019impunit\u00e9 r\u00e8gne toujours https://t.co/oKQZA1Iqtq via @amnestybe"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233801564160", "lang": "ar", "text": "RT @imoodu: \u0627\u0644\u062d\u0631\u0643\u0629 \u0630\u064a \u0645\u0627\u062a\u0635\u064a\u0631\u0644\u064a \u0627\u0644\u0627 \u064a\u0648\u0645 \u0627\u0643\u0648\u0646 \u0645\u0639\u0635\u0628 \u0623\u062d\u0633 \u0627\u0644\u0628\u0627\u0628 \u064a\u0642\u0648\u0644 \u0644\u062d\u0638\u0629 \u0645\u0646 \u0632\u0639\u0644\u0643. https://t.co/JiYEdIxyI6"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233780588544", "lang": "ko", "text": "RT @BTS_twt: \ube45\ud788\ud2b8\uc758 \uc2e0\uc18d\ud55c \ub300\uc751!! \uc5b4\uba38\ub2c8 \uc544\ub4e4\uc740 \uc88b\uc740 \ud68c\uc0ac\uc5d0 \ub2e4\ub2c8\uace0 \uc788\uc5b4\uc5ec https://t.co/CvjIKR6S74"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233801498624", "lang": "und", "text": "https://t.co/Z3VGMO4qVW"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233793171456", "lang": "ar", "text": "\u0627\u0644\u0644\u0647\u0645 \u0625\u0646\u064a \u0623\u0633\u062a\u062e\u064a\u0631\u0643 \u0628\u0639\u0644\u0645\u0643 \u0648\u0623\u0633\u062a\u0642\u062f\u0631\u0643 \u0628\u0642\u062f\u0631\u062a\u0643 \u0648\u0623\u0633\u0623\u0644\u0643 \u0645\u0646 \u0641\u0636\u0644\u0643 \u0627\u0644\u0639\u0638\u064a\u0645 \u0641\u0625\u0646\u0643 \u062a\u0642\u062f\u0650\u0631\u064f \u0648\u0644\u0627 \u0623\u0642\u062f\u0650\u0631\u064f \u0648\u062a\u0639\u0644\u0645 \u0648\u0644\u0627 \u0623\u0639\u0644\u0645 \u0648\u0623\u0646\u062a \u0639\u0644\u0627\u0645 \u0627\u0644\u063a\u064a\u0648\u0628 https://t.co/m5JaB16dI7"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233801408513", "lang": "ja", "text": "\u3061\u30fc\u304c\u30fc\u3046\u3046\u3046\u3046\u3046\u3046"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233780621313", "lang": "ar", "text": "RT @KhalidA37777401: #\u0627\u0644\u0646\u0635\u0631_\u0627\u0644\u0631\u0627\u064a\u062f\n\n\u0645\u062c\u0644\u0633 \u062c\u0645\u0647\u0648\u0631 \u0627\u0644\u0646\u0635\u0631 \u064a\u0637\u0642\u0637\u0642 \u0639\u0644\u0649 \u0627\u0644\u0637\u062d\u0644\u0628\u064a \u0637\u0627\u0631\u0642 \u0643\u064a\u0627\u0644 \u0648\u064a\u0637\u0644\u0628 \u0645\u0646\u0647 \u0627\u0633\u0645 \u0634\u0631\u0643\u0629 \u062a\u064a\u0641\u0648 \u0627\u0644\u0646\u0635\u0631...\u0648\u0627\u0644\u0637\u062d\u0644\u0628\u064a \u0648\u0636\u0639\u064a\u0629 \u0627\u0644\u0645\u064a\u062a\ud83d\ude02\ud83d\ude02 htt\u2026"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233763635200", "lang": "ja", "text": "RT @_escapegoat: \u25bdACT\nTitle of Your Life(\u5927\u962a)\nZINNIA(\u5c3e\u9053)\n\u305d\u306e\u6f22\u3001\u540d\u3092\u671d\u6d77\u3068\u7533\u3059\nEscapegoat"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233793204224", "lang": "en", "text": "RT @AnnissaForBos: Early Voting om Friday, November 4, 2016, 11:00 am \u2013 5:00 pm at the Jewish Community Housing, 30 Wallingford Rd, Brighton"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233776197632", "lang": "en", "text": "The balloons are stuck https://t.co/jxl8Op43aI"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233793019904", "lang": "es", "text": "Wall Street abre al alza y el Dow Jones avanza un 0,16 % https://t.co/nZCV8t78c5 https://t.co/HEExaF1Rmj"}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233784721408", "lang": "en", "text": "END of BASEBALL means these TORONTO hacks like BRUCE ARTHUR JEFF BLAIR DAMIEN COX and the REST will go BACK to SLAGGING @CFL and CDN #HOCKEY"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233763840000", "lang": "en", "text": "RT @SPoonia777: Fantastic Acting! Simply Superb Guru @Gurmeetramrahim ji &amp; Craziness Going increases Continually day by day So  #300Crossed\u2026"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233772138496", "lang": "en", "text": "RT @jturnershow: The Black Church Has\nSold Out To The Democrat Party &amp; Abandoned Jesus Now Worship Obama, Oprah\n&amp; Hillary\u2026 "}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233801555968", "lang": "en", "text": "#movies naked chinese girls wetpanty https://t.co/jeqbuQ5F3Y"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:10 +0000 2016", "id_str": "794197233763762176", "lang": "pt", "text": "disse que ia parar de comer carne\nmeu recorde foi dois dias, eu sou a mulher mais decepcionante do brasil https://t.co/7eftCj4kLd"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237962149888", "lang": "in", "text": "RT @lepatpisangg: kau tahu tak\n\nbila kau buat terlalu baik, org tak nampak\n\nbila kau buat jahat, jahat kau kecik je sebesar kuman sampai ki\u2026"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237995687936", "lang": "tl", "text": "RT @dhentwice16: Alam ko kulang pa ang sorry para mapatawad mo ako"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237962186752", "lang": "en", "text": "RT @Bible_Time: But seek first his kingdom &amp; his righteousness, &amp; all these things will be given to you as well. -Matt 6:33"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237983158272", "lang": "ja", "text": "\u3042\u3044\u3046\u3048\u304a @null"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237978959872", "lang": "ko", "text": "\uc624\ub7ad\ub9c8\ub2c8\uc5d0\uc624\ud2b8\uce5c\ub4e4\u3160\u3160\u3160\u3160 \ud610\uc0dd\uc5d0 \uce58\uc5ec\uc11c \uc9c4\uc9dc \ub118 \uc624\ub79c\ub9cc\uc5d0 \uc654\ub124\uc624\u3160\u3160\u3160"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237987323904", "lang": "es", "text": "RT @Jovenesentw: Sonre\u00edr no siempre significa que est\u00e1s feliz, a veces significa que eres fuerte."}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237991542784", "lang": "tl", "text": "@ellalambio \ud83d\ude18 sorry na frend wag ka na sad"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237962194944", "lang": "th", "text": "@Oat_KS \u0e21\u0e31\u0e19\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e01\u0e31\u0e1a\u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19\u0e20\u0e32\u0e2a\u0e07\u0e20\u0e32\u0e29\u0e32\u0e2d\u0e30\u0e44\u0e23\u0e1b\u0e49\u0e30"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237966352384", "lang": "ko", "text": "RT @angelgikwang: 161103 #\uc774\uae30\uad11 #\ube44\uc2a4\ud2b8\n\uc870\uba85\uc740 \uc548\uc88b\uc558\uc9c0\ub9cc \u3160\u3160\n\uae30\uad11\uc774\uac00 \ubd10\uc92c\ub2e4\uc694\u3160\u3160 \uc0c1\ub0a8\ub2e4\ubc24\ud1a8\uc774\u3160\u3160\u3160\u3160\n\uc6b0\uc8fc\ub300\uc874\uc790\ub958\u3160\u3160\u3160\u3160\u3160\u3160\u3160\ub045\uc544\uc544\uc544\uc6b0\u3160\u3160\u3160\u3160\n\uac78\uc5b4\ubd10\uc544\uc544~ \u314b\u314b\u314b\u314b https://t.co/M2ZMBKBXht"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237987315712", "lang": "ko", "text": "@immranma \uc65c \uc544\ud508 \uc624\ub808\uc624\uc5d0\uc694...\u3160\u3160\u3160"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237987323905", "lang": "ja", "text": "@idnex5a1 \n\u305f\u30fc\u574a\u547c\u3073\u306f\u6570\u5c11\u306a\u3044\u3093\u3067\u306d \u7b11"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237970530304", "lang": "en", "text": "RT @itssixwordstory: \u201cPlease forgive me. I\u2019m a monster.\u201d"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237974777857", "lang": "th", "text": "RT @nnnnoeyyy: \u0e01\u0e01- \u0e44\u0e21\u0e48\u0e04\u0e34\u0e14\u0e08\u0e30\u0e17\u0e31\u0e01\u0e40\u0e21\u0e35\u0e22\u0e1a\u0e49\u0e32\u0e07\u0e40\u0e25\u0e22\u0e2b\u0e23\u0e2d how are you \u0e44\u0e23\u0e07\u0e35\u0e49 \u0e17\u0e31\u0e01\u0e41\u0e15\u0e48\u0e2b\u0e21\u0e39 (\u0e40\u0e1b\u0e48\u0e32\u0e40\u0e1b\u0e32)\n\u0e1a\u0e35\u0e49 - \u0e21\u0e31\u0e19\u0e44\u0e21\u0e48\u0e0a\u0e34\u0e19 \u0e15\u0e2d\u0e19\u0e1a\u0e27\u0e0a\u0e2b\u0e49\u0e32\u0e21\u0e43\u0e01\u0e25\u0e49\u0e1c\u0e39\u0e49\u0e2b\u0e0d\u0e34\u0e07\u0e44\u0e07\n\u0e01\u0e01 -\u2026 "}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237958057984", "lang": "ar", "text": "RT @hh0PBZ9K5tsHS1V: #\u0642\u0631\u0648\u0628_\u0643\u0628\u0631\u064a\u0627\u0621_\u0631\u062c\u0644_\u0644\u0644\u062f\u0639\u0645.                                   \u064a\u0627\u0631\u0628 ... \u0623\u064f\u0645\u0646\u064a\u0629 \u0635\u064e\u063a\u064a\u0631\u0629\u0652 \u062a\u064e\u0639\u064a\u0634\u064f \u0641\u064a \u062f\u064e\u0627\u062e\u0650\u0644\u064a\u0652 \u0623\u0633\u0639\u0650\u062f \u0642\u064e\u0644\u0628\u064a\u0652\u2026 "}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237970575360", "lang": "ja", "text": "@kento_y_eringi \n\u3044\u3064\u304b\u98df\u3079\u3066\u3042\u3052\u3066\u306d"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237962153984", "lang": "en", "text": "RT @beyoncehatesme: Beyonc\u00e9 serving fried chicken, biscuit lickin:, Mac and cheese meltin' vocals tonight https://t.co/RGYQ44Q128"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237958148096", "lang": "fr", "text": "RT @lepenjm: Soutien sans r\u00e9serve aux forces de l\u2019ordre, d\u00e9sarm\u00e9es par la hi\u00e9rarchie politique face \u00e0 des hordes criminelles qu\u2019il faut r\u00e9d\u2026"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237991612416", "lang": "en", "text": "RT @deadpooIt: HELP ME OUT"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237991636992", "lang": "ru", "text": "@Noiz_Murder \u0443\u0436\u0430\u0441"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237987495936", "lang": "en", "text": "RT @DBloom451: ALL CORRUPT! All #Rigged. Asst AG charged w/@ClintonFdn investigation asking to be on HER campaign\ud83d\udc47#PodestaEmails27\u2026 "}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237991501824", "lang": "tl", "text": "@triciavalino may iba kasi na umaasa sa taong imposibleng maging kanila"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237987295232", "lang": "ko", "text": "RT @arabesque951013: 161023 BOF \ud3d0\ub9c9\uc2dd \n\uc778\uc774\uc5b4\ub3c4 \ub9cc\uc838\uc57c \ud558\uace0 \uba38\ub9ac\ub3c4 \ub9cc\uc838\uc57c \ud558\uace0\n\uc6b0\ub9ac \uadc0\uc5fd\ub514 \uadc0\uc5ec\uc6b4 \uc9c0\ubbfc\uc774\n\uadc0\uc5ec\uc6b4 \uc9c0\ubbfc\uc774........ \n\ubcf4\uace0\ud508 \uc9c0\ubbfc\uc774\u3160\u3160\n#\uc9c0\ubbfc #JIMIN https://t.co/Wepc5lffqm"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237962186754", "lang": "es", "text": "RT @juan5041: El nuevo Pac,lidereado por  diputados Mena y Redondo ponen en \"jaque mate\" al Trump hondure\u00f1o (Salvador Nasralla). https://t.\u2026"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237987414016", "lang": "ar", "text": "@fhoody229900 \u0628\u0627\u0644\u062a\u0648\u0641\u064a\u0642 \u0644\u0644\u0639\u0627\u0644\u0645\u064a \u0627\u0644\u0644\u064a\u0644\u0647 \u064a\u0627\u0631\u0628"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237966327808", "lang": "ja", "text": "RT @tyul_syu__vo: \u9069\u5f53\u611f\u6e80\u8f09\u3060\u3051\u3069\ud83d\udc50\ud83c\udffb\n\n#\u85e4\u4e95\u8429\u82b1\n#\u5c11\u3057\u3067\u3082\u4f3c\u3066\u308b\u3068\u601d\u3063\u305f\u3089RT\n#\u30d5\u30a9\u30ed\u30fc https://t.co/Snw73ZyBdW"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237966389248", "lang": "ja", "text": "@nekozukiniwa \u7121\u7406www\n\u5893\u77f3\u306f\u7121\u7406www\n\n\u7d0d\u5f97\u3067\u304d\u3066\u306a\u30fc\u30fc\u30fc\u30fc\u30fc\u3044(\uff1e\uff1c)"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237958053888", "lang": "es", "text": "https://t.co/KzWW3CN7O8 Air Jordan 4 Retro 30th - 9 \"Teal\" - 705331 330"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237974712320", "lang": "ar", "text": "\u062e\u0631 \u0631\u062c\u0644 \u0645\u0646 \u0628\u0639\u064a\u0631\u0647 \u0641\u0648\u0642\u0635 \u0641\u0645\u0627\u062a \u0641\u0642\u0627\u0644 \u0627\u063a\u0633\u0644\u0648\u0647 \u0628\u0645\u0627\u0621 \u0648\u0633\u062f\u0631 \u0648\u0643\u0641\u0646\u0648\u0647 \u0641\u064a \u062b\u0648\u0628\u064a\u0647 \u0648\u0644\u0627 \u062a\u062e\u0645\u0631\u0648\u0627 \u0631\u0623\u0633\u0647 \u0641\u0625\u0646 \u0627\u0644\u0644\u0647 \u064a\u0628\u0639\u062b\u0647 \u064a\u0648\u0645 \u0627\u0644\u0642\u064a\u0627\u0645\u0629 \u0645\u0644\u0628\u064a\u0627 \u0643\u0627\u0646 \u0641\u0649 \u0627\u0644\u062d\u062c #Hadith #\ufdfa"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237995737088", "lang": "en", "text": "Do u need to study for the #CMP  in Nov? U need CMP Crash Course https://t.co/YoJ8Dqsrir #EventProfs #MPI #PCMA https://t.co/zCDqu3p38M"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237995864064", "lang": "en", "text": "RT @MsPatriarch: \ud83d\udea8Bret Baier: FBI Sources Believe Clinton Foundation Case Moving Towards \"Likely an Indictment\"\nHillary is done. \ud83d\udc4e\ud83c\udffb https:/\u2026"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237991489540", "lang": "es", "text": "Seguimos una semana m\u00e1s en el thestyleoutlets_es con el mejor #streetfood #foodtruck\u2026 https://t.co/cCEzxBJ47D"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237970636802", "lang": "en", "text": "@AbriannaKaylyn gotcha \ud83d\ude09"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237974843392", "lang": "es", "text": "RT @la_patilla: Ahora militares controlar\u00e1n distribuci\u00f3n de medicamentos   en hospitales venezolanos https://t.co/dySQZu7zdE https://t.co/P\u2026"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237983277056", "lang": "ko", "text": "@suga_come_  \uce5c\uad6c\uc9c0\uae08 \ud55c\ub2ec\uac04 \uc77c\ubcf8\uc5ec\ud589\uac08\uaebc\ub77c\uace0 \uadf8\ub798\uc11c \uace4\uc57d\uc824\ub9ac \uc0ac\ub2e4\uc918! \uc774\ub7ac\ub354\ub2c8 \uc800\ub798 \ubcf4\ub0b4\uc92c\uc2b5\ub2c8\ub2e4....\uc5b8\uc81c \ub2e4\uba39\uc744\uc9c0\ub294 \ubaa8\ub974\uaca0\uc9c0\ub9cc \uba39\uc5b4\ubcf4\uaca0\uc2b5\ub2c8\ub2e4!(?\ud83d\ude03"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237991673856", "lang": "ar", "text": "\u0627\u0644\u0644\u0647\u0645 \u0625\u0646\u064a \u0623\u0633\u0623\u0644\u0643 \u0627\u0644\u0639\u0627\u0641\u064a\u0629 \u0641\u064a \u0627\u0644\u062f\u0646\u064a\u0627 \u0648\u0627\u0644\u0622\u062e\u0631\u0629 \u0648 \u0641\u064a \u062f\u064a\u0646\u064a \u0648\u062f\u0646\u064a\u0627\u064a \u0648\u0623\u0647\u0644\u064a \u0648\u0645\u0627\u0644\u064a \u0627\u0644\u0644\u0647\u0645 \u0627\u0633\u062a\u0631 \u0639\u0648\u0631\u0627\u062a\u064a \u0648\u0622\u0645\u0646 \u0631\u0648\u0639\u0627\u062a\u064a https://t.co/i1eAZQGdzm"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237957992448", "lang": "in", "text": "RT @jonru: Namanya Pak Anjari. Saya mengenal beliau lewat sebuah komunitas blogger, beberapa tahun lalu. Dalam menulis di... https://t.co/J\u2026"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237995884544", "lang": "tr", "text": "RT @cilekapisi: \u00d6nemli bir insan olmak istiyordum, camiye gittim. \u0130lk safta a\u011f\u0131rlad\u0131lar. Mehmet Deveci https://t.co/Aq10kQQ9DA"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237958111232", "lang": "en", "text": "RT @takethiscurve: never cheat on a man who's fire on a track https://t.co/xhgVGx58qB"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237987414017", "lang": "fr", "text": "@TomizITA @NewverMN @AymericMachu j'avoue"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237962186753", "lang": "ja", "text": "\u5927\u962a \u306e \u9ad8\u53ce\u5165 \u6c42\u4eba \u60c5\u5831\u30b5\u30a4\u30c8\u266a\u30ca\u30a4\u30c8\u7cfb\u5c02\u9580\u266a\u3010LOVE\u2665JOB\u3011\u7a3c\u304e\u305f\u3044\uff01\u6c17\u6301\u3088\u304f\u697d\u3057\u304f\u50cd\u304d\u305f\u3044\uff01\u305d\u3093\u306a\u30ef\u30ac\u30de\u30de\u306a\u5973\u306e\u5b50\u306e\u305f\u3081\u306b\u2026\u2665\u2192 https://t.co/RRGuZ5H7o2 https://t.co/2GoV3sXvIg"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237962248193", "lang": "en", "text": "Fantastic Lynette Carveth she's singing in italian a song of mine made by me 24 years ago... she's taking my... https://t.co/88oEDc7coV"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237991555074", "lang": "ja", "text": "RT @_____sera: \u8077\u696d\u67c4\u3001\u5e7c\u5150\u30d1\u30ed\u3068\u304b\u898b\u3066\u3044\u308b\u3068\u300c\u25cb\u6b73\u3067\u306f\u3053\u3093\u306a\u3053\u3068\u3067\u304d\u3093\u2026\uff01\u300d\u3063\u3066\u601d\u3046\u3053\u3068\u304c\u591a\u3044\u306e\u3067\u767a\u9054\u6bb5\u968e\u3092\u8868\u306b\u307e\u3068\u3081\u3066\u307f\u307e\u3057\u305f\u3002\u5e7c\u5150\u5316\u3059\u308b\u969b\u306e\u53c2\u8003\u306b\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u305d\u3057\u3066\u63cf\u3044\u3066\u2026 https://t.co/IlpDroi7TS"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237974859776", "lang": "en", "text": "RT @Zeina1967: HEY GOVERNMENT:YOU ARE PUT ON NOTICE THAT HILLARY CLINTON LACKS COMPETENCY TO RUN OUR NATION, PROTECT ITS PEOPLE &amp;\u2026 "}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237966327809", "lang": "ja", "text": "\u3053\u306e\u30e9\u30e0\u7537\u306e\u5a18\u3060\u3082\u3093\u306a\u3041"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237979054080", "lang": "en", "text": "RT @Augustfiire: Swear he do \ud83d\ude44\ud83d\ude02 https://t.co/3GiR3PmHvP"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237987471360", "lang": "es", "text": "@ChangGaby jajaja el veraniiiito que se viene \u2764\ufe0f\ud83d\udc6f\ud83d\udc85\ud83c\udffc"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237974769664", "lang": "en", "text": "she reads about people she could never be and adventures she could never have. https://t.co/5F5qeBq7s5"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237957935104", "lang": "ja", "text": "\u7acb\u3061\u5411\u304b\u3048\u308b\u541b\u3068\u306a\u3089\n\u8cab\u3051\u308b\u3088\u3053\u306e\u60f3\u3044\n\u3044\u3064\u304b\u304d\u3063\u3068\u8fbf\u308a\u3064\u304f\u3060\u308d\u3046\n\u65c5\u8def\u306e\u679c\u3066\u306b\n\u5b88\u308a\u629c\u304f\u3088\u541b\u306e\u4e8b\n\u5bc2\u3057\u304f\u306a\u3044\u672c\u5f53\u3060\u3088\n\u99c6\u3051\u629c\u3051\u3066\u3044\u304f\u6642\u9593\u306e\u4e2d\u3067\n\u672a\u6765\u3092\u63a2\u3057\u3066\u3044\u304f\n\u4e8c\u4eba\u624b\u3092\u7e4b\u304e\n\n  #\u597d\u304d\u306a\u6b4c\u8a5e\u30921\u65e51\u56de\u545f\u304f https://t.co/GxvjTPBUtW"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237979025408", "lang": "und", "text": "@TwitterWomen https://t.co/rt1407G39F"}
+{"created_at": "Thu Nov 03 15:19:11 +0000 2016", "id_str": "794197237978935296", "lang": "th", "text": "\u0e2d\u0e38\u0e49\u0e22 \u0e41\u0e2d\u0e1a\u0e40\u0e2b\u0e47\u0e19\u0e1e\u0e38\u0e07 https://t.co/eYY6par7Rl"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242169016320", "lang": "ja", "text": "\u30db\u30b3\u3060\u3068\u52dd\u3066\u308b\u2026"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242181623809", "lang": "ja", "text": "\u305d\u3046\u3060\u3063\u305f\u2026\u305d\u308c\u3067\u306f\u30c7\u30b9\u30ce\u30fc\u30c8\u898b\u305f\u3042\u3068\u306b\u30ad\u30e9\u306b\u4f1a\u304a\u3046"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242185797632", "lang": "en", "text": "RT @RealityGV: A society conditioned by oppressive forces will create that behavioral mindset which is why people try to impose on others'\u2026"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242152296448", "lang": "ja", "text": "@urth0 \u9022\u5742\u3055\u3093\u306f\u305d\u308c\u3092\u898b\u3066\u4f55\u304b\u306a\u3044\u3093\u3067\u3059\u304b"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242152251392", "lang": "en", "text": "RT @RealityGV: A society conditioned by oppressive forces will create that behavioral mindset which is why people try to impose on others'\u2026"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242185846784", "lang": "en", "text": "RT @RealityGV: A society conditioned by oppressive forces will create that behavioral mindset which is why people try to impose on others'\u2026"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242177470464", "lang": "en", "text": "Linkedin Ads Made Easy - https://t.co/6RmdLZK9rg"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242152222720", "lang": "th", "text": "RT @brownS2_94: \u0e2e\u0e23\u0e36\u0e01... \u0e02\u0e19\u0e15\u0e32\u0e40\u0e23\u0e35\u0e22\u0e07\u0e22\u0e32\u0e27 \u0e19\u0e48\u0e32\u0e23\u0e31\u0e01 \u0e2a\u0e27\u0e22\u0e07\u0e32\u0e21 \u0e40\u0e1b\u0e47\u0e19\u0e20\u0e32\u0e1e\u0e17\u0e35\u0e48\u0e2a\u0e27\u0e22\u0e07\u0e32\u0e21\u0e17\u0e35\u0e48\u0e2a\u0e38\u0e14 \ud83d\ude2d\ud83d\udc98 https://t.co/CSV1yvgKjw"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242164850688", "lang": "ja", "text": "\u307e\u3063\u3066\u3053\u308c\u306f\u30e2\u2026\u2026\u30e2\u30ea\u30de\u2026\u2026\uff1f"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242181656576", "lang": "en", "text": "RT @PostBikers: 0-400 Km/H not so bad \ud83d\ude02 https://t.co/wJzZaqOwWq"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242185814016", "lang": "ja", "text": "@PCS_TL \u304b\u3044\u2026\u304b\u3001\u4f1a\u8a71\u2026\uff1f\u4f1a\u8a71\u3063\u3066\u4f1a\u8a71\u3057\u3066\u306a\u304f\u306a\u3044\u2026\u2026\uff1f"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242173276160", "lang": "in", "text": "@ditarizky_aulia Hi Dita, punya bisnis? Yuk coba Sasbuzz agar lebih banyak customernya! https://t.co/XrnNc3K3C5 https://t.co/MQccFtfDNR"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242181611521", "lang": "ko", "text": "RT @prettyboy_0326: 161031 \uccb8\ubc31\uc2dc \uc1fc\ucf00\uc774\uc2a4 \u2763 #xiumin #\uc2dc\uc6b0\ubbfc\nhttps://t.co/9qHfIvIBwc\nhttps://t.co/Odqr2LkAeH https://t.co/fkhDv2YWEM"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242152370176", "lang": "pt", "text": "2015 foi foda \n2016 n\u00e3o t\u00e1 sendo f\u00e1cil\n2017 tenho at\u00e9 medo"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242181812224", "lang": "ar", "text": "\u0635\u062d \u0627\u0644\u062e\u0644\u062f \ud83d\ude02\ud83d\ude02\ud83d\ude02\ud83d\ude02\ud83d\ude02\u2764\ufe0f \u2014 \u0627\u0641\u0627 \u0639\u0644\u064a\u0643 \ud83d\ude02\u2764\ufe0f https://t.co/DJrHDta7MT"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242190188544", "lang": "pt", "text": "RT @falatubeeh: Que vontade de beijar na boca.."}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242164805632", "lang": "ja", "text": "\u30c4\u30a4\u30fc\u30c8\u6570:50(\u524d\u65e5\u6bd4:-56)\nRT\u3055\u308c\u305f\u6570:1(\u524d\u65e5\u6bd4:-8)\n\u9001\u3063\u305f\u30ea\u30d7\u30e9\u30a4\u6570:20(\u524d\u65e5\u6bd4:-32)\n\u53d7\u3051\u53d6\u3063\u305f\u30ea\u30d7\u30e9\u30a4\u6570:25(\u524d\u65e5\u6bd4:-36)\n\u3044\u3044\u306d\u3057\u305f\u6570:27(\u524d\u65e5\u6bd4:-55)\nhttps://t.co/ueTBDTrz1t"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242165002240", "lang": "ar", "text": "RT @0uuua: \ud83d\udd34\u0644\u0644\u0625\u0639\u0644\u0627\u0646\u0627\u062a\ud83d\udd34\n\u2705\u0645\u0633\u062a\u0634\u0641\u064a\u0627\u062a \n\u2705\u0628\u064a\u0639 \u0645\u0646\u062a\u062c\u0627\u062a\n\u2705\u0634\u0631\u0643\u0627\u062a\n\u2705\u062d\u0633\u0627\u0628\u0627\u062a \u0634\u062e\u0635\u064a\u0629\n\u2705\u0639\u0642\u0627\u0631\u0627\u062a\n\u2705\u0645\u062a\u0627\u062c\u0631\n\u062a\u0648\u0627\u0635\u0644 \u0648\u0627\u062a\u0633\u0627\u0628\n\ud83d\udc47\n00966501456034\n\n\ud83c\udf38\u0623\u0633\u0639\u0627\u0631 \u0631\u0645\u0632\u064a\u0629\n#\u0627\u0639\u0644\u0627\u0646\u0627\u062a_\u0627\u0644\u0623\u0641\u2026"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242169200646", "lang": "pt", "text": "RT @Dre1996_: Quem n\u00e3o goza gostoso inferniza a vida dos outros!!!"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242181746688", "lang": "ja", "text": "[\u5730\u4e2d\u30ab\u30a6\u30f3\u30c8\u5897\u52a0] 00:19 \u9759\u5ca1\u770c \u5f15\u4f50 1 #\u5730\u9707"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242160680962", "lang": "ja", "text": "\u30a8\u30ad\u30b9\u30d1\u30fc\u30c8\u30d6\u30ed\u30c3\u30af\u306f\u79c1\u306b\u306f\u7121\u7e01\u3060\u3068\u601d\u3063\u3066\u308b\u2026\n\u72ec\u6975\u3092\u30af\u30ea\u30a2\u3067\u304d\u306a\u3044\u3082\u3093\nXH\u3088\u308a\u4e0a\u306e\u96e3\u6613\u5ea6\u8ffd\u52a0\u3055\u308c\u305f\u308a\u3057\u3066\n\u3067\u3082\u305d\u3046\u306a\u308b\u3068\u30ec\u30d9\u30eb\u30ad\u30e3\u30c3\u30d7\u89e3\u653e\u3082\u3042\u308a\u3046\u308b\u304b\u3057\u3089\u306d\n90"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242181730304", "lang": "es", "text": "RT @trafficVALERA: via @curiotweet: #SabiasQue Petare es un vocablo que deriva de la lengua caribe cuyo significado es De cara al r\u00edo (pet:\u2026"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242181611520", "lang": "en", "text": "RT @SGLovelyz: [INFO] #BEAUTIFUL - #Kei (#Lovelyz #\ub7ec\ube14\ub9ac\uc988) &amp; #\uc194\ub8e8\uc158\uc2a4 (#THESOLUTIONS) featured on Apple Music K-Pop Radio https://t.co/5UYcKJllq4"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242160648192", "lang": "en", "text": "RT @RealityGV: A society conditioned by oppressive forces will create that behavioral mindset which is why people try to impose on others'\u2026"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242190163968", "lang": "fr", "text": "RT @JBiebsgirlJB: Vote Vote  Vote #EMABiggestFansJustinBieber"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242185973760", "lang": "en", "text": "@_MeganLambert make sure it's a good one. Take your time to get a really timeless piece"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242169200645", "lang": "es", "text": "Que vuelvan Casemiro y Modric ya, aunque sean lesionados"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242173341697", "lang": "ar", "text": "@uaedivers \u0627\u0646\u062a\u0648 \u0641\u0627\u064a\u0632\u064a\u0646 \u0639\u0627\u0644\u0634\u0627\u0631\u062c\u0647 \u0648\u0644\u0627 \u0628\u0631\u0634\u0644\u0648\u0646\u0647\u061f"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242177589248", "lang": "pt", "text": "Eu comprei muito doce"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242164969472", "lang": "en", "text": "#SoftwareTesting\n\n#softwaretest A faltering article from starterpad on our 5 keys to successful landing pages: \u2026 https://t.co/YDBzlO3VOU\n\n\u2026"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242156634112", "lang": "en", "text": "A highlight from a night of highlights. Well played @Budweiser. https://t.co/4VJqTWwKCS"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242156433412", "lang": "ja", "text": "\u4f55\u304b\uff1f"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242169139200", "lang": "ar", "text": "\u0645\u0646 \u0643\u0627\u0646 \u0622\u062e\u0631 \u0643\u0644\u0627\u0645\u0647 \u0644\u0627 \u0625\u0644\u0647 \u0625\u0644\u0627 \u0627\u0644\u0644\u0647 \u062f\u062e\u0644 \u0627\u0644\u062c\u0646\u0629\n\u267b\ufe0f https://t.co/sSjklis33F"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242181799936", "lang": "en", "text": "These white racist are getting bolder by the day. #TheView"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242152439808", "lang": "en", "text": "@ICNUTP i'll be coming to utp to see the most epic event of the year !!"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242173386752", "lang": "en", "text": "\"Exercising Faith for Fruitfulness' - Prof. Zack Gary -Oct 30, 2016: https://t.co/2KzqgfJaKD via @YouTube"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242169217024", "lang": "en", "text": "RT @LScandyjar: OUT NOW, Times Squared! The Yeti return to cause havoc, and now it's New York's turn! https://t.co/YVvaHwqfL8 https://t.co/\u2026"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242190168064", "lang": "en", "text": "RT @OJPOJJDP: JUST RELEASED: \"Delinquency Cases Involving Hispanic Youth, 2013\" is now available.  https://t.co/4C7tC2p4Nn"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242190016512", "lang": "en", "text": "Wow, I can't believe how far we've come!! \ud83d\ude12 https://t.co/aWiP120Lb8"}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242169040896", "lang": "es", "text": "Claro que se les desea un #felizjueves a todos!!! https://t.co/q1oM7d5PbH"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242181582848", "lang": "ja", "text": "\u68ca\u5b50\u9eba https://t.co/QBMYFiIHSI"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242169081856", "lang": "und", "text": "https://t.co/77gM7S90PF"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242152419329", "lang": "en", "text": "Orion Crew Module Underway Recovery Testing via NASA https://t.co/m2fBXd4uza https://t.co/dwXMLgWq4H"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:07 +0000 2016", "id_str": "794197221197520896", "lang": "ja", "text": "\u6d6e\u6c17\u304b\u306a\uff1f\u6d6e\u6c17\u3055\u308c\u3066\u6012\u3063\u3066\u308b\u3093\u3060\u3068\u601d\u3046\u3051\u3069"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242160611328", "lang": "ja", "text": "\u3042\u308a\u307e\u3057\u305f\u306d\u2026 #anime_eupho #bs11 https://t.co/wr6ETtuW9j"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246350766081", "lang": "ko", "text": "\"\u2665\u2665\u2665\ucd9c\uc7a5 \uac15\ub0a8 \uc624\ud53c\u2665\u2665\u2665\n\u203b\u203b\u203b\uc800\ub834\ud55c \uac00\uaca9\u203b\u203b\u203b\n\ubb38\uc758 010 4418 0231\n#01044180231\n#\ucd9c\uc7a5\uc548\ub9c8\n#\ucd9c\uc7a5\uc624\ud53c\n#\uac15\ub0a8\uc624\ud53c\n#\uac15\ub0a8\ub7ec\uc2dc\uc544\n#\ucd9c\uc7a5\ub7ec\uc2dc\uc544\n#\uacbd\uae30\ucd9c\uc7a5\ub9c8\uc0ac\uc9c0\n#\ucd9c\uc7a5\uc624\ud53c\n#\ub7ec\uc2dc\uc544\ucd9c\uc7a5\ucd5c\uc800\uac00\""}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246371708929", "lang": "in", "text": "RT @ABCDEpul: Dari zaman kolej lagi aku terkenal dgn seni balutan yang kemas dan pantas."}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246375931904", "lang": "ja", "text": "\u305d\u3093\u306a\u3088\u3046\u306a\u3053\u3068\u3092\u3046\u307e\u304f\u4f1d\u3048\u3088\u3046\u3068\u3059\u308b\u3068\u63e1\u624b\u5238\u304c60\u679a\u304f\u3089\u3044\u5fc5\u8981\u306a\u306e\u3067\u3001\u65e9\u304f\u501f\u91d1\u3092\u8fd4\u3055\u306a\u304f\u3066\u306f\u3002"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246354935808", "lang": "ja", "text": "\u6c17\u7d76\u3057\u3066\u305f\u3057\u7d75\u3092\u63cf\u304f"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246375927812", "lang": "ja", "text": "\u3064\u3044\u3067\u306b\u6587\u5b57\u3082\u5909\u3048\u305f\u3088\u3002"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246346596353", "lang": "ja", "text": "\u30bb\u30c3\u30b7\u30e7\u30f3\u7d42\u4e86\u3001\u304a\u75b2\u308c\u69d8\u3067\u3057\u305f\u3002\n\u30f4\u30a9\u30b9\u3055\u3093\u306f\u307b\u3093\u3068\u306b\u3044\u3044\u5b50\n#sw2\u30af\u30e9\u30a4\u30e0\u30c7\u30b6\u30a4\u30a2"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246359183365", "lang": "ko", "text": "\uc138\ucc2c\uc774 \uc791\ud654 \ucf54\ub05d\uc5d0 \uad11\ud0dd\ub4e4\uc5b4\uac00\uc788\ub294\uac70 \ub108\ubb34\ub108\ubb34\ub108\ubb34 \uadc0\uc5ec\uc6cc....\u3160\u3160"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246350757889", "lang": "ja", "text": "@yahiro_69 \u3042\u308b\u3058\u3085\u306a\u304f\u3060\u3055\u3044\uff01"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246346547201", "lang": "ko", "text": "[STATION] \uc784\uc2ac\uc639 X \uc870\uc774_\uc774\ubcc4\uc744 \ubc30\uc6e0\uc5b4 (Always In My Heart)_Music Video https://t.co/Vc1a6MpIra \u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e08\u0e32\u0e01 @YouTube"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246380163072", "lang": "th", "text": "RT @19880218MJ: \u0e1e\u0e23\u0e30\u0e40\u0e17\u0e1e\u0e2f\u0e40\u0e25\u0e48\u0e32\u0e43\u0e2b\u0e49\u0e1e\u0e23\u0e30\u0e2d\u0e07\u0e04\u0e4c\u0e42\u0e2a\u0e21\u0e2f\u0e1f\u0e31\u0e07\u0e27\u0e48\u0e32\u0e40\u0e04\u0e22\u0e40\u0e2a\u0e27\u0e22\u0e40\u0e1b\u0e47\u0e14\u0e1b\u0e31\u0e01\u0e01\u0e34\u0e48\u0e072\u0e15\u0e31\u0e27\u0e41\u0e25\u0e30\u0e2b\u0e21\u0e39\u0e2a\u0e30\u0e40\u0e15\u0e4a\u0e30\u0e2d\u0e35\u0e01300\u0e44\u0e21\u0e49..\n\u0e1e\u0e23\u0e30\u0e2d\u0e07\u0e04\u0e4c\u0e42\u0e2a\u0e21\u0e17\u0e23\u0e07\u0e2d\u0e36\u0e49\u0e07\u0e44\u0e1b\u0e40\u0e25\u0e22\n\n\u0e17\u0e23\u0e07\u0e40\u0e1b\u0e47\u0e19\u0e44\u0e2d\u0e14\u0e2d\u0e25\u0e02\u0e2d\u2026 "}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246350802945", "lang": "tl", "text": "Wala lagi ka naka disturb hays di mo tuo"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246367526912", "lang": "ja", "text": "@anrshia_saiore \n\u7d50\u69cb\u3084\u3070\u3044www"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246376026113", "lang": "pt", "text": "RT @giriquita: Eu sou a pessoa mais de boa que eu conhe\u00e7o"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246359183366", "lang": "in", "text": "@celcom_malaysia terima kasih sebab upgrade pakej first gold dari 10gb kepada 20gb sebulan. \ud83d\ude18\ud83d\ude18"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246380101632", "lang": "ja", "text": "RT @miulandi7: \u8b72\u6e21 \u30a2\u30a4\u30c9\u30ea\u30c3\u30b7\u30e5\u30bb\u30d6\u30f3 \u30a2\u30a4\u30ca\u30ca\n\u8b72\u2192\u524d\u56de\u4e00\u756a\u30ab\u30d5\u30a7\u30b3\u30fc\u30b9\u30bf\u30fc\u516815\u7a2e\u30bb\u30c3\u30c8\n\u6c42\u2192\u30bb\u30c3\u30c8\u3067\u9001\u6599\u8fbc1200\u5186\n\u30d0\u30e9\u306e\u5834\u5408\uff11\u679a80\u5186\uff0b\u9001\u6599\u30673\u679a\uff5e\u304a\u9858\u3044\u3057\u307e\u3059\u3002\u30b7\u30fc\u30af\u30ec\u30c3\u30c8\uff13\u7a2e\u306b\u3064\u3044\u3066\u306f1\u679a\u306b\u3064\u304d\u4ed6\u304b\u3089\u6700\u4f4e3\u679a\u306e\u5f15\u53d6\u308a\u3092\u304a\u9858\u3044\u3057\u307e\u2026 "}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246380150784", "lang": "ja", "text": "\u81ea\u5df1\u518d\u751f\u30ed\u30fc\u30c9\u30d0\u30a4\u30af\u30fb\u30b9\u30c8\u30fc\u30ea\u30fc!!\u300e\u304b\u3082\u3081\u30c1\u30e3\u30f3\u30b9\u300f\u5168\u5dfb\u304c\u30a2\u30d7\u30ea\u3067\u4eca\u3060\u3051\u8aad\u3081\u308b\uff01 https://t.co/LDr3yBjW5M"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246384304128", "lang": "en", "text": "RT @ygent_official: [HAPPY BIRTHDAY T.O.P]\noriginally posted by https://t.co/XZQ3IOI9MY\n#HappyTOPday #TOP #BIGBANG #\ube45\ubc45 https://t.co/r2OhBrg\u2026"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246359179264", "lang": "ja", "text": "RT @Ymstki62: \u3053\u3046\u3086\u3046\u7f70\u30b2\u30fc\u30e0\u3084\u308a\u305f\u3044\u8ab0\u304b\u3084\u308d https://t.co/syyDSLZA22"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246354931713", "lang": "en", "text": "RT @emazzanti: #AdobeMAX got us like https://t.co/RH2Jm6VriY"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246363324416", "lang": "in", "text": "RT @natasya_zaini: NEXT CERITA TAKNAK TGK SBB BUKAN PEMINAT AYDA JEBAT AND MESTI TK BEST K SEKIAN"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246346752000", "lang": "es", "text": "RT @Aguanta_Ok: en Whatsapp o no te habla nadie o te hablan todos al mismo tiempo y me dan ganas de tirar el tel\u00e9fono a la mierda."}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246350913536", "lang": "ja", "text": "\u9999\u6e2f:\u8b70\u54e1\u8cc7\u683c\u5de1\u308a\u53f8\u6cd5\u5be9\u67fb\u958b\u59cb https://t.co/x6oDEpEIO8"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246384504834", "lang": "es", "text": "te gusta alguno o q onda ? \u2014 Que ondaa https://t.co/oUC0mQpTUt"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246350766080", "lang": "ja", "text": "\u300e\u30dd\u30b1\u30e2\u30f3 GO\u300f\u30c7\u30a4\u30ea\u30fc\u30dc\u30fc\u30ca\u30b9\u306e\u5831\u916c\u3084\u7372\u5f97\u6761\u4ef6\u3092\u7d39\u4ecb\u3002\u307b\u3057\u306e\u3059\u306a\u3084XP\u3092\u3082\u3089\u3048\u308b #\u30dd\u30b1\u30e2\u30f3GO  https://t.co/HE7OeeY9pJ"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246380306433", "lang": "es", "text": "RT @vsfmael: Sono d 10 belas adormecidas"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246384500736", "lang": "en", "text": "these cloudy days just make me so sleepy \ud83d\ude2b"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246376103936", "lang": "pt", "text": "RT @1Dnoticia: E: \"A One Direction estava no topo do mundo e de repente, decidiu dar uma pausa. Por que agora?\"\n(@accesshollywood) https://\u2026"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246376026115", "lang": "ar", "text": "RT @jig7869: #\u0633\u0644\u0645\u0627\u0646_\u0645\u0644\u064a\u0643\u0646\u0627_\u0648\u0641\u062e\u0631\u0646\u0627\n\u0639\u0627\u0634 \u0633\u0644\u0645\u0627\u0646 \u0645\u0644\u0643\u0646\u0627 . \u0639\u0627\u0634 \u0633\u0644\u0645\u0627\u0646 \n\u0639\u0627\u0634 \u0633\u0644\u0645\u0627\u0646 \u064a\u0627\u0628\u0644\u0627\u062f\u064a . \u0639\u0627\u0634 \u0633\u0644\u0645\u0627\u0646 \n\u0648\u0627\u0644\u0634\u0639\u0628 \u0643\u0644\u0647 \u064a\u0631\u062f\u062f .. \u0639\u0627\u0634 \u0633\u0644\u0645\u0627\u0646 \ud83c\uddf8\ud83c\udde6\ud83c\uddf8\ud83c\udde6\ud83c\uddf8\ud83c\udde6 https://t\u2026"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246363439104", "lang": "en", "text": "@deekgerv couldn't have been said better"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246367518720", "lang": "ja", "text": "RT @Ymstki62: \u3053\u3046\u3086\u3046\u7f70\u30b2\u30fc\u30e0\u3084\u308a\u305f\u3044\u8ab0\u304b\u3084\u308d https://t.co/syyDSLZA22"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246350917634", "lang": "en", "text": "RT @ranganaathan: Mother and son decide to rent its space out to government departments and blue chip companies. #NHScam"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246355050496", "lang": "en", "text": "@nickltfc I'd be amazed if they were allowed to build that. Seems mad."}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246371721216", "lang": "ja", "text": "7.\u544a\u767d\u3055\u308c\u3066\u4ed8\u304d\u5408\u3063\u305f\u306e\u306b\u300c\u7b11\u9854\u304c\u6016\u304f\u306a\u3063\u3066\u304d\u305f\u300d\u3068\u3075\u3089\u308c\u305f(\u30b7\u30e5\u30f3)"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246384467969", "lang": "in", "text": "YulianaFull Hi Kak, sayang banget, bisa DM nominalnya berapa, cara isi ulang dan kapan isinya Kak? Thanks ^Rio"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246380281856", "lang": "es", "text": "RT @Anaa_Levis: Me levant\u00e9 con un malhumorrrrr"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246380150785", "lang": "en", "text": "RT @GDtotheTOP: KING OF WEARING PAJAMAS! \n\n#HAPPYTOPDAY \ud83d\ude02\ud83d\ude02\ud83d\udc93 https://t.co/CeBy0DyHWh"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246367727616", "lang": "pt", "text": "RT @maconhudo: Sobre a exist\u00eancia de algumas pessoas https://t.co/wQLRGUsT1Q"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246367633409", "lang": "ja", "text": "Benjamin Netanyahu interview (1978) (\u0411\u0438\u043d\u044c\u044f\u043c\u0438\u043d \u041d\u0435\u0442\u0430\u043d\u044c\u044f\u0445\u0443 \u05d1\u05e0\u05d9\u05de\u05d9\u05df \u05e0\u05ea\u05e0\u05d9\u05d4\u05d5 \u30d9\u30f3\u30e4\u30df\u30f3\u30fb\u30cd\u30bf\u30cb\u30e4\u30d5 2015 speech) https://t.co/h0vX8dYSGE"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246363340801", "lang": "ja", "text": "@ucmc02 \u307e\u308a\u3061\u3083\u3093\u304c\uff01"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246384476160", "lang": "en", "text": "#pooping anal free download young german sex https://t.co/V6bONSYPbN"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246355062784", "lang": "ar", "text": "\u0627\u0641\u0644\u0627\u0645_\u0633\u0643\u0633 \u0646\u064a\u0643 \u0642\u062d\u0628\u0647 \u0623\u062a\u0628\u0639 \u0627\u0644\u0622\u062a\u0649 1\u20e3 \u0627\u062f\u062e\u0644 \u0639\u0644\u0649 \u0647\u0627 \u0627\u0644\u0631\u0627\u0628\u0637 \u21a9https://t.co/4UqZJ46xeQ\u21aa 2\u20e3 \u0627\u0636\u063a\u0637 \u0639\u0644\u0649 \u0627\u0644\u0627\u0639\u0644\u0627\u0646 \u0644\u0644\u062a\u062e\u0637\u064b\u0649 https://t.co/UrDnjuAjsz\nf1e7"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246376026112", "lang": "es", "text": "RT @_ju1_: Los rebeldes sirios en Alepo oeste bombardean la ciudad sin piedad y realizan atentados suicidas\n\nMientras\u2026 "}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246350860288", "lang": "en", "text": "Everybody is a track star when the rain comes out https://t.co/wAdk5os4rB"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246355079168", "lang": "ar", "text": "\u0645\u062d\u0627\u0631\u0645 \u0645\u0635\u0631\u064a \u0639\u064a\u0644\u0629 \u0627\u0645 \u0648\u0628\u0646\u062a\u064a\u0646 \u064a\u0646\u062a\u0627\u062c\u0648\u0627 \u0633\u0648\u0627..https://t.co/P3yGv9BdrV  https://t.co/kYzuQvBoa3 VoC\n\u0645\u0648\u0644\u0639\u0647\n\u0633\u0643\u0633_\u062e\u0644\u064a\u062c\u064a\n\u0633\u0643\u0633_\u062e\u0644\u0641\u064a\n4556"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246363344897", "lang": "ko", "text": "RT @holiday0330: \u3131 \u3163\uc5ec\uc6cc\uc11c \uae30\uad11\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u3160\u314d https://t.co/tEz45zDBWI"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246371921920", "lang": "nl", "text": "Morgen is stad #Buren decor voor opnamen v.h. programma Streken van Wim op #24Kitchen. Twee afl in december. Trots! https://t.co/fz1txeGFg1"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246371840000", "lang": "en", "text": "RT @BleacherReport: And now, an important message from Wrigley Field \ud83d\ude02 https://t.co/feVF9mHCdd"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246354984960", "lang": "ja", "text": "@nami_dango \u3055\u3089\u3055\u3089\u308a https://t.co/yB8jj5apAf"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246359130112", "lang": "und", "text": "@sv_tuebou  https://t.co/ABrD1sMB5h"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246355107840", "lang": "en", "text": "RT @guarnaschelli: Wow. This made me tear up instantly. https://t.co/AwqVKFja5V"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246354915332", "lang": "en", "text": "So... I made this for my laptop theme. Damn this is good. #AndrewScott #moriarty #JimMoriarty #MoriartyLives\u2026 https://t.co/KwafktIC8N"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246359257089", "lang": "en", "text": "RT @_dauzuki: Shoot on LRT \ud83c\uddf2\ud83c\uddfe https://t.co/z6yHfuvq69"}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246367514624", "lang": "ja", "text": "\u30b9\u30de\u30dbRPG\u306f\u4eca\u3053\u308c\u3092\u3084\u3063\u3066\u308b\u3088\u3002\u4eca\u306e\u63a8\u3057\u30ad\u30e3\u30e9\u306f\u3053\u3061\u3089\uff01\u3000\u30b2\u30fc\u30e0\u5185\u30d7\u30ed\u30d5\u30a3\u30fc\u30eb\u2192\u3000https://t.co/HUGzsnurWj https://t.co/Pfdu9DHXYQ"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246384291841", "lang": "ko", "text": "\uc774\uac70 \uc608\ud488 https://t.co/sjPei4iHPS"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246363373568", "lang": "ja", "text": "\u3088\u3046\u3053\u305d\u3001\u6211\u304c\u5bb6\u3078 https://t.co/zUHzJr2eKV"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246359257088", "lang": "ar", "text": "\u0644\u0627 \u0625\u0644\u0647 \u0625\u0644\u0627 \u0627\u0644\u0644\u0647 \u0627\u0644\u0648\u0627\u062d\u062f \u0627\u0644\u0642\u0647\u0627\u0631 \u0631\u0628\u064f\u0651 \u0627\u0644\u0633\u0645\u0648\u0627\u062a \u0648\u0627\u0644\u0623\u0631\u0636 \u0648\u0645\u0627 \u0628\u064a\u0646\u0647\u0645\u0627 \u0627\u0644\u0639\u0632\u064a\u0632 \u0627\u0644\u063a\u0641\u0627\u0631 https://t.co/dYWoizkNDr"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250557624321", "lang": "tl", "text": "RT @AzureGreys: In fairness lumilevel na tlga kgwapohan ni Yong kay Tanner ah! Payt payt Yong haha!\n\nWeAreOne ForMAYWARD https://t.co/Bw2Yb\u2026"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250557681664", "lang": "en", "text": "Old doors close so new ones can open. Don't get stuck on what fell apart just because it hurts. Transformation requires growth &amp; letting go"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250540871680", "lang": "ja", "text": "RT @robatokoara: \u4e45\u3005\u306e\u306a\u3067\u80a9\u82b8\uff01\uff01\uff01 https://t.co/l23tkMN4VL"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250557644800", "lang": "en", "text": "You were born when he left? RT @_TAYLORRmadeee: Y'all still upset about Nick leaving ? I really wanna know lol"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250540851201", "lang": "tl", "text": "@jamvdelrosario @pawyamayiz Baka nakasave sa phone hahahahahahaha nay oh"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250557607937", "lang": "ja", "text": "@umatsune \u3058\u3083\u3042\u307e\u305f\u305d\u306e\u3068\u304d\u306b\u3067\u3082\u8a71\u3057\u307e\u3057\u3087\ud83d\udc4d"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250545041408", "lang": "th", "text": "RT @Myojojung: \u0e1e\u0e35\u0e48\u0e41\u0e17\u0e22\u0e2d\u0e19 VS \u0e19\u0e49\u0e2d\u0e07\u0e1f\u0e32\u0e19\u0e35\u0e48\n\n^///////////////////////^ https://t.co/OsqYf6UntZ"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250570211328", "lang": "en", "text": "Okay i'm done"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250566025217", "lang": "en", "text": "RT @Breaking911: NEW POLL - OHIO: \n\nTrump 46%\nClinton 41% https://t.co/azYWlX00JT"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250561875969", "lang": "ja", "text": "RT @DaisakuKimutaku: \u30d1\u30f3\u30c7\u30df\u30c3\u30af\u30a2\u30ed\u30fc\u30f3\u3001\u3067\u304d\u308c\u3070\u661f\u8f1d\u5b50\u4f5c\u8a5e\u3067\u3042\u3063\u3066\u307b\u3057\u3044\u3057\u3053\u306e\u307e\u307e\u5f31\u8005\u306e\u30ab\u30ea\u30b9\u30de\u306b\u306a\u3063\u3066\u6700\u7d42\u7684\u306b\u5927\u69fb\u30b1\u30f3\u30c2\u3068\u4eba\u9593\u6905\u5b50\u306e\u9593\u304f\u3089\u3044\u306e\u30dd\u30b8\u30b7\u30e7\u30f3\u306b\u306a\u3063\u3066\u307b\u3057\u3044"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250561875968", "lang": "ja", "text": "\u308f\u3001\u308f\u30fc\u30fc\u30fc\u30fc\u30fc\uff01\u304b\u308f\u3044\u3044\u30fc\uff01\uff01\n\u3057\u306e\u306e\u3093\u306e\u6821\u5185\u30a2\u30eb\u30d0\u30a4\u30c8\u306b\u3046\u3061\u306e\u304a\u5e3d\u5b50\u304c\u30fc\uff01\u3046\u308c\u3057\u3044\uff65\uff65\uff65\uff01\n\u3081\u3063\u3061\u3083\u304b\u308f\u3044\u3044\u304a\u5199\u771f\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u30fc:;(\u2229\u00b4\u2661`\u2229);:\n&gt;RT"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250570235904", "lang": "und", "text": "@_____thin"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250578661376", "lang": "ja", "text": "@MARUMARU_twt \n\u30d5\u30a9\u30ed\u30d0\u3053\u307e\u3046\u3049\ud83d\udc95\n\u306a\u3093\u3066\u547c\u3093\u3060\u3089\u3044\u3044\u3067\u3059\u304b\u3063\uff01"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250574454785", "lang": "th", "text": "RT @FanGxii: SNSD \u0e40\u0e1b\u0e47\u0e19\u0e27\u0e07\u0e17\u0e35\u0e48\u0e40\u0e04\u0e22\u0e44\u0e1b\u0e41\u0e2a\u0e14\u0e07\u0e44\u0e25\u0e1f\u0e4c\u0e1a\u0e19\u0e14\u0e32\u0e14\u0e1f\u0e49\u0e32, \u0e2a\u0e27\u0e19\u0e19\u0e49\u0e33 \u0e41\u0e25\u0e30\u0e25\u0e32\u0e19\u0e44\u0e2d\u0e0b\u0e4c\u0e2a\u0e40\u0e01\u0e47\u0e15 \u0e17\u0e38\u0e01\u0e17\u0e35\u0e48\u0e25\u0e49\u0e27\u0e19 Music Core \ud83d\ude02\ud83d\ude02\ud83d\ude02\ud83d\ude02\ud83d\ude02 https://t.co/2vwv4wbGxA"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250578649088", "lang": "tl", "text": "Sana naman sabay na tayo ulit bukas ha? Araw arawin kona pala."}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250561847297", "lang": "ja", "text": "@mk_87_ss \u304a\u3084\u3059\u307f\u3001\u307f\u306e\u308a!!! on ICE\u3002\u826f\u3044\u5922\u3092"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250574520320", "lang": "en", "text": "@HVRanch @ericandre Legalize it!"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250574454786", "lang": "th", "text": "RT @yyyiing: \u0e02\u0e33\u0e08\u0e23\u0e34\u0e07\u0e46\u0e19\u0e30 5555 \n\u0e43\u0e19\u0e44\u0e2d\u0e08\u0e35 vs \u0e2a\u0e19\u0e32\u0e21\u0e1a\u0e34\u0e19 \ud83d\ude02\ud83d\ude02\ud83d\ude02 https://t.co/u5nnuZBlwj"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250566135808", "lang": "ar", "text": "RT @p11__: \u2b50\ufe0f@Semo_Alamer \n\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\n\u0627\u0644\u0641 \u0645\u0628\u0631\u0648\u0648\u0643 \n\u0634\u0627\u0647\u062f\u064a\u0646 \u0644\u0643 \u0628\u0627\u0644\u062e\u064a\u0631 \u0641\u0627\u0644\u0643 \u0627\u0644\u0645\u0644\u064a\u0648\u0646\n\n#\u062d\u0633\u0627\u0628_\u0631\u0627\u0642\u064a\n\ud83d\udd1d\ud83d\udd1d\ud83d\udd1d\ud83d\udd1d\ud83d\udd1d"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250566131712", "lang": "et", "text": "RT @insan_honey: @Gurmeetramrahim #300CrossedLionHeart in 27 days 300 crossed \ud83d\ude01\ud83d\ude01!! Papag!!!! Lion Heart to kamaal dhamaal macha rahi hai \ud83d\udc4f\ud83d\udc4f\u2026"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250561839104", "lang": "tl", "text": "kanina https://t.co/xJ5PqjBeXD"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250553552898", "lang": "es", "text": "RT @KrysCFC_: Que risa cuando se enamoran de las malucas. Hahahaha"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250549293056", "lang": "ja", "text": "@lala555888 \u7740\u8131\u3068\u304b\u306a\u3093\u304b\u8272\u3005\u8003\u3048\u308b\u3068\u6df7\u4e71\u3057\u3066\u304f\u308b\u3093\u3067\u3059\u3088\u306d\ud83d\ude07\ud83d\ude07\ud83d\ude07\n\u3067\u3082\u57fa\u672c\u306f\u305d\u3053\u3067\u3059\u3088\u306d\uff01\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\uff01"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250561839105", "lang": "ja", "text": "\u30aa\u30fc\u30eb\u30a2\u30a6\u30c8\u306f\u3053\u3046\u3044\u3046\u5730\u9053\u306a\u7df4\u7fd2\u3092\u3072\u305f\u3059\u3089\u7d9a\u3051\u308b\u3060\u3051\u306e\u4f5c\u54c1\u3067\u3059"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250553552897", "lang": "en", "text": "LEIAM MINHA FANFIC .. THANKS BAD THINGS #wattpad https://t.co/38Ep7U3YL3"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250545041410", "lang": "en", "text": "RT @WSHHJAMS: XXX Weighs in on second arrest and ex-girlfriend scandal https://t.co/hdBRqUoJjj"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250553413632", "lang": "en", "text": "RT @GraceJohnso: my grandpa put this beer in his fridge 32 years ago and said he would open it when the cubs won the world series. t\u2026 "}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250545254400", "lang": "en", "text": "THEY GOT ME FUCKED UP"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250557771776", "lang": "ar", "text": "(\u0642\u0627\u0644 \u0647\u064a \u0639\u0635\u0627\u064a \u0623\u062a\u0648\u0643\u0623 \u0639\u0644\u064a\u0647\u0627 \u0648\u0623\u0647\u0634 \u0628\u0647\u0627 \u0639\u0644\u0649 \u063a\u0646\u0645\u064a \u0648\u0644\u064a \u0641\u064a\u0647\u0627 \u0645\u0622\u0631\u0628 \u0623\u062e\u0631\u0649) [\u0637\u0647:18] https://t.co/r4u8xDfPFn"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250578579456", "lang": "ko", "text": "RT @mooncomb09shop: \uadc0\uc5ec\uc6b4 \ub9ac\ubcf8 \uace0\uc591\uc774 \uc154\uce20!! \n\n\ubd84\ud64d\uc0c9 \ud30c\ub780\uc0c9 \uc788\uace0 \ud6c4\uae30 \uc0ac\uc9c4\uc5d0\uc11c\ub3c4 \uadc0\uc5ec\uc6c0 \ud401\ud401\uc785\ub2c8\ub2e4!&gt;_&lt;\n\ud310\ub9e4\uc790 \ub4f1\uae09\uc774 \uc544\uc8fc \ub192\uc544\uc694!:D (\uae30\ub300\uae30\ub300 https://t.co/g7npvSjwo0"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250557755392", "lang": "en", "text": "RT @beyoncehatesme: Beyonc\u00e9 serving fried chicken, biscuit lickin:, Mac and cheese meltin' vocals tonight https://t.co/RGYQ44Q128"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250578808832", "lang": "es", "text": "RT @bryantmyers_: Antes yo volaba con el viento pero hace tiempo que yo no siento lo que yo siento"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250570219520", "lang": "ko", "text": "\uc7a1\uc558\ub2e4. \ub3c4\ub9c8\ubc40."}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250561847296", "lang": "ja", "text": "\u682a\u5f0f\u4f1a\u793efeileB\u69d8\u306e\u3001Lepeel Organics \u8449\u9178\u30b5\u30d7\u30ea\u30e1\u30f3\u30c8\u2026 https://t.co/zYkisBY2ga"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250557743104", "lang": "und", "text": "ohhh https://t.co/JBAcBtAS9W"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250574422016", "lang": "ja", "text": "RQ*417-Y\u3060"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250549383168", "lang": "en", "text": "RT @BasedRada: What you see vs. what she see https://t.co/w4pFWu4T7h"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250541056000", "lang": "en", "text": "Wow.  Does this show intent now?  None of this has been \"honest mistakes\" either.  It's all been planned also. https://t.co/DYCIniYiOG"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250574520321", "lang": "pt", "text": "RT @CentraLuaBlanco: A Manu Gavassi tamb\u00e9m est\u00e1 confirmada no elenco do filme Ela \u00e9 o cara. Queremos muito cenas delas juntas!!! \ud83c\udf89\ud83c\udfac https:/\u2026"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250549301248", "lang": "ja", "text": "RT @chibiohsenchi: \u3042\u3068\u4f55\u5ea6\u304b\u8a00\u3063\u3066\u308b\u3051\u3069\u3001\u300c\u866b\u597d\u304d\u3063\u3066\u3053\u3068\u306f\u866b\u98df\u3079\u308b\u306e\uff1f\u7f8e\u5473\u3057\u3044\uff1fw\u300d\u3068\u304b\u8a00\u3063\u3066\u304f\u308b\u99ac\u9e7f\u3082\u6ec5\u3079\u3002\u8cb4\u69d8\u306f\u732b\u304c\u597d\u304d\u306a\u3089\u732b\u98df\u3046\u306e\u304b\u3002\u305b\u3044\u305c\u3044\u6b7b\u9ab8\u3092\u9aa8\u683c\u6a19\u672c\u306b\u3059\u308b\u304f\u3089\u3044\u3060\u308d\u3002\u3048\uff1f\u3061\u304c\u3046\uff1f\uff1f"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250578579457", "lang": "ja", "text": "@TN_TRGR \n|\u00b4-`)\uff81\uff97\uff6f https://t.co/OAvYxpMM2U"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250541027328", "lang": "fr", "text": "@Earlsimxx @Codemasters rien \u00e0 redire sur la mod\u00e9lisation ! Au top"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250549411840", "lang": "en", "text": "Bitches don't be wanting no work, they just be running their big ass mouths."}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:12 +0000 2016", "id_str": "794197242160648193", "lang": "en", "text": "@rkyte365 #airpollution #ParisAgreement(Right to Breath)#SDGs Stop polluting cities by cars,Use GPS electric capsule https://t.co/uXHHoXkaPp"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:13 +0000 2016", "id_str": "794197246384500737", "lang": "en", "text": "@Cypress_io on stage at @VentureAtlanta #vaATL16 #futureofwebapplicationtesting @be_mann https://t.co/acY2WPXv0p"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254764523520", "lang": "ja", "text": "\u6a5f\u68b0\u97f3\u75f4\u306b\u306f\u8f9b\u3044\u307e\u308b\ud83d\ude22"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254772912128", "lang": "en", "text": "RT @PCYHomeThaiLand: [HQ] 161101 #CHANYEOL at SBS Power FM 20 Anniversary_2\nCr.\uadf8\ub188\nhttps://t.co/Mg5l6r1VfA\nhttps://t.co/honTDoQV39 https://t\u2026"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254735163393", "lang": "ja", "text": "\u304d\u3087\u3046\u308f\u304b\u3063\u305f\u3053\u3068\n\u30fb\u65e7\u4e0a\u5ca1\u5c0f\u306f\u601d\u3063\u305f\u4ee5\u4e0a\u306b\u9060\u3044"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254760345600", "lang": "ja", "text": "\u798f\u7530\u5f69\u4e43\u306e\u30e2\u30ce\u30de\u30cd\u30b7\u30ea\u30fc\u30ba\u304c\u6700\u8fd1\u597d\u304d\u306a\u3093\u3060\u3051\u3069\u3001 \u7af9\u5185\u7d50\u5b50\u306e\u30de\u30cd\u3092\u3059\u308b\u798f\u7530\u5f69\u4e43\u306e\u30e2\u30ce\u30de\u30cd\u3092\u7fd2\u5f97\u3057\u305f(\u6d41\u308c\u661f\u30e2\u30ce\u30de\u30cd\u306f\u3069\u3053\u304b\u3078\u3068\u6d88\u3048\u305f)"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254760300544", "lang": "ja", "text": "@Monokuro3Shiina \n\n\u795e\u6238\u304c\u521d\u3081\u3066\u964d\u683c\u304c\u6c7a\u307e\u3063\u305f\u5e74\u2026\u8f9b\u3055\u3092\u7652\u3057\u3066\u304f\u308c\u305f\u306e\u306f \u795e\u6238\u306e\u30e6\u30fc\u30b9\u9054\u3067\u3057\u305f\u3002\u5e74\u672b\u307e\u3067 \u30b5\u30c3\u30ab\u30fc\u89b3\u6226 \u5fdc\u63f4\u304c\u51fa\u6765\u3066 \u2026\u6765\u5e74J2\u3067\u3082\u2026\u30f4\u30a3\u30c3\u30bb\u30eb\u306f\u7121\u304f\u306a\u3063\u3066\u306a\u3044\u3057\u2026\u30e6\u30fc\u30b9\u3082\u9811\u5f35\u3063\u3066\u308b\u3002\u79c1\u9054\u3082\u9811\u5f35\u308d\u3046\u3063\u3066\u2026\u611f\u8b1d\u3057\u305f\u306e\u3092\u2026\u6bce\u5e74 \u3053\u306e\u6642\u671f\u306b\u601d\u3044\u51fa\u3057\u307e\u3059"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254768762880", "lang": "en", "text": "RT @TheGooglePics: These make my heart happy \ud83d\ude0a https://t.co/3755Hi9Wui"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254772903936", "lang": "ja", "text": "RT @Karomu_monst: \u3070\u306a\u306a\u304f\u3093\u3001\u3064\u3050\u3057\u3083\u3093\u30d1\u30ed\u30b8\u30ab\u304a\u75b2\u308c\uff01\n\u30cb\u30e9\u30ab\u30ca\u904b\u67a02\u3001\u771f\u75302\u304c\u304b\u306a\u308a\u30a4\u30a4\u306d( *\uff40\u03c9\u00b4) https://t.co/yPquftjqnm"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254735163392", "lang": "th", "text": "RT @mor_maew: \u0e0b\u0e37\u0e49\u0e2d\u0e02\u0e2d\u0e07\u0e43\u0e19 7-11 \u0e41\u0e25\u0e49\u0e27\u0e40\u0e2b\u0e47\u0e19\u0e27\u0e48\u0e32\u0e2a\u0e35\u0e0b\u0e32\u0e01\u0e38\u0e23\u0e30\u0e1a\u0e19\u0e02\u0e27\u0e14Oishi\u0e15\u0e23\u0e07\u0e40\u0e04\u0e32\u0e19\u0e4c\u0e40\u0e15\u0e2d\u0e23\u0e4c\u0e01\u0e31\u0e1a\u0e43\u0e19\u0e15\u0e39\u0e49\u0e41\u0e0a\u0e48\u0e44\u0e21\u0e48\u0e40\u0e2b\u0e21\u0e37\u0e2d\u0e19\u0e01\u0e31\u0e19 \u0e40\u0e25\u0e22\u0e40\u0e2d\u0e32\u0e21\u0e32\u0e17\u0e14\u0e25\u0e2d\u0e07\u0e23\u0e32\u0e14\u0e19\u0e49\u0e33\u0e23\u0e49\u0e2d\u0e19\u0e14\u0e39 .. \u0e2a\u0e35\u0e14\u0e2d\u0e01\u2026 "}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254772953089", "lang": "ja", "text": "RT @maigoof: 5\u8a71\u306f\u307b\u3093\u3068\u300c4\u8a71\u89b3\u305f\u30892\u4eba\u3092\u30db\u30e2\u306b\u306a\u3093\u3066\u51fa\u6765\u306a\u3044\u3088\u3049\uff78\uff9e\uff7d\uff78\uff9e\uff7d\u300d\u3063\u3066\u8a00\u3063\u3066\u308b\u30ef\u30b7\u3089\u306b\u516c\u5f0f\u304c\u300c\u7518\u3063\u305f\u308c\u305f\u4e8b\u8a00\u3063\u3066\u3093\u3058\u3083\u306a\u3044\u3088\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\u300d\u3063\u3066\u540c\u4eba\u8a8c\u3067\u5f80\u5fa9\u30d3\u30f3\u30bf\u3057\u3066\u304d\u305f\u611f\u3042\u308b"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254764535808", "lang": "ja", "text": "@pocotoon_ojn \u30b9\u30ad\u30e3\u30c3\u30c8\u30de\u30f3"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254747881473", "lang": "ar", "text": "RT @Abd_Yafei: #\u0627\u0644\u0633\u0641\u064a\u0631_\u0627\u0644\u0633\u0639\u0648\u062f\u064a_\u0628\u0648\u0627\u0634\u0646\u0637\u0646_\u064a\u0647\u064a\u0646_\u0627\u0644\u064a\u0645\u0646\n\n\u0633\u0646\u0646\u062a\u0638\u0631 \u0631\u062f \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629 \u0627\u0644\u064a\u0645\u0646\u064a\u0629 \u0639\u0644\u0649 \u0645\u0627 \u0642\u0627\u0644\u0647 \u0627\u0644\u0633\u0641\u064a\u0631\n\u0648\u0646\u0639\u064a\u062f \u0648\u0646\u0643\u0631\u0631 \u0623\u0646 \u0639\u0644\u0627\u0642\u0629 \u0627\u0644\u064a\u0645\u0646 \u0648\u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629 \u0623\u0643\u0628\u0631\u2026"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254752059392", "lang": "en", "text": "RT @Lil_Booty_Boss: I want to jump on and break your turning tables."}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254756175873", "lang": "ja", "text": "RT @HU_mA0416: #RT\u3067\u79c1\u3092\u6709\u540d\u306b\u3057\u3066\u304f\u3060\u3055\u3044 \n#RT\u3057\u305f\u4eba\u5168\u54e1\u30d5\u30a9\u30ed\u30fc\u3059\u308b \n#\u3089\u3076\u308a\u3064\u304f\u3060\u3055\u3044 \n\n\u307f\u3093\u306a\u3001\u3088\u308d\u3057\u304f\u306d(\u3063*\u2019\u03c9`\u0441) https://t.co/8vJtwfknBK"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254751911936", "lang": "th", "text": "RT @brownS2_94: \u0e2d\u0e22\u0e48\u0e32\u0e17\u0e33\u0e41\u0e1a\u0e1a\u0e40\u0e19\u0e49 \ud83d\ude2d\ud83d\udc98\ud83d\udc98\ud83d\udc98\ud83d\udc98\ud83d\udc98 https://t.co/39JO7lAn3a"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254768734210", "lang": "ja", "text": "\u4f60\u5f88\u91cd\u8981!"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254764642305", "lang": "ar", "text": "RT @alhasanynews1: #\u0627\u0644\u0635\u0631\u062e\u064a_\u064a\u0633\u062a\u0646\u0647\u0636_\u0645\u062b\u0642\u0641\u064a_\u0627\u0644\u0639\u0631\u0628 :\n\u0633\u062a\u0628\u0648\u0621 \u0628\u0625\u062b\u0645\u0643 \u063a\u062f\u064b\u0627 \u0645\u0639 \u0627\u0644\u062e\u0648\u0646\u0629 \u064a\u0627\u0633\u064a\u0633\u062a\u0627\u0646\u064a \nhttps://t.co/RHsABuj2Jp"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254739554304", "lang": "es", "text": "RT @itaipuparaguay: La 2\u00b0meta alcanzada en 2016 ha sido mantener los primeros mejores 10 meses de a\u00f1o en producci\u00f3n energ\u00e9tica,17% mayo\u2026 "}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254764642306", "lang": "ko", "text": "RT @Moonwalker_0324: \ud61c\uc131\uc624\ube60\uac00 \uc774\uac8c \ubb34\uc2a8\uc0ac\uc774\uc8e0? \uc548\uc740\uc0ac\uc774 ~ \uc544\ub294\uc0ac\uc774~ \uc774\ub7ec\ub2c8\uae4c\n\ubbfc\uc6b0\uc624\ube60\uac00 \uc791\uc740 \ub9ac\uc561\uc158\ud574\uc90c \uc624~ \uc774\ub7ec\uba74\uc11c\n\ub2e4\uc815\ud558\uace0 \ucfe8\ud55c\ub0a8\uc790 https://t.co/nCRNRuJijj"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254739468288", "lang": "ar", "text": "\u064a\u0627 \u0642\u0645\u0631\u0647 \u062a\u0645\u0644\u064a \u0644\u064a\u0627\u0644\u064a \u0627\u0644\u0639\u0645\u0631 \u0646\u0648\u0631 \n\u0648\u064a\u0627 \u0636\u062d\u0643\u0647 \u062a\u0633\u0648\u0649 \u0644\u0647\u0627 \u0646\u0627\u0633\u064d \u0643\u062b\u0627\u0631\"\ud83d\udc99\"."}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254760300545", "lang": "und", "text": "RT @ChurlishCajole: \u275d\u026a \u1d05\u1d0f\u0274'\u1d1b \u1d21\u1d00\u0274\u1d1b \u028f\u1d0f\u1d1c \u1d1b\u1d0f \u0299\u1d07 \u0274\u1d0f\u0280\u1d0d\u1d00\u029f.\n   \u026a  \u1d21\u1d00\u0274\u1d1b  \u028f\u1d0f\u1d1c  \u1d1b\u1d0f  \u0299\u1d07  \u1d00 \u029f \u026a \u1d20 \u1d07.\u275e\n\n\u273d \u1d3a\u1d31\u1d42 \u1d2c\u1d38\u1d38\u1d35\u02e2\u1d3c\u1d3a\u00b7\n\u273d \u1d3a\u1d3c\u1d40 \u1d3a\u1d31\u1d42 \u1d40\u1d3c \u1d3f\u1d3e\u00b7\n\u273d #\u02e2\u1d9c\u1d2c\u1d38\u1d38\u1d35\u02e2\u1d3c\u1d3a\u00b7\n\u273d \u02e2\u2026"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254752108544", "lang": "en", "text": "RT @DrakeMoon: Instant Elemental 50 GA (5 wins):\n-Follow @DrakeMoon\n-RT\n-Paste your affiliate URL\n-Tag a friend\n-Go\u2026 "}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254760525825", "lang": "en", "text": "RT @catherine_roiii: Guys, keep on voting. I'm gonna shut my eyes now and sleep and will get back tomorrow.\n#EMABiggestFansJustinBieber htt\u2026"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254739521539", "lang": "es", "text": "RT @CiudadanosCs: \u00bfTe perdiste ayer a @martamartirio en @debatedela1_tve? Aqu\u00ed completo \ud83d\udcfd \ud83d\udc49\ud83c\udffb https://t.co/hIv3kkkIRX"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254768709633", "lang": "en", "text": "RT @hitorieJP: 2016.11.4\nHappy Birthday wowaka! https://t.co/VcTZ1fr0pj"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254739521537", "lang": "und", "text": "RT @nopressuvre: https://t.co/bloZBj6P9E"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254768852992", "lang": "pt", "text": "RT @noitesombria: o sono \u00e9 tanto que a volta pra cama se torna obrigat\u00f3ria em momentos como esse."}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254747910144", "lang": "nl", "text": "Morgen ga ik gezellig met een aantal ambulante clienten uit Geldrop naar Toverland"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254764642304", "lang": "tl", "text": "RT @Limo_alan: Mimi ningekuwa kwa hii deal ya NYS bora tu wanipee 700 ya KC Coconut every Friday I'd take a bullet for the team."}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254735171584", "lang": "ja", "text": "RT @ZACCONEWS: \u3010\u5927\u6749\u3000\u6f23\u3011\u30b9\u30b1\u30b8\u30e5\u30fc\u30eb\n2017\u5e741\u6708\u30b9\u30bf\u30fc\u30c8\u300c\u5618\u306e\u6226\u4e89\u300d\uff08\u95a2\u897f\u30c6\u30ec\u30d3\u7cfb\uff09\u6bce\u9031\u706b\u66dc21:00\u301c\u51fa\u6f14\u6c7a\u5b9a\u3044\u305f\u3057\u307e\u3057\u305f\uff01 https://t.co/4Sd3kCFQOP"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250557644805", "lang": "ja", "text": "@mmkkiieeyy \u308f\u301c\u301c\u304f\u3044\u3055\u3093\uff01\u5171\u611f\u3044\u305f\u3060\u3051\u3066\u5b09\u3057\u3044\u3067\u3059\u2728\u308f\u305f\u3057\u3082\u6614\u8cb7\u3063\u3066\u4eca\u3067\u3082\u305f\u307e\u306b\u8aad\u307f\u8fd4\u3057\u307e\u3059\u2026\u3001\u6700\u5f8c\u304c\u7279\u306b\u5927\u597d\u304d\u3067\u2026\u5207\u306a\u3044\u7d14\u611b\u306a\u3093\u3067\u3059\u3088\u306d\ud83c\udf0e\ud83d\udc93"}
+{"created_at": "Thu Nov 03 15:19:14 +0000 2016", "id_str": "794197250540830720", "lang": "ja", "text": "\u30de\u30a4\u30b3\u30a5\u306b\u306f\u6ed1\u8d70\u80fd\u529b\u304c\u3042\u308b\u3088\uff01"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254756302848", "lang": "en", "text": "RT @Realbobbyjay: tbh if a girl cares about you she\u2019ll get upset over little things and if you can\u2019t handle that, go for a hoe that doesn\u2019t\u2026"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254756126720", "lang": "en", "text": "that would be enough is sang by alicia keys!!!!!!!!!!!!!! I LOVE HER"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254756323329", "lang": "es", "text": "El tercer kit me parec\u00eda una desgracia, pero hay que reconocer que le est\u00e1 devolviendo la carrera a Ramsey en \u00e9l club y nos da clase."}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254735335424", "lang": "es", "text": "RT @runnerschile1: CDF estrena nuevo espacio que promueve  el deporte y estilo de vida saludable https://t.co/CPc9LVZmxz v\u00eda @runnerschile1\u2026"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254773112832", "lang": "ru", "text": "RT @AStislavskiy: \u0422\u0430\u043a\u043e\u0439 \u043a\u0440\u0430\u0441\u043e\u0442\u044b \u0436\u0434\u0430\u0442\u044c \u0442\u0435\u043f\u0435\u0440\u044c \u043f\u043e\u043b\u0433\u043e\u0434\u0430... https://t.co/xCkiPmPJhv"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254764630017", "lang": "und", "text": "RT @en_eeen: https://t.co/jdQob6VC54"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254768906241", "lang": "ar", "text": "\u0627\u0644\u0641\u0648\u0632 \u064a\u0627\u0639\u0645\u064a\u062f \u0627\u0644\u0623\u0646\u062f\u064a\u0629 \u0627\u0644\u064a\u0648\u0648\u0648\u0645 \u0628\u0627\u0652\u0630\u0646 \u0644\u0644\u0647"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254768906240", "lang": "es", "text": "RT @perelloayerra: I encara queda..!! https://t.co/W2hmAYfZQj"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254768914432", "lang": "pt", "text": "RT @sagitaxtrology: quando sagit\u00e1rio fica solteiro(a) \u2650\ufe0f: https://t.co/GVBeex9pZA"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254772924416", "lang": "und", "text": "#tbt #katedelcastillo y #cristinaurgel \ud83d\udc95 https://t.co/MlUqFYVOXT"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254751985664", "lang": "en", "text": "@Target u must know how much I  \u2764 this. U all know how to make a girl smile. #targetredbasket #targetlove"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254756323330", "lang": "pt", "text": "KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK AIAIAIAIAIAIIA https://t.co/ACWRBPUKk0"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254735282176", "lang": "ru", "text": "RT @UnitedNationsRU: \u0422\u043e\u0440\u0433\u043e\u0432\u0446\u044b \u00ab\u0436\u0438\u0432\u044b\u043c \u0442\u043e\u0432\u0430\u0440\u043e\u043c\u00bb \u0434\u043e\u043b\u0436\u043d\u044b \u0431\u044b\u043b\u0438 \u0432\u044b\u044f\u0432\u043b\u0435\u043d\u044b \u0438 \u043d\u0430\u043a\u0430\u0437\u0430\u043d\u044b https://t.co/kRsB9tzAra https://t.co/HxXhS4LzIR"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254739521536", "lang": "ar", "text": "RT @fame_wsp: #\u0627\u0644\u0634\u0647\u0631\u0629_\u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0629\u2069 \u2600\u2600\u2600\n\u0631\u0627\u0628\u062a\u0648\u0631\u0632 \u064a\u0647\u0632\u0645 \u0648\u064a\u0632\u0627\u0631\u062f\u0632 \u0628\u062f\u0648\u0631\u064a \u0627\u0644\u0633\u0644\u0629 \u0627\u0644\u0623\u0645\u064a\u0631\u0643\u064a https://t.co/NcEJWamtSa"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254760493056", "lang": "en", "text": "RT @Damian_Roland: Definitely! \n\n\"Recognised barriers to adequate pain relief are under recognition/treatment but managing anxiety oft\u2026 "}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254768881664", "lang": "de", "text": "Ja, danke Kurt. Sch\u00f6n. Mach doch alle anderen mni8t dir zusammen kaputt, du... ARG!"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254752051200", "lang": "en", "text": "@BryanZavala1 @pathofmann8 Then why did one bite a piece of my brothers nose off when he was a baby \ud83d\ude43"}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254756335616", "lang": "en", "text": "RT @brightlouis_: 30. We can't forget this interview !!! Louis just made me laugh so hard https://t.co/fLTAQIP79E"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254773080065", "lang": "en", "text": "Found a Transponder Snail!\nGiants, sea monsters and other amazing encounters!\nhttps://t.co/yWiHjxLOFg #TreCru https://t.co/1sudEHi4YA"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254764630018", "lang": "en", "text": "Productive research writing retreat with @A_Newing at @gladlib #Wales #Welshcakes #FinallyGettingSomeResearchDone https://t.co/yYyFgDqcei"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:15 +0000 2016", "id_str": "794197254768889856", "lang": "en", "text": "RT @Mike_Fabricant: 421 out of 574 English and Welsh constituencies voted to Leave.\nHeaven help any MP who chooses to defy their electorate\u2026"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258958798849", "lang": "th", "text": "RT @baipad: \u0e04\u0e27\u0e32\u0e21\u0e2a\u0e1a\u0e32\u0e22\u0e43\u0e08 \u0e01\u0e47\u0e40\u0e1b\u0e47\u0e19\u0e40\u0e1b\u0e49\u0e32\u0e2b\u0e21\u0e32\u0e22\u0e0a\u0e35\u0e27\u0e34\u0e15\u0e44\u0e14\u0e49\u0e19\u0e30"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258954604546", "lang": "ja", "text": "@takomaru12132 \u306a\u308b\u307b\u3069\u3001\u3070\u3070\u81ed\u304f\u306f\u306a\u3044\u3067\u3059\u3051\u3069\u540c\u5e74\u4ee3\u304b\u3068\u601d\u3063\u3066\u306f\u3044\u307e\u3057\u305fw"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258946252801", "lang": "ja", "text": "@marikuyuno @upa_k1210 \u306a\u3001\u305d\u308c\u3088\u308a\u3001\u3048\u3064\u306e\u8f09\u305b\u305f\u5199\u771f\u306e\u3053\u3061\u307f\u3066\u307f\uff1f\u308f\u3089\u3044\u3068\u307e\u3089\u3093\u304b\u3089"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258933669888", "lang": "und", "text": "RT @officialjaden: https://t.co/RovqQ6EGgP"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258963075072", "lang": "en", "text": "RT @Pink: Congrats @kennychesney on your pinnacle award tonight, and that #1 album you got on iTunes, and that #1 song you got goin on \ud83d\ude0d\ud83d\ude0d"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258950410245", "lang": "tl", "text": "RT @ArciMunozLines: Hindi raw siya nag-aral, pero perfect sa exam https://t.co/1v3mWP1Hca"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258967224320", "lang": "ja", "text": "@nananamippe \u305d\u3046\u306a\u3093\u3060\uff01\u306a\u307f\u305f\u3061\u9577\u304f\u306a\u304b\u3063\u305f\u3063\u3051\uff1f\uff1f"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258933714944", "lang": "und", "text": "RT @teenagernotes: https://t.co/pFXn4ped9Y"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258950410240", "lang": "ja", "text": "RT @Da1k1_415: \u2764\ufe0e \u30d5\u30a9\u30ed\u30ef\u30fc\u69d8\u63a2\u3057 \u2764\ufe0e\n\n\u6709\u5ca1\u5927\u8cb4\u304f\u3093\u2661\u2661\n\n\u30d5\u30a9\u30ed\u30d0\u306a\u3044\u3068\u30ea\u30e0\u308a\u307e\u3059\nRT\u304a\u9858\u3044\u3057\u307e\u3059 \ua20d\u25e1\ua20d\u0b68\u0b67\n\n#\u3068\u3073\u3063\u5b50\u3055\u3093\u3068\u7e4b\u304c\u308a\u305f\u3044 \n#RT\u3057\u305f\u3068\u3073\u3063\u5b50\u3055\u3093\u5168\u54e1\u30d5\u30a9\u30ed\u30fc https://t.co/yj8iRMPu3r"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258938028032", "lang": "ar", "text": "RT @DvLZStaTioN: \u0641\u064a\u062f\u064a\u0648 \u0628\u0639\u062f 8 \u062f\u0642\u0627\u0626\u0642 \u0627\u0646 \u0634\u0627\u0621 \u0627\u0644\u0644\u0647"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258950455297", "lang": "en", "text": "I want free collage"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258937847809", "lang": "es", "text": "RT @APPligoteo: Prueba nuestra aplicaci\u00f3n y conoce gente con tus mismos gustos ~ \u2764\ufe0f   \n\n\ud83c\udfae Descarga: https://t.co/bmPUg12wfW https://t.co/UR\u2026"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258954649600", "lang": "es", "text": "RT @BibliaJoanne: @UniaoLMs vamos la GAGA COME TO BRAZIL #EMABiggestFansLadyGaga https://t.co/tTfvNthPEy"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258937856001", "lang": "en", "text": "RT @danpfeiffer: Periodic reminder that a guy running for President has no idea how a bill becomes a law https://t.co/KS23G2j5Do"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258967207936", "lang": "en", "text": "RT @makeuptrending: Gold glitter cut crease \u2728\ud83d\udd2a\n https://t.co/tzZDcUqHXd"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258954620928", "lang": "ja", "text": "@Shotou_02 \u3042\u3063\u3066\u304f\u3060\u305b\u3047\u2026\u2026( \u02c7\u03c9\u02c7 )"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258942251008", "lang": "pt", "text": "Gostei de um v\u00eddeo @YouTube de @d31m0srgt https://t.co/GuWd6QDzwY War Thunder! He-162! O Pior Jato?"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258967224321", "lang": "ja", "text": "\u677e\u672c\u4eba\u5fd7\u3068\u65b0\u5ddd\u512a\u611b\u304c\u5c06\u68cb\u3092\u89e3\u8aac\u300c\u30bf\u30a6\u30f3\u30ef\u30fc\u30af\u300d\u65b0CM https://t.co/sGUuII8kSm"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258933825536", "lang": "ar", "text": "RT @armanii33: #\u062c\u0633\u0631_\u0627\u0644\u0645\u0644\u0643_\u0641\u0647\u062f #\u062c\u0633\u0631_\u0627\u0644\u0628\u062d\u0631\u064a\u0646 \ud83d\ude37\n\u0645\u0627\u0647\u0630\u0627 \ud83d\ude31\n\u062d\u0627\u0644\u064a\u0627 \u0645\u0628\u0627\u0634\u0631 \u0645\u0646 \u0642\u0644\u0628 \u0627\u0644\u062d\u062f\u062b \n#\u0627\u0631\u0645\u0627\u0646\u064a_\u0627\u0644\u0628\u062d\u0631\u064a\u0646\n@FahdCauseway https://t.co/arQf5t67n0"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258954604544", "lang": "ja", "text": "\u76ee\u304c\u304f\u308a\u3063\u304f\u308a\u3067\u8d85\u53ef\u611b\u3044\u300046\u6b73\u6700\u9ad8"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258937856000", "lang": "ko", "text": "\u2665\uc77c\ub300\uc77c \ube44\ubc00\ub300\ud654 \ub9cc\ub0a8 \ucc44\ud305\uc0ac\uc774\ud2b8 \u25b6 https://t.co/H1pnJEQlvS \u25c0 #\uac15\uc6d0\ub0a8\uc790 #\uc774\ucc9c\uc18c\uac1c\ud305\ub9cc\ub0a8 #\ubc00\uc591\ubc31\uc870\ub9cc\ub0a8\ud6c4\uae30 #\uc774\ucc9c\uc624\ud53c\ub9cc\ub0a8 #\ubbf8\ub140\ucd08\ubbf8\ub2c8\uc2a4\ucee4\ud2b8 #\uc0ac\ucc9c\uc774\uc05c\uc5ec\uc790\ub9cc\ub0a8\ud6c4\uae30 #\uc601\uc8fc\uc5ec\uc790 #\ub9c8\uc0b0\uc5ec\uc131\ub9cc\ub0a8\ud6c4\uae30 #\ucc98\uc81c\uacfc\ube60\uad6c\ub9ac"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258950492160", "lang": "ko", "text": "RT @amont11: \uc774\uaf34\ub85c \uc774\uc81c \uc678\uad50\ub294 \uc5c6\ub2e4. \ubc18\ub4dc\uc2dc \ud558\uc57c\uc2dc\ucf1c\uc57c. https://t.co/kgkkptTM0n"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258963013633", "lang": "th", "text": "RT @NINEX09: /\u0e41\u0e2d\u0e04\u0e17\u0e27\u0e34\u0e15\u0e04\u0e25\u0e34\u0e1b\u0e25\u0e31\u0e1a \u0e04\u0e31\u0e14\u0e41\u0e15\u0e48\u0e07\u0e32\u0e19\u0e14\u0e35\u0e46\u0e40\u0e15\u0e47\u0e21\u0e40\u0e23\u0e37\u0e48\u0e2d\u0e07HD\u0e44\u0e21\u0e48\u0e15\u0e31\u0e14 \u0e2a\u0e19\u0e43\u0e08\u0e42\u0e2b\u0e25\u0e14\u0e04\u0e25\u0e34\u0e1b\u0e2a\u0e48\u0e07\u0e02\u0e49\u0e2d\u0e04\u0e27\u0e32\u0e21(DM)\u0e21\u0e32\u0e04\u0e31\u0e1a/ https://t.co/u77Y7uk4T0"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258929655808", "lang": "pt", "text": "A escola que a juh vai estudar pediu pra eu pedi a dermato da juh um relat\u00f3rio do hemangioma da juh"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258963140608", "lang": "en", "text": "RT @lolkd: if my 22 inch hair hit you when i flip it then you 22 inches too close to me. back up"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258959015936", "lang": "en", "text": "#IceStationZ Single Player footage will be on it's way very soon, and then some multiplayer action is next! ;) #3DS #Nintendo #Nindies"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258950455296", "lang": "ja", "text": "@Alnair__GE__ \n\u308f\u3041\u304a,\u30cf\u30a4\u30c6\u30f3\u30b7\u30e7\u30f3\u306a\u304a\u65b9\u3067\u2026\u304a\u540d\u524d\u306f(\u58c1\u304b\u3089\u306b\u3085\u3063\u3068\u9854\u3092\u51fa\u3057\u306a\u304c\u3089)"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258946445312", "lang": "ar", "text": "\ufdfd\n\ufd3f\u0644\u0647\u0627 \u0633\u0628\u0639\u0629 \u0623\u0628\u0648\u0627\u0628 \u0644\u0643\u0644 \u0628\u0627\u0628 \u0645\u0646\u0647\u0645 \u062c\u0632\u0621 \u0645\u0642\u0633\u0648\u0645\ufd3e\n\u2b05\ufe0f https://t.co/b6FmYwYzDS"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258938044416", "lang": "en", "text": "Our government and this Indian guy has no faith in us! Why visit? https://t.co/QaHNnNftBi"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258937827329", "lang": "ko", "text": "\uc544 \uc9c0\uae08 \ub108\ubb34 \uc6b1\uaca8 \uc9c4\uc9dc \uac00\ud1a0\ub2d8\u3131\u314b\u3131\u314b\u314b\n\u314b\n\u3131\n\u314b\u3131\u314b\u314b\n\u314b\u3131\u314b"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258950438913", "lang": "es", "text": "Eres un Pastor Aleman \u00a1Descubre que raza de #perro eres! ENTRA: https://t.co/uxD6KkMfaS https://t.co/zTy217yYOp"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258942238720", "lang": "en", "text": "Just because I kick it with you don't mean I trust you"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258954801152", "lang": "en", "text": "Nigga said we was locked in his building &amp;&amp; I was tryna hey I go ppls apartments &amp;&amp; steal ...... I don't even like stealing wtf ?"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258929664000", "lang": "en", "text": "RT @karstrich: Psa, it's november which means Target officially has $1 Christmas socks!!!!!!! https://t.co/auk66K7IpQ"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258937864192", "lang": "ja", "text": "\u4e45\u3005\u306b\u30c4\u30a4\u30fc\u30c8\u304c\u3066\u3089\u843d\u66f8\u304d\u98a8\u666f\u3092\u3061\u3087\u3053\u3063\u3068\u2026\u2026\u3002\u3042\u3068\u9031\u672b\u306e\u305d\u3046\u3055\u304f\u7551final\u3001\u304a\u624b\u4f1d\u3044\u3055\u3093\u3092\u3057\u306b\u884c\u304d\u307e\u3059\u306e\u3067\u3088\u308d\u3057\u304f\u304a\u9858\u3044\u3057\u307e\u3059\u3002"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258950610944", "lang": "und", "text": "RT @CCatalaNegocis: El 2015, el pitjor any de la hist\u00f2ria en inversi\u00f3 de l'Estat en infraestructures de Catalunya. #Fraternalisme \nFont\u2026 "}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258963189760", "lang": "und", "text": "@CMMehta1 @MORTHIndia #WhyVictimiseSaints"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258967326720", "lang": "es", "text": "RT @EPsociedad: El asesino de Pioz: \"Creen que tengo carita de bobo, pero soy mala persona\" https://t.co/dd6UMIClNG"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258963222528", "lang": "en", "text": "RT @typicalastrid: and this is the time of the year where the trees show us how beautiful it is to let go"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258946351104", "lang": "es", "text": "RT @yofredwilcheswn: @Setulus1 @cevamo santos no fue en carroza el iba en la carreta de siempre con la cual ha tumbado a m\u00e1s de uno https:/\u2026"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258942169088", "lang": "ar", "text": "@fllhadoom \u064a\u0642\u0648\u0644\u0648\u0646 \u0643\u0630\u0628 \u0645\u0648 \u062f\u0627\u0639\u0634\u064a \ud83d\ude29"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258946445313", "lang": "en", "text": "RT @e_kateland: The sad part is you can treat me however you want to, because in the end you know I'll always be there waiting for you.."}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258933825537", "lang": "und", "text": "RT @tattoo_animal: \ud83d\udc89\ud83d\udc31 https://t.co/av3KwDWsEx"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258967322625", "lang": "es", "text": "RT @unsimplecafe: Qu\u00e9 bonito encontrar al amor de tu vida, todos los d\u00edas, en la misma persona. https://t.co/04Hr2BBdfZ"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258967334912", "lang": "ru", "text": "RT @willfillourse: \u041a\u0430\u043a \u043c\u0430\u0440\u0432\u0435\u043b \u043a\u0430\u0441\u0442\u0438\u043d\u0433\u0438 \u043f\u0440\u043e\u0432\u043e\u0434\u0438\u0442\n\n\u041f\u0430\u0440\u0435\u043d\u044c: \u0437\u0434\u0440\u0430\u0441\u044c\u0442\u0435, \u043c\u0435\u043d\u044f \u0437\u043e\u0432\u0443\u0442 \u041a\u0440\u0438\u0441 -\n\u041c\u0430\u0440\u0432\u0435\u043b: \u041d\u0418 \u0421\u041b\u041e\u0412\u0410 \u0411\u041e\u041b\u042c\u0428\u0415 https://t.co/huoK1Vwt6c"}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": null, "id_str": null, "lang": null, "text": null}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258942246912", "lang": "en", "text": "Just posted a photo https://t.co/l30DvpPlzY"}
+{"created_at": "Thu Nov 03 15:19:16 +0000 2016", "id_str": "794197258958999552", "lang": "en", "text": "Can't fucking believe the gardener has cut all the grass with a fucking strimmer so my car is covered in fucking grass"}

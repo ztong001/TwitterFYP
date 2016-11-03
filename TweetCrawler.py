@@ -22,7 +22,7 @@ import json
 import logging
 import os
 import sys
-from configobj import ConfigObj
+import configparser
 from twitter import Api
 
 # Log for debugging purposes
@@ -30,13 +30,11 @@ logging.basicConfig(format='%(asctime)s %(message)s', level=logging.DEBUG)
 
 # Either specify a set of keys here or use os.getenv('CONSUMER_KEY') style
 # assignment:
+config= configparser.ConfigParser(empty_lines_in_values=False)
+config.read_file(open(r'C:\Users\Admin\Desktop\TwitterFYP\config.ini'))
 
-config= ConfigObj(os.path.abspath('.\\config.ini'))
 OAuth= config['AUTH_KEYS']
 logging.debug("Loading credentials")
-# with open(os.path.abspath('.\\AuthConfig.json')) as authfile:
-#     OAuth = json.load(authfile)
-#     logging.debug('Loading credentials...')
 
 # Since we're going to be using a streaming endpoint, there is no need to worry
 # about rate limits.
@@ -51,8 +49,8 @@ def FilterTweet(source):
         Twitter stream and returns a json object from the filtered structure
     """
     default= None
-    fields_required= config['TWEET']['FORMAT']
-    #logging.debug(fields_required)
+    fields_required= config['TWEET']['FORMAT'].split(',')
+    # logging.debug(fields_required)
     filtered_tweet= {field: source[field] if field in source else default for field in fields_required}
     return json.dumps(filtered_tweet,sort_keys=True)
 
@@ -72,11 +70,12 @@ def main():
                     #logging.debug("%s tweets are in!" % number)
                     #break
         except:
-            error = str(sys.exc_info())
+            error = sys.exc_info()[0]
             logging.exception("Error: %s"%(error))
         finally:
             output.close()
             logging.debug("Closing twitter stream")
+    logging.debug("End of Program")
 
 
 if __name__ == '__main__':
