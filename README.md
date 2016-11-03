@@ -8,7 +8,7 @@ TODO:
 
 Credits:
 https://github.com/bear/python-twitter - Python-Twitter library by Mike Taylor(Bear)
-https://github.com/DiffSK/configobj - Flexible ConfigParser for Python
+
 https://api.mongodb.org/python - Python driver for MongoDB
 
 Current error:
