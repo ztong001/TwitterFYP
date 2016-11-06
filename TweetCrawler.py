@@ -54,27 +54,31 @@ def FilterTweet(source):
     filtered_tweet= {field: source[field] if field in source else default for field in fields_required}
     return json.dumps(filtered_tweet,sort_keys=True)
 
-def main():
-    number = 0
+def Streaming():
+    number=0
     filename= "output{:%d%m%y}.txt".format(datetime.date.today())
     logging.debug("Opening twitter stream")
     with open(filename, 'a') as output:
+        for line in twitterapi.GetStreamSample():
+            output.write(FilterTweet(line))
+            output.write('\n')
+            number += 1
+            logging.debug("%s tweets processed" % number)
+            #if number == 100:
+                #logging.debug("%s tweets are in!" % number)
+                #break
+        logging.debug("Closing twitter stream")
+    return
+
+def main():
+    logging.debug("Starting Program")
+    ## Endless loop to work around sudden disconnection 
+    while True:
         try:
-            for line in twitterapi.GetStreamSample(stall_warnings=True):
-                #logging.debug(type(line))
-                output.write(FilterTweet(line))
-                output.write('\n')
-                number += 1
-                logging.debug("%s tweets processed" % number)
-                #if number == 100:
-                    #logging.debug("%s tweets are in!" % number)
-                    #break
+            Streaming()
         except:
             error = sys.exc_info()[0]
-            logging.exception("Error: %s"%(error))
-        finally:
-            output.close()
-            logging.debug("Closing twitter stream")
+            logging.error("Error: %s"%(error))
     logging.debug("End of Program")
 
 
