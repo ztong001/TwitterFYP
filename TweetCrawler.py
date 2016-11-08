@@ -49,8 +49,8 @@ def FilterTweet(source):
         Twitter stream and returns a json object from the filtered structure
     """
     default= None
-    fields_required= config['TWEET']['FORMAT'].split(',')
-    # logging.debug(fields_required)
+    fields_required= [field.strip() for field in config['TWEET']['FORMAT'].split(',')]
+    logging.debug(fields_required)
     filtered_tweet= {field: source[field] if field in source else default for field in fields_required}
     return json.dumps(filtered_tweet,sort_keys=True)
 
@@ -68,7 +68,6 @@ def Streaming():
                 #logging.debug("%s tweets are in!" % number)
                 #break
         logging.debug("Closing twitter stream")
-    return
 
 def main():
     logging.debug("Starting Program")
@@ -79,6 +78,7 @@ def main():
         except:
             error = sys.exc_info()[0]
             logging.error("Error: %s"%(error))
+            continue
     logging.debug("End of Program")
 
 

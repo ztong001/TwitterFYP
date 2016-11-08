@@ -1,6 +1,0 @@
-future
-requests
-requests_oauthlib
-six
-configobj
-pymongo
