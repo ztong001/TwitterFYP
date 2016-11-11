@@ -7,5 +7,5 @@ TODO:
 - Graphical front-end to show the results of the classification
 
 Credits:
-- https://github.com/bear/python-twitter - Python-Twitter library by Mike Taylor(Bear)
+- https://mike.verdone.ca/twitter/ - Python Twitter Tools (by Mike Verdone)
 - https://api.mongodb.org/python - Python driver for MongoDB
