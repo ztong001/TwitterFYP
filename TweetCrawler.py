@@ -25,7 +25,8 @@ import logging
 import os
 import sys
 import configparser
-from twitter.stream import TwitterStream, Timeout, Hangup
+from DBHelper import DBHandler
+from twitter.stream import TwitterStream, Timeout, Hangup, HeartbeatTimeout
 from twitter.oauth import OAuth
 
 # Log for debugging purposes
@@ -35,7 +36,6 @@ logging.basicConfig(format='%(asctime)s %(message)s', level=logging.DEBUG)
 # assignment:
 config = configparser.ConfigParser(empty_lines_in_values=False)
 config.read_file(open(os.path.abspath(r'.\config.ini')))
-
 Cred = config['AUTH_KEYS']
 logging.debug("Loading credentials")
 
@@ -46,37 +46,45 @@ auth = OAuth(consumer_key=Cred['CONSUMER_KEY'],
              token=Cred['ACCESS_TOKEN'],
              token_secret=Cred['ACCESS_TOKEN_SECRET'])
 
+# Initialise Database Connector
+db= DBHandler()
 
-def FilterTweet(source):
-    """ This helper function filters out the specific fields needed within the
+def filter_tweet(source):
+    """ This function filters out the specific fields needed within the
         Twitter stream and returns a json object from the filtered structure
     """
     default = None
     fields_needed = [field.strip() for field in config['TWEET']['FORMAT'].split(',')]
     # logging.debug(fields_needed)
     filtered_tweet = {field: source[field] if field in source else default for field in fields_needed}
-    return json.dumps(filtered_tweet, sort_keys=True)
+    return filtered_tweet
 
 
-def StreamTweets():
+def stream_tweets():
     """ This is the main streaming function of the TweetCrawler, which collects real-time tweets
         and write them into output text files.
     """
     number = en_tweets = 0
     filename = str(os.getcwd()) + "/outData/output{:%d%m%y}.txt".format(datetime.date.today())
     # Using default Public Stream for now
-    tweetStream = TwitterStream(auth=auth)
+    stream = TwitterStream(auth=auth, domain="stream.twitter.com",secure=True)
     logging.debug("Opening twitter stream")
     with open(filename, 'a') as output:
-        for line in tweetStream.statuses.sample():
+        for line in stream.statuses.sample():
             if line is Timeout:
                 logging.debug("Timeout")
             elif line is Hangup:
                 logging.debug("Hangup")
+            elif line is HeartbeatTimeout:
+                logging.debug("HeartbeatTimeout")
             else:
-                output.write(FilterTweet(line) + '\n')
-                if line['lang'].equals('en'):
+                tweet = filter_tweet(line)
+                #logging.debug(tweet)
+                if tweet.get('lang') == 'en':
                     en_tweets += 1
+                    output.write(json.dumps(tweet, sort_keys=True))
+                    output.write("\n")
+                    db.insert_into_collection('source', tweet)
                 number += 1
                 logging.debug("%s english tweets out of %s total processed" % (en_tweets, number))
         logging.debug("Closing twitter stream")
@@ -84,10 +92,11 @@ def StreamTweets():
 
 def main():
     logging.debug("Starting Program")
+    db.start_mongo_database(db_name='test', db_path=r'.\db')
     # Endless loop to work around sudden disconnection
     while True:
         try:
-            StreamTweets()
+            stream_tweets()
         except (KeyboardInterrupt, SystemExit):
             logging.error("Forced Stop")
             break
@@ -96,6 +105,8 @@ def main():
             logging.exception("Error: %s" % (error))
             # continue
             break
+        finally:
+            db.stop_mongo_database()
     logging.debug("End of Program")
 
 
