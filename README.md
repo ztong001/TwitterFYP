@@ -9,3 +9,8 @@ TODO:
 Credits:
 - https://mike.verdone.ca/twitter/ - Python Twitter Tools (by Mike Verdone)
 - https://api.mongodb.org/python - Python driver for MongoDB
+
+Current error with DB portion: 
+- Error: <class 'TypeError'>
+- 'Collection' object is not callable. If you meant to call the 'insertOne' method on a 'Collection' object it is failing because no such meth
+od exists.

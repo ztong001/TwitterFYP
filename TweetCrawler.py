@@ -21,33 +21,35 @@
 
 import datetime
 import json
-import logging
 import os
 import sys
 import configparser
+from logbook import Logger, StreamHandler
 from DBHelper import DBHandler
 from twitter.stream import TwitterStream, Timeout, Hangup, HeartbeatTimeout
 from twitter.oauth import OAuth
 
-# Log for debugging purposes
-logging.basicConfig(format='%(asctime)s %(message)s', level=logging.DEBUG)
-
+# Logging for debugging purposes
+# logging.basicConfig(format='%(asctime)s %(message)s', level=logging.DEBUG)
+StreamHandler(sys.stdout).push_application()
 # Either specify a set of keys here or use os.getenv('CONSUMER_KEY') style
 # assignment:
 config = configparser.ConfigParser(empty_lines_in_values=False)
 config.read_file(open(os.path.abspath(r'.\config.ini')))
-Cred = config['AUTH_KEYS']
-logging.debug("Loading credentials")
+credentials = config['AUTH_KEYS']
+
+log = Logger("Twitter Logger")
+log.debug("Loading credentials")
 
 # Since we're going to be using a streaming endpoint, there is no need to worry
 # about rate limits.
-auth = OAuth(consumer_key=Cred['CONSUMER_KEY'],
-             consumer_secret=Cred['CONSUMER_SECRET'],
-             token=Cred['ACCESS_TOKEN'],
-             token_secret=Cred['ACCESS_TOKEN_SECRET'])
+auth = OAuth(consumer_key=credentials['CONSUMER_KEY'],
+             consumer_secret=credentials['CONSUMER_SECRET'],
+             token=credentials['ACCESS_TOKEN'],
+             token_secret=credentials['ACCESS_TOKEN_SECRET'])
 
 # Initialise Database Connector
-db= DBHandler()
+# db = DBHandler()
 
 def filter_tweet(source):
     """ This function filters out the specific fields needed within the
@@ -67,47 +69,42 @@ def stream_tweets():
     number = en_tweets = 0
     filename = str(os.getcwd()) + "/outData/output{:%d%m%y}.txt".format(datetime.date.today())
     # Using default Public Stream for now
-    stream = TwitterStream(auth=auth, domain="stream.twitter.com",secure=True)
-    logging.debug("Opening twitter stream")
+    stream = TwitterStream(auth=auth, domain="stream.twitter.com", secure=True)
+    log.debug("Opening twitter stream")
     with open(filename, 'a') as output:
         for line in stream.statuses.sample():
             if line is Timeout:
-                logging.debug("Timeout")
+                log.warn("Timeout")
             elif line is Hangup:
-                logging.debug("Hangup")
+                log.warn("Hangup")
             elif line is HeartbeatTimeout:
-                logging.debug("HeartbeatTimeout")
+                log.warn("HeartbeatTimeout")
             else:
                 tweet = filter_tweet(line)
-                #logging.debug(tweet)
+                log.debug(tweet)
                 if tweet.get('lang') == 'en':
                     en_tweets += 1
                     output.write(json.dumps(tweet, sort_keys=True))
                     output.write("\n")
-                    db.insert_into_collection('source', tweet)
+                    #db.insert_into_collection('source', tweet)
                 number += 1
-                logging.debug("%s english tweets out of %s total processed" % (en_tweets, number))
-        logging.debug("Closing twitter stream")
+                log.debug("%s english tweets out of %s total processed" % (en_tweets, number))
+        log.debug("Closing twitter stream")
 
 
 def main():
-    logging.debug("Starting Program")
-    db.start_mongo_database(db_name='test', db_path=r'.\db')
-    # Endless loop to work around sudden disconnection
-    while True:
-        try:
-            stream_tweets()
-        except (KeyboardInterrupt, SystemExit):
-            logging.error("Forced Stop")
-            break
-        except:
-            error = '\n'.join([str(v) for v in sys.exc_info()])
-            logging.exception("Error: %s" % (error))
-            # continue
-            break
-        finally:
-            db.stop_mongo_database()
-    logging.debug("End of Program")
+    log.debug("Starting Program")
+    #db.start_mongo_database(db_name='test', db_path=r'.\db')
+    try:
+        stream_tweets()
+    except (KeyboardInterrupt, SystemExit):
+        log.error("Forced Stop")
+    except:
+        error = '\n'.join([str(v) for v in sys.exc_info()])
+        log.error(error)
+    finally:
+        # db.stop_mongo_database()
+        log.debug("End of Program")
 
 
 if __name__ == '__main__':
