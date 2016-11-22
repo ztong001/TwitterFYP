@@ -102,6 +102,9 @@ def main():
     except:
         error = '\n'.join([str(v) for v in sys.exc_info()])
         log.error(error)
+        with open(r"/ErrorLog",'a') as errlog:
+            errlog.write(error)
+            errlog.write("\n")
     finally:
         # db.stop_mongo_database()
         log.debug("End of Program")
