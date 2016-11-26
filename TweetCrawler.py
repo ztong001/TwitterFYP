@@ -24,14 +24,15 @@ import json
 import os
 import sys
 import configparser
-from logbook import Logger, StreamHandler
-from DBHelper import DBHandler
+from logbook import Logger, StreamHandler, FileHandler
 from twitter.stream import TwitterStream, Timeout, Hangup, HeartbeatTimeout
 from twitter.oauth import OAuth
 
 # Logging for debugging purposes
 # logging.basicConfig(format='%(asctime)s %(message)s', level=logging.DEBUG)
-StreamHandler(sys.stdout,encoding='UTF-8').push_application()
+errlogname = str(os.getcwd()) + "/ErrorLog.txt"
+StreamHandler(sys.stdout,encoding='utf-8').push_application()
+FileHandler(filename= errlogname, encoding='utf-8', level='ERROR').push_application()
 # Either specify a set of keys here or use os.getenv('CONSUMER_KEY') style
 # assignment:
 config = configparser.ConfigParser(empty_lines_in_values=False)
@@ -94,22 +95,19 @@ def stream_tweets():
 
 def main():
     switch = True
-    errlogname = str(os.getcwd()) + "/ErrorLog.txt"
     log.debug("Starting Program")
     #db.start_mongo_database(db_name='test', db_path=r'.\db')
-    while (switch):
+    while switch:
         try:
             log.debug("Starting the stream")
             stream_tweets()
-        except(KeyboardInterrupt):
+        except KeyboardInterrupt:
             log.error("Forced Stop")
             switch = False
-        except:
+            break
+        except Exception:
             error = '\n'.join([str(v) for v in sys.exc_info()])
             log.error(error)
-            with open(errlogname, 'a') as errlog:
-                errlog.write(error)
-                errlog.write("\n")
             continue
     log.debug("End of Program")
 
