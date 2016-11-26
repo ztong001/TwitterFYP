@@ -1,3 +1,4 @@
 pymongo==3.3.0
 irclib==0.0.0
 simplejson==3.10.0
+logbook==1.0.0

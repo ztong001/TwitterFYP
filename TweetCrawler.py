@@ -31,7 +31,7 @@ from twitter.oauth import OAuth
 
 # Logging for debugging purposes
 # logging.basicConfig(format='%(asctime)s %(message)s', level=logging.DEBUG)
-StreamHandler(sys.stdout).push_application()
+StreamHandler(sys.stdout,encoding='UTF-8').push_application()
 # Either specify a set of keys here or use os.getenv('CONSUMER_KEY') style
 # assignment:
 config = configparser.ConfigParser(empty_lines_in_values=False)
@@ -81,7 +81,7 @@ def stream_tweets():
                 log.warn("HeartbeatTimeout")
             else:
                 tweet = filter_tweet(line)
-                log.debug(tweet)
+                #log.debug(tweet)
                 if tweet.get('lang') == 'en':
                     en_tweets += 1
                     output.write(json.dumps(tweet, sort_keys=True))
@@ -93,21 +93,25 @@ def stream_tweets():
 
 
 def main():
+    switch = True
+    errlogname = str(os.getcwd()) + "/ErrorLog.txt"
     log.debug("Starting Program")
     #db.start_mongo_database(db_name='test', db_path=r'.\db')
-    try:
-        stream_tweets()
-    except (KeyboardInterrupt, SystemExit):
-        log.error("Forced Stop")
-    except:
-        error = '\n'.join([str(v) for v in sys.exc_info()])
-        log.error(error)
-        with open(r"/ErrorLog",'a') as errlog:
-            errlog.write(error)
-            errlog.write("\n")
-    finally:
-        # db.stop_mongo_database()
-        log.debug("End of Program")
+    while (switch):
+        try:
+            log.debug("Starting the stream")
+            stream_tweets()
+        except(KeyboardInterrupt):
+            log.error("Forced Stop")
+            switch = False
+        except:
+            error = '\n'.join([str(v) for v in sys.exc_info()])
+            log.error(error)
+            with open(errlogname, 'a') as errlog:
+                errlog.write(error)
+                errlog.write("\n")
+            continue
+    log.debug("End of Program")
 
 
 if __name__ == '__main__':
