@@ -19,7 +19,7 @@
 
 # ----------------------------------------------------------------------
 
-import datetime
+import time
 import json
 import os
 import sys
@@ -28,7 +28,7 @@ from logbook import Logger, StreamHandler, FileHandler
 from twitter.stream import TwitterStream, Timeout, Hangup, HeartbeatTimeout
 from twitter.oauth import OAuth
 
-# Logging for debugging purposes
+# Logging for debugging purposes, errors are logged in an separate file
 # logging.basicConfig(format='%(asctime)s %(message)s', level=logging.DEBUG)
 errlogname = str(os.getcwd()) + "/ErrorLog.txt"
 StreamHandler(sys.stdout,encoding='utf-8').push_application()
@@ -55,11 +55,13 @@ auth = OAuth(consumer_key=credentials['CONSUMER_KEY'],
 def filter_tweet(source):
     """ This function filters out the specific fields needed within the
         Twitter stream and returns a json object from the filtered structure
+        User name is added in by default.
     """
     default = None
     fields_needed = [field.strip() for field in config['TWEET']['FORMAT'].split(',')]
     # logging.debug(fields_needed)
     filtered_tweet = {field: source[field] if field in source else default for field in fields_needed}
+    filtered_tweet.update(user=source['user']['name'])
     return filtered_tweet
 
 
@@ -68,12 +70,14 @@ def stream_tweets():
         and write them into output text files.
     """
     number = en_tweets = 0
-    filename = str(os.getcwd()) + "/outData/output{:%d%m%y}.txt".format(datetime.date.today())
-    # Using default Public Stream for now
+    # filename = str(os.getcwd()) + "/outData/output{:%d%m%y}.txt".format(datetime.date.today())
+    filename = str(os.getcwd()) + "/outData/tweetdata.txt"
+    # Using default Public Stream and stopwords for filter keywords
     stream = TwitterStream(auth=auth, domain="stream.twitter.com", secure=True)
+    stream_iter = stream.statuses.filter(track=config['TWEET']['KEYWORDS'])
     log.debug("Opening twitter stream")
     with open(filename, 'a') as output:
-        for line in stream.statuses.sample():
+        for line in stream_iter:
             if line is Timeout:
                 log.warn("Timeout")
             elif line is Hangup:
@@ -94,20 +98,23 @@ def stream_tweets():
 
 
 def main():
+    """The core function for the entire workflow
+    """
     switch = True
     log.debug("Starting Program")
     #db.start_mongo_database(db_name='test', db_path=r'.\db')
     while switch:
         try:
-            log.debug("Starting the stream")
             stream_tweets()
         except KeyboardInterrupt:
-            log.error("Forced Stop")
+            log.warn("Forced Stop")
             switch = False
             break
         except Exception:
             error = '\n'.join([str(v) for v in sys.exc_info()])
             log.error(error)
+            log.warn("Sleep for 90 seconds due to rate limits")
+            time.sleep(90)
             continue
     log.debug("End of Program")
 
