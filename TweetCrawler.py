@@ -32,8 +32,9 @@ from twitter.oauth import OAuth
 # Logging for debugging purposes, errors are logged in an separate file
 # logging.basicConfig(format='%(asctime)s %(message)s', level=logging.DEBUG)
 errlogname = str(os.getcwd()) + "/ErrorLog.txt"
-StreamHandler(sys.stdout,encoding='utf-8').push_application()
-FileHandler(filename= errlogname, encoding='utf-8', level='ERROR').push_application()
+StreamHandler(sys.stdout, encoding='utf-8').push_application()
+FileHandler(filename=errlogname, encoding='utf-8',
+            level='ERROR').push_application()
 # Either specify a set of keys here or use os.getenv('CONSUMER_KEY') style
 # assignment:
 config = configparser.ConfigParser(empty_lines_in_values=False)
@@ -46,12 +47,13 @@ log.debug("Loading credentials")
 # Since we're going to be using a streaming endpoint, there is no need to worry
 # about rate limits.
 authKeys = OAuth(consumer_key=credentials['CONSUMER_KEY'],
-             consumer_secret=credentials['CONSUMER_SECRET'],
-             token=credentials['ACCESS_TOKEN'],
-             token_secret=credentials['ACCESS_TOKEN_SECRET'])
+                 consumer_secret=credentials['CONSUMER_SECRET'],
+                 token=credentials['ACCESS_TOKEN'],
+                 token_secret=credentials['ACCESS_TOKEN_SECRET'])
 
 # Initialise Database Connector
 # db = DBHandler()
+
 
 def filter_tweet(source):
     """ This function filters out the specific fields needed within the
@@ -59,17 +61,20 @@ def filter_tweet(source):
         User name is added in by default.
     """
     default = None
-    fields_needed = [field.strip() for field in config['TWEET']['FORMAT'].split(',')]
+    fields_needed = [field.strip()
+                     for field in config['TWEET']['FORMAT'].split(',')]
     # logging.debug(fields_needed)
-    filtered_tweet = {field: source[field] if field in source else default for field in fields_needed}
+    filtered_tweet = {field: source[
+        field] if field in source else default for field in fields_needed}
     filtered_tweet.update(user=source['user']['name'])
     return filtered_tweet
+
 
 def write_to_json(filename, tweetStream):
     """ Writes tweets to json file
     """
     number = 0
-    with open((filename+".json"), 'a') as output:
+    with open((filename + ".json"), 'a') as output:
         for line in tweetStream:
             if line is Timeout:
                 log.warn("Timeout")
@@ -83,16 +88,19 @@ def write_to_json(filename, tweetStream):
                 number += 1
                 log.debug("%s tweets processed" % (number))
 
+
 def crawl_tweets():
     """ REST API implementation of crawling existing tweets and saving them into a json file.
     """
 
-    filename = str(os.getcwd()) +"/outData/tweetdata"
+    filename = str(os.getcwd()) + "/outData/tweetdata"
     stream = Twitter(auth=authKeys, domain="api.twitter.com", secure=True)
-    stream_iter = stream.search.tweets(q=config['TWEET']['KEYWORDS'], lang='en')
+    stream_iter = stream.search.tweets(
+        q=config['TWEET']['KEYWORDS'], lang='en')
     log.debug("Activating Twitter REST API")
     write_to_json(filename, stream_iter)
     log.debug("Closing twitter stream")
+
 
 def stream_tweets():
     """ Stream API implementation of crawling real-time tweets and saving them into a json file.
@@ -101,9 +109,12 @@ def stream_tweets():
     # filename = str(os.getcwd()) + "/outData/output{:%d%m%y}.txt".format(datetime.date.today())
     filename = str(os.getcwd()) + "/outData/tweetdata"
 
-    # Using default Public Stream and stopwords for filter keywords, english tweets only
-    stream = TwitterStream(auth=authKeys, domain="stream.twitter.com", secure=True)
-    stream_iter = stream.statuses.filter(track=config['TWEET']['KEYWORDS'], language='en')
+    # Using default Public Stream and stopwords for filter keywords, english
+    # tweets only
+    stream = TwitterStream(
+        auth=authKeys, domain="stream.twitter.com", secure=True)
+    stream_iter = stream.statuses.filter(
+        track=config['TWEET']['KEYWORDS'], language='en')
     log.debug("Activating Twitter Stream API")
     write_to_json(filename, stream_iter)
     log.debug("Closing twitter stream")
