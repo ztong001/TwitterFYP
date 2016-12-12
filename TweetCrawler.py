@@ -45,7 +45,7 @@ log.debug("Loading credentials")
 
 # Since we're going to be using a streaming endpoint, there is no need to worry
 # about rate limits.
-auth = OAuth(consumer_key=credentials['CONSUMER_KEY'],
+authKeys = OAuth(consumer_key=credentials['CONSUMER_KEY'],
              consumer_secret=credentials['CONSUMER_SECRET'],
              token=credentials['ACCESS_TOKEN'],
              token_secret=credentials['ACCESS_TOKEN_SECRET'])
@@ -65,17 +65,12 @@ def filter_tweet(source):
     filtered_tweet.update(user=source['user']['name'])
     return filtered_tweet
 
-def crawl_tweets():
-    """ REST API implementation of crawling existing tweets and saving them into a json file.
+def write_to_json(filename, tweetStream):
+    """ Writes tweets to json file
     """
     number = 0
-    filename = str(os.getcwd()) +"/outData/tweetdata.json"
-    stream = Twitter(auth=auth, domain="api.twitter.com", secure=True)
-    stream_iter = stream.search.tweets(q=config['TWEET']['KEYWORDS'], lang='en')
-    log.debug("Activating REST API")
-    # Write to a file (Planning to shift this code out to another function)
-    with open(filename, 'a') as output:
-        for line in stream_iter:
+    with open((filename+".json"), 'a') as output:
+        for line in tweetStream:
             if line is Timeout:
                 log.warn("Timeout")
             elif line is Hangup:
@@ -87,34 +82,31 @@ def crawl_tweets():
                 output.write(tweet)
                 number += 1
                 log.debug("%s tweets processed" % (number))
-        log.debug("Closing twitter stream")
+
+def crawl_tweets():
+    """ REST API implementation of crawling existing tweets and saving them into a json file.
+    """
+
+    filename = str(os.getcwd()) +"/outData/tweetdata"
+    stream = Twitter(auth=authKeys, domain="api.twitter.com", secure=True)
+    stream_iter = stream.search.tweets(q=config['TWEET']['KEYWORDS'], lang='en')
+    log.debug("Activating Twitter REST API")
+    write_to_json(filename, stream_iter)
+    log.debug("Closing twitter stream")
 
 def stream_tweets():
     """ Stream API implementation of crawling real-time tweets and saving them into a json file.
     """
-    number = 0
+
     # filename = str(os.getcwd()) + "/outData/output{:%d%m%y}.txt".format(datetime.date.today())
-    filename = str(os.getcwd()) + "/outData/tweetdata.json"
+    filename = str(os.getcwd()) + "/outData/tweetdata"
 
     # Using default Public Stream and stopwords for filter keywords, english tweets only
-    stream = TwitterStream(auth=auth, domain="stream.twitter.com", secure=True)
+    stream = TwitterStream(auth=authKeys, domain="stream.twitter.com", secure=True)
     stream_iter = stream.statuses.filter(track=config['TWEET']['KEYWORDS'], language='en')
-    log.debug("Opening twitter stream")
-    # Write to a file (Planning to shift this code out to another function)
-    with open(filename, 'a') as output:
-        for line in stream_iter:
-            if line is Timeout:
-                log.warn("Timeout")
-            elif line is Hangup:
-                log.warn("Hangup")
-            elif line is HeartbeatTimeout:
-                log.warn("HeartbeatTimeout")
-            else:
-                tweet = filter_tweet(line)
-                output.write(tweet)
-                number += 1
-                log.debug("%s tweets processed" % (number))
-        log.debug("Closing twitter stream")
+    log.debug("Activating Twitter Stream API")
+    write_to_json(filename, stream_iter)
+    log.debug("Closing twitter stream")
 
 
 def main():
