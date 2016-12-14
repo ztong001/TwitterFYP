@@ -24,6 +24,7 @@ import json
 import os
 import sys
 import configparser
+from collections import defaultdict
 from logbook import Logger, StreamHandler, FileHandler
 from twitter import Twitter, TwitterError, TwitterHTTPError
 from twitter.stream import TwitterStream, Timeout, Hangup, HeartbeatTimeout
@@ -58,23 +59,18 @@ authKeys = OAuth(consumer_key=credentials['CONSUMER_KEY'],
 def filter_tweet(source):
     """ This function filters out the specific fields needed within the
         Twitter stream and returns a json object from the filtered structure
-        User name is added in by default.
     """
-    default = None
-    fields_needed = [field.strip()
-                     for field in config['TWEET']['FORMAT'].split(',')]
-    # logging.debug(fields_needed)
-    filtered_tweet = {field: source[
-        field] if field in source else default for field in fields_needed}
-    filtered_tweet.update(user=source['user']['name'])
+    fields = [('created_at', source['created_at']), ('id', source['id']),
+              ('text', source['text']), ('user', source['user']['name'])]
+    filtered_tweet = defaultdict(fields)
     return filtered_tweet
 
 
-def write_to_json(filename, tweetStream):
-    """ Writes tweets to json file
+def write_to_txt(filename, tweetStream):
+    """ Writes tweets to text file
     """
     number = 0
-    with open((filename + ".json"), 'a') as output:
+    with open((filename + ".txt"), 'a') as output:
         for line in tweetStream:
             if line is Timeout:
                 log.warn("Timeout")
@@ -84,7 +80,7 @@ def write_to_json(filename, tweetStream):
                 log.warn("HeartbeatTimeout")
             else:
                 tweet = filter_tweet(line)
-                output.write(tweet)
+                json.dump(tweet, output)
                 number += 1
                 log.debug("%s tweets processed" % (number))
 
@@ -98,7 +94,7 @@ def crawl_tweets():
     stream_iter = stream.search.tweets(
         q=config['TWEET']['KEYWORDS'], lang='en')
     log.debug("Activating Twitter REST API")
-    write_to_json(filename, stream_iter)
+    write_to_txt(filename, stream_iter)
     log.debug("Closing twitter stream")
 
 
@@ -116,7 +112,7 @@ def stream_tweets():
     stream_iter = stream.statuses.filter(
         track=config['TWEET']['KEYWORDS'], language='en')
     log.debug("Activating Twitter Stream API")
-    write_to_json(filename, stream_iter)
+    write_to_txt(filename, stream_iter)
     log.debug("Closing twitter stream")
 
 
@@ -128,7 +124,7 @@ def main():
     #db.start_mongo_database(db_name='test', db_path=r'.\db')
     while switch:
         try:
-            stream_tweets()
+            crawl_tweets()
         except KeyboardInterrupt:
             log.warn("Forced Stop")
             switch = False
