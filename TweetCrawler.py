@@ -62,15 +62,17 @@ def filter_tweet(source):
     """
     fields = [('created_at', source['created_at']), ('id', source['id']),
               ('text', source['text']), ('user', source['user']['name'])]
-    filtered_tweet = defaultdict(fields)
+    #log.debug(fields)
+    filtered_tweet = defaultdict(None, fields)
     return filtered_tweet
 
 
-def write_to_txt(filename, tweetStream):
+def write_to_txt(tweetStream):
     """ Writes tweets to text file
     """
     number = 0
-    with open((filename + ".txt"), 'a') as output:
+    filename = str(os.getcwd()) + config['TWEET']['TEST']
+    with open(filename, 'a') as output:
         for line in tweetStream:
             if line is Timeout:
                 log.warn("Timeout")
@@ -78,41 +80,43 @@ def write_to_txt(filename, tweetStream):
                 log.warn("Hangup")
             elif line is HeartbeatTimeout:
                 log.warn("HeartbeatTimeout")
-            else:
+            elif 'text' in line:
                 tweet = filter_tweet(line)
+                log.debug(type(tweet))
                 json.dump(tweet, output)
+                # /r/n used as newline delimiting tweets
+                output.write("\r\n")
                 number += 1
                 log.debug("%s tweets processed" % (number))
+            else:
+                log.debug("%r" % (line))
 
 
 def crawl_tweets():
-    """ REST API implementation of crawling existing tweets and saving them into a json file.
+    """ REST API implementation of crawling existing tweets and saving them into a file.
     """
 
-    filename = str(os.getcwd()) + "/outData/tweetdata"
-    stream = Twitter(auth=authKeys, domain="api.twitter.com", secure=True)
+    stream = Twitter(auth=authKeys, domain="search.twitter.com", secure=True)
     stream_iter = stream.search.tweets(
-        q=config['TWEET']['KEYWORDS'], lang='en')
+        q=config['TWEET']['KEYWORDS'], lang='en', _timeout=1)
     log.debug("Activating Twitter REST API")
-    write_to_txt(filename, stream_iter)
+    write_to_txt(stream_iter)
     log.debug("Closing twitter stream")
 
 
 def stream_tweets():
-    """ Stream API implementation of crawling real-time tweets and saving them into a json file.
+    """ Stream API implementation of crawling real-time tweets and saving them into a file.
     """
 
     # filename = str(os.getcwd()) + "/outData/output{:%d%m%y}.txt".format(datetime.date.today())
-    filename = str(os.getcwd()) + "/outData/tweetdata"
-
     # Using default Public Stream and stopwords for filter keywords, english
     # tweets only
     stream = TwitterStream(
         auth=authKeys, domain="stream.twitter.com", secure=True)
     stream_iter = stream.statuses.filter(
-        track=config['TWEET']['KEYWORDS'], language='en')
+        track=config['TWEET']['KEYWORDS'], language='en', _timeout=1)
     log.debug("Activating Twitter Stream API")
-    write_to_txt(filename, stream_iter)
+    write_to_txt(stream_iter)
     log.debug("Closing twitter stream")
 
 
@@ -124,14 +128,14 @@ def main():
     #db.start_mongo_database(db_name='test', db_path=r'.\db')
     while switch:
         try:
-            crawl_tweets()
-        except KeyboardInterrupt:
-            log.warn("Forced Stop")
+            stream_tweets()
+        except (KeyboardInterrupt, SystemExit):
+            log.error("Forced Stop")
             switch = False
             break
         except (TwitterError, TwitterHTTPError):
             error = '\n'.join([str(v) for v in sys.exc_info()])
-            log.error(error)
+            log.exception(error)
             log.warn("Sleep for 90 seconds due to rate limits")
             time.sleep(90)
             continue
