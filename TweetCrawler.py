@@ -31,10 +31,8 @@ from twitter.stream import TwitterStream, Timeout, Hangup, HeartbeatTimeout
 from twitter.oauth import OAuth
 
 # Logging for debugging purposes, errors are logged in an separate file
-# logging.basicConfig(format='%(asctime)s %(message)s', level=logging.DEBUG)
-errlogname = str(os.getcwd()) + "/ErrorLog.txt"
 StreamHandler(sys.stdout, encoding='utf-8').push_application()
-FileHandler(filename=errlogname, encoding='utf-8',
+FileHandler(filename=(str(os.getcwd()) + "/ErrorLog.txt"), encoding='utf-8',
             level='ERROR').push_application()
 # Either specify a set of keys here or use os.getenv('CONSUMER_KEY') style
 # assignment:
@@ -62,7 +60,6 @@ def filter_tweet(source):
     """
     fields = [('created_at', source['created_at']), ('id', source['id']),
               ('text', source['text']), ('user', source['user']['name'])]
-    #log.debug(fields)
     filtered_tweet = defaultdict(None, fields)
     return filtered_tweet
 
@@ -71,7 +68,7 @@ def write_to_txt(tweetStream):
     """ Writes tweets to text file
     """
     number = 0
-    filename = str(os.getcwd()) + config['TWEET']['TEST']
+    filename = str(os.getcwd()) + config['TWEET']['FILE']
     with open(filename, 'a') as output:
         for line in tweetStream:
             if line is Timeout:
@@ -82,9 +79,8 @@ def write_to_txt(tweetStream):
                 log.warn("HeartbeatTimeout")
             elif 'text' in line:
                 tweet = filter_tweet(line)
-                log.debug(type(tweet))
                 json.dump(tweet, output)
-                # /r/n used as newline delimiting tweets
+                # \r\n used as newline delimiting tweets
                 output.write("\r\n")
                 number += 1
                 log.debug("%s tweets processed" % (number))
@@ -96,9 +92,9 @@ def crawl_tweets():
     """ REST API implementation of crawling existing tweets and saving them into a file.
     """
 
-    stream = Twitter(auth=authKeys, domain="search.twitter.com", secure=True)
+    stream = Twitter(auth=authKeys, domain="api.twitter.com", api_version="1.1", secure=True)
     stream_iter = stream.search.tweets(
-        q=config['TWEET']['KEYWORDS'], lang='en', _timeout=1)
+        q=config['TWEET']['KEYWORDS'], lang='en')
     log.debug("Activating Twitter REST API")
     write_to_txt(stream_iter)
     log.debug("Closing twitter stream")
@@ -114,7 +110,7 @@ def stream_tweets():
     stream = TwitterStream(
         auth=authKeys, domain="stream.twitter.com", secure=True)
     stream_iter = stream.statuses.filter(
-        track=config['TWEET']['KEYWORDS'], language='en', _timeout=1)
+        track=config['TWEET']['KEYWORDS'], language='en')
     log.debug("Activating Twitter Stream API")
     write_to_txt(stream_iter)
     log.debug("Closing twitter stream")
@@ -136,7 +132,7 @@ def main():
         except (TwitterError, TwitterHTTPError):
             error = '\n'.join([str(v) for v in sys.exc_info()])
             log.exception(error)
-            log.warn("Sleep for 90 seconds due to rate limits")
+            log.warn("%s - Sleep for 90 seconds" % error)
             time.sleep(90)
             continue
     log.debug("End of Program")
