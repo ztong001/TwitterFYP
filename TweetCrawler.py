@@ -68,7 +68,7 @@ def write_to_txt(tweetStream):
     """ Writes tweets to text file
     """
     number = 0
-    filename = str(os.getcwd()) + config['TWEET']['FILE']
+    filename = str(os.getcwd()) + config['TWEET']['TEST']
     with open(filename, 'a') as output:
         for line in tweetStream:
             if line is Timeout:
@@ -92,7 +92,7 @@ def crawl_tweets():
     """ REST API implementation of crawling existing tweets and saving them into a file.
     """
 
-    stream = Twitter(auth=authKeys, domain="api.twitter.com", api_version="1.1", secure=True)
+    stream = Twitter(auth=authKeys, domain="search.twitter.com", api_version="1.1", secure=True)
     stream_iter = stream.search.tweets(
         q=config['TWEET']['KEYWORDS'], lang='en')
     log.debug("Activating Twitter REST API")
@@ -124,7 +124,7 @@ def main():
     #db.start_mongo_database(db_name='test', db_path=r'.\db')
     while switch:
         try:
-            stream_tweets()
+            crawl_tweets()
         except (KeyboardInterrupt, SystemExit):
             log.error("Forced Stop")
             switch = False

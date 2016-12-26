@@ -180,3 +180,39 @@ details: {'errors': [{'message': 'The Twitter REST API v1 is no longer active. P
 [2016-12-21 14:29:12.295654] ERROR: Twitter Logger: Forced Stop
 [2016-12-21 14:55:45.172880] ERROR: Twitter Logger: Forced Stop
 [2016-12-21 15:24:10.943042] ERROR: Twitter Logger: Forced Stop
+[2016-12-23 13:10:05.010608] ERROR: Twitter Logger: Forced Stop
+[2016-12-23 13:11:10.467714] ERROR: Twitter Logger: Forced Stop
+[2016-12-23 13:11:33.984306] ERROR: Twitter Logger: <class 'twitter.api.TwitterHTTPError'>
+Twitter sent status 410 for URL: 1.1/search/tweets.json using parameters: (lang=en&oauth_consumer_key=IyV94QBnm4UZRO8oS8UuKkKbE&oauth_nonce=8114441090594877045&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1482498693&oauth_token=1418392116-ObuGLOBPQkovNJ8OPaPkxEix29vAk4VdwEioo93&oauth_version=1.0&q=a%2Cthe%2CI%2Cyou&oauth_signature=U00nnK3chJD1D20T4mWxhNuB2UI%3D)
+details: {'errors': [{'code': 64, 'message': 'The Twitter REST API v1 is no longer active. Please migrate to API v1.1. https://dev.twitter.com/docs/api/1.1/overview.'}]}
+<traceback object at 0x000002541B98B6C8>
+Traceback (most recent call last):
+  File "c:\Users\ZackTong\Desktop\TwitterFYP\twitter\api.py", line 329, in _handle_response
+    handle = urllib_request.urlopen(req, **kwargs)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\urllib\request.py", line 163, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\urllib\request.py", line 472, in open
+    response = meth(req, response)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\urllib\request.py", line 582, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\urllib\request.py", line 510, in error
+    return self._call_chain(*args)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\urllib\request.py", line 444, in _call_chain
+    result = func(*args)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\urllib\request.py", line 590, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 410: Gone
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:/Users/ZackTong/Desktop/TwitterFYP/TweetCrawler.py", line 127, in main
+    crawl_tweets()
+  File "c:/Users/ZackTong/Desktop/TwitterFYP/TweetCrawler.py", line 97, in crawl_tweets
+    q=config['TWEET']['KEYWORDS'], lang='en')
+  File "c:\Users\ZackTong\Desktop\TwitterFYP\twitter\api.py", line 322, in __call__
+    return self._handle_response(req, uri, arg_data, _timeout)
+  File "c:\Users\ZackTong\Desktop\TwitterFYP\twitter\api.py", line 355, in _handle_response
+    raise TwitterHTTPError(e, uri, self.format, arg_data)
+twitter.api.TwitterHTTPError: Twitter sent status 410 for URL: 1.1/search/tweets.json using parameters: (lang=en&oauth_consumer_key=IyV94QBnm4UZRO8oS8UuKkKbE&oauth_nonce=8114441090594877045&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1482498693&oauth_token=1418392116-ObuGLOBPQkovNJ8OPaPkxEix29vAk4VdwEioo93&oauth_version=1.0&q=a%2Cthe%2CI%2Cyou&oauth_signature=U00nnK3chJD1D20T4mWxhNuB2UI%3D)
+details: {'errors': [{'code': 64, 'message': 'The Twitter REST API v1 is no longer active. Please migrate to API v1.1. https://dev.twitter.com/docs/api/1.1/overview.'}]}
