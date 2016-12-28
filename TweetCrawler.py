@@ -68,7 +68,7 @@ def write_to_txt(tweetStream):
     """ Writes tweets to text file
     """
     number = 0
-    filename = str(os.getcwd()) + config['TWEET']['TEST']
+    filename = str(os.getcwd()) + config['TWEET']['FILE']
     with open(filename, 'a') as output:
         for line in tweetStream:
             if line is Timeout:
@@ -110,7 +110,7 @@ def stream_tweets():
     stream = TwitterStream(
         auth=authKeys, domain="stream.twitter.com", secure=True)
     stream_iter = stream.statuses.filter(
-        track=config['TWEET']['KEYWORDS'], language='en')
+        track=(config['TWEET']['KEYWORDS']), language='en')
     log.debug("Activating Twitter Stream API")
     write_to_txt(stream_iter)
     log.debug("Closing twitter stream")
@@ -124,7 +124,7 @@ def main():
     #db.start_mongo_database(db_name='test', db_path=r'.\db')
     while switch:
         try:
-            crawl_tweets()
+            stream_tweets()
         except (KeyboardInterrupt, SystemExit):
             log.error("Forced Stop")
             switch = False
