@@ -23,10 +23,9 @@ import time
 import json
 import os
 import sys
-import configparser
 from collections import defaultdict
 from logbook import Logger, StreamHandler, FileHandler
-from twitter import Twitter, TwitterError, TwitterHTTPError
+from twitter import Twitter
 from twitter.stream import TwitterStream, Timeout, Hangup, HeartbeatTimeout
 from twitter.oauth import OAuth
 
@@ -36,9 +35,10 @@ FileHandler(filename=(str(os.getcwd()) + "/ErrorLog.txt"), encoding='utf-8',
             level='ERROR').push_application()
 # Either specify a set of keys here or use os.getenv('CONSUMER_KEY') style
 # assignment:
-config = configparser.ConfigParser(empty_lines_in_values=False)
-config.read_file(open(os.path.abspath(r'.\config.ini')))
-credentials = config['AUTH_KEYS']
+config_filename = str(os.getcwd()) + "/config.json"
+with open(config_filename) as jsonfile:
+    config = json.load(jsonfile)
+credentials = config['auth_keys']
 
 log = Logger("Twitter Logger")
 log.debug("Loading credentials")
@@ -52,6 +52,15 @@ authKeys = OAuth(consumer_key=credentials['CONSUMER_KEY'],
 
 # Initialise Database Connector
 # db = DBHandler()
+
+
+def crawl_method(crawlType):
+    if crawlType == 'rest':
+        return crawl_tweets()
+    elif crawlType == 'stream':
+        return stream_tweets()
+    else:
+        print("Invalid crawling type")
 
 
 def filter_tweet(source):
@@ -68,7 +77,7 @@ def write_to_txt(tweetStream):
     """ Writes tweets to text file
     """
     number = 0
-    filename = str(os.getcwd()) + config['TWEET']['FILE']
+    filename = str(os.getcwd()) + config['tweet']['file']
     with open(filename, 'a') as output:
         for line in tweetStream:
             if line is Timeout:
@@ -78,6 +87,8 @@ def write_to_txt(tweetStream):
             elif line is HeartbeatTimeout:
                 log.warn("HeartbeatTimeout")
             elif 'text' in line:
+                if 'RT @' in line['text']:
+                    continue
                 tweet = filter_tweet(line)
                 json.dump(tweet, output)
                 # \r\n used as newline delimiting tweets
@@ -92,9 +103,10 @@ def crawl_tweets():
     """ REST API implementation of crawling existing tweets and saving them into a file.
     """
 
-    stream = Twitter(auth=authKeys, domain="search.twitter.com", api_version="1.1", secure=True)
+    stream = Twitter(auth=authKeys, domain="search.twitter.com",
+                     api_version="1.1", secure=True)
     stream_iter = stream.search.tweets(
-        q=config['TWEET']['KEYWORDS'], lang='en')
+        q=config['tweet']['keywords'], lang='en')
     log.debug("Activating Twitter REST API")
     write_to_txt(stream_iter)
     log.debug("Closing twitter stream")
@@ -110,7 +122,7 @@ def stream_tweets():
     stream = TwitterStream(
         auth=authKeys, domain="stream.twitter.com", secure=True)
     stream_iter = stream.statuses.filter(
-        track=(config['TWEET']['KEYWORDS']), language='en')
+        track=(config['tweet']['keywords']), language='en')
     log.debug("Activating Twitter Stream API")
     write_to_txt(stream_iter)
     log.debug("Closing twitter stream")
@@ -124,15 +136,14 @@ def main():
     #db.start_mongo_database(db_name='test', db_path=r'.\db')
     while switch:
         try:
-            stream_tweets()
+            crawl_method(config['tweet']['type'])
         except (KeyboardInterrupt, SystemExit):
             log.error("Forced Stop")
             switch = False
             break
-        except (TwitterError, TwitterHTTPError):
-            error = '\n'.join([str(v) for v in sys.exc_info()])
-            log.exception(error)
-            log.warn("%s - Sleep for 90 seconds" % error)
+        except BaseException:
+            log.exception()
+            log.warn("Sleep for 90 seconds")
             time.sleep(90)
             continue
     log.debug("End of Program")
