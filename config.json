@@ -8,7 +8,7 @@
     "tweet":
     {
         "type": "stream",
-        "keywords": "a,the,I,you",
+        "keywords": "a,the,I,you,year",
         "file": "/outData/tweetdata.txt",
         "test": "/outData/test.txt"
     }

@@ -87,20 +87,20 @@ def write_to_txt(tweetStream):
             elif line is HeartbeatTimeout:
                 log.warn("HeartbeatTimeout")
             elif 'text' in line:
-                if 'RT @' in line['text']:
-                    continue
-                tweet = filter_tweet(line)
-                json.dump(tweet, output)
-                # \r\n used as newline delimiting tweets
-                output.write("\r\n")
-                number += 1
-                log.debug("%s tweets processed" % (number))
+                if 'RT ' not in line['text']:
+                    tweet = filter_tweet(line)
+                    json.dump(tweet, output)
+                    # \r\n used as newline delimiting tweets
+                    output.write("\r\n")
+                    number += 1
+                    log.debug("%s tweets processed" % (number))
             else:
                 log.debug("%r" % (line))
 
 
 def crawl_tweets():
     """ REST API implementation of crawling existing tweets and saving them into a file.
+        Not working so far
     """
 
     stream = Twitter(auth=authKeys, domain="search.twitter.com",
@@ -142,7 +142,7 @@ def main():
             switch = False
             break
         except BaseException:
-            log.exception()
+            log.error()
             log.warn("Sleep for 90 seconds")
             time.sleep(90)
             continue

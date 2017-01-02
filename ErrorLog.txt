@@ -1,3 +1,5 @@
 
 [2016-12-31 09:15:42.714701] ERROR: Twitter Logger: Forced Stop
 [2016-12-31 09:38:50.767413] ERROR: Twitter Logger: Forced Stop
+[2017-01-02 02:33:51.257804] ERROR: Twitter Logger: Forced Stop
+[2017-01-02 02:38:22.358232] ERROR: Twitter Logger: Forced Stop
