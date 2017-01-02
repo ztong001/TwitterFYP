@@ -23,6 +23,7 @@ import time
 import json
 import os
 import sys
+import re
 from collections import defaultdict
 from logbook import Logger, StreamHandler, FileHandler
 from twitter import Twitter
@@ -52,6 +53,9 @@ authKeys = OAuth(consumer_key=credentials['CONSUMER_KEY'],
 
 # Initialise Database Connector
 # db = DBHandler()
+
+# Regex used to filter out retweets
+retweets_re = re.compile(r'^RT\s')
 
 
 def crawl_method(crawlType):
@@ -87,7 +91,7 @@ def write_to_txt(tweetStream):
             elif line is HeartbeatTimeout:
                 log.warn("HeartbeatTimeout")
             elif 'text' in line:
-                if 'RT ' not in line['text']:
+                if re.search(retweets_re, line['text']) is None:
                     tweet = filter_tweet(line)
                     json.dump(tweet, output)
                     # \r\n used as newline delimiting tweets
