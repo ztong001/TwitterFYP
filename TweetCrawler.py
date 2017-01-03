@@ -26,7 +26,7 @@ import sys
 import re
 from collections import defaultdict
 from logbook import Logger, StreamHandler, FileHandler
-from twitter import Twitter
+from twitter import Twitter, TwitterHTTPError, TwitterError
 from twitter.stream import TwitterStream, Timeout, Hangup, HeartbeatTimeout
 from twitter.oauth import OAuth
 
@@ -50,9 +50,6 @@ authKeys = OAuth(consumer_key=credentials['CONSUMER_KEY'],
                  consumer_secret=credentials['CONSUMER_SECRET'],
                  token=credentials['ACCESS_TOKEN'],
                  token_secret=credentials['ACCESS_TOKEN_SECRET'])
-
-# Initialise Database Connector
-# db = DBHandler()
 
 # Regex used to filter out retweets
 retweets_re = re.compile(r'^RT\s')
@@ -93,7 +90,7 @@ def write_to_txt(tweetStream):
             elif 'text' in line:
                 if re.search(retweets_re, line['text']) is None:
                     tweet = filter_tweet(line)
-                    json.dump(tweet, output)
+                    json.dump(tweet, output, sort_keys=True)
                     # \r\n used as newline delimiting tweets
                     output.write("\r\n")
                     number += 1
@@ -137,7 +134,6 @@ def main():
     """
     switch = True
     log.debug("Starting Program")
-    #db.start_mongo_database(db_name='test', db_path=r'.\db')
     while switch:
         try:
             crawl_method(config['tweet']['type'])
@@ -145,8 +141,9 @@ def main():
             log.error("Forced Stop")
             switch = False
             break
-        except BaseException:
+        except (TwitterHTTPError, TwitterError):
             log.error()
+            log.exception()
             log.warn("Sleep for 90 seconds")
             time.sleep(90)
             continue

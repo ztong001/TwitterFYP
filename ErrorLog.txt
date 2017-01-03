@@ -3,3 +3,56 @@
 [2016-12-31 09:38:50.767413] ERROR: Twitter Logger: Forced Stop
 [2017-01-02 02:33:51.257804] ERROR: Twitter Logger: Forced Stop
 [2017-01-02 02:38:22.358232] ERROR: Twitter Logger: Forced Stop
+[2017-01-02 04:12:06.475672] ERROR: Twitter Logger: Uncaught exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\urllib\request.py", line 1254, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\http\client.py", line 1106, in request
+    self._send_request(method, url, body, headers)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\http\client.py", line 1151, in _send_request
+    self.endheaders(body)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\http\client.py", line 1102, in endheaders
+    self._send_output(message_body)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\http\client.py", line 934, in _send_output
+    self.send(msg)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\http\client.py", line 877, in send
+    self.connect()
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\http\client.py", line 1252, in connect
+    super().connect()
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\http\client.py", line 849, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\socket.py", line 693, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\socket.py", line 732, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\ZackTong\Desktop\TwitterFYP\TweetCrawler.py", line 140, in main
+    #db.start_mongo_database(db_name='test', db_path=r'.\db')
+  File "c:\Users\ZackTong\Desktop\TwitterFYP\TweetCrawler.py", line 61, in crawl_method
+    def crawl_method(crawlType):
+  File "c:\Users\ZackTong\Desktop\TwitterFYP\TweetCrawler.py", line 126, in stream_tweets
+    stream = TwitterStream(
+  File "c:\Users\ZackTong\Desktop\TwitterFYP\twitter\api.py", line 322, in __call__
+    return self._handle_response(req, uri, arg_data, _timeout)
+  File "c:\Users\ZackTong\Desktop\TwitterFYP\twitter\stream.py", line 288, in _handle_response
+    _timeout or timeout, heartbeat_timeout)
+  File "c:\Users\ZackTong\Desktop\TwitterFYP\twitter\stream.py", line 211, in handle_stream_response
+    handle = urllib_request.urlopen(req,)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\urllib\request.py", line 163, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\urllib\request.py", line 466, in open
+    response = self._open(req, data)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\urllib\request.py", line 484, in _open
+    '_open', req)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\urllib\request.py", line 444, in _call_chain
+    result = func(*args)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\urllib\request.py", line 1297, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "C:\Users\ZackTong\AppData\Local\Continuum\Anaconda3\lib\urllib\request.py", line 1256, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+[2017-01-03 05:45:26.863575] ERROR: Twitter Logger: Forced Stop
