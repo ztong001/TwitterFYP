@@ -90,7 +90,7 @@ def write_to_txt(tweetStream):
             elif 'text' in line:
                 if re.search(retweets_re, line['text']) is None:
                     tweet = filter_tweet(line)
-                    json.dump(tweet, output, sort_keys=True)
+                    output.write(json.dumps(tweet, sort_keys=True))
                     # \r\n used as newline delimiting tweets
                     output.write("\r\n")
                     number += 1
