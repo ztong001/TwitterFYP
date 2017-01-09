@@ -24,6 +24,7 @@ import json
 import os
 import sys
 import re
+from socket import error as SocketError
 from collections import defaultdict
 from logbook import Logger, StreamHandler, FileHandler
 from twitter import Twitter, TwitterHTTPError, TwitterError
@@ -141,11 +142,10 @@ def main():
             log.error("Forced Stop")
             switch = False
             break
-        except (TwitterHTTPError, TwitterError):
-            log.error()
-            log.exception()
-            log.warn("Sleep for 90 seconds")
-            time.sleep(90)
+        except (TwitterHTTPError, TwitterError, SocketError) as e:
+            log.error("Caught Error %s" % str(e))
+            log.warn("Sleep for 2 seconds")
+            time.sleep(2)
             continue
     log.debug("End of Program")
 
