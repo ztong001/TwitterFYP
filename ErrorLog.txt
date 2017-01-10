@@ -56,3 +56,6 @@ Traceback (most recent call last):
     raise URLError(err)
 urllib.error.URLError: <urlopen error [Errno 11001] getaddrinfo failed>
 [2017-01-03 05:45:26.863575] ERROR: Twitter Logger: Forced Stop
+[2017-01-10 14:25:15.701629] ERROR: Twitter Logger: Forced Stop
+[2017-01-10 14:56:51.956190] ERROR: Twitter Logger: Forced Stop
+[2017-01-10 16:09:00.150850] ERROR: Twitter Logger: Forced Stop

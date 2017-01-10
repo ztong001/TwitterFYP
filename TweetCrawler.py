@@ -46,8 +46,10 @@ credentials = config['auth_keys']
 log = Logger("Twitter Logger")
 log.debug("Loading credentials")
 
-# Since we're going to be using a streaming endpoint, there is no need to worry
-# about rate limits.
+# Data output filename here
+filename = str(os.getcwd()) + config['tweet']['testjsonl']
+
+# OAuth authentication details here
 authKeys = OAuth(consumer_key=credentials['CONSUMER_KEY'],
                  consumer_secret=credentials['CONSUMER_SECRET'],
                  token=credentials['ACCESS_TOKEN'],
@@ -66,22 +68,22 @@ def crawl_method(crawlType):
         print("Invalid crawling type")
 
 
-def filter_tweet(source):
-    """ This function filters out the specific fields needed within the
-        Twitter stream and returns a json object from the filtered structure
-    """
-    fields = [('created_at', source['created_at']), ('id', source['id']),
-              ('text', source['text']), ('user', source['user']['name'])]
-    filtered_tweet = defaultdict(None, fields)
-    return filtered_tweet
+# def filter_tweet(source):
+#     """ This function filters out the specific fields needed within the
+#         Twitter stream and returns a json object from the filtered structure
+#     """
+#     fields = [('created_at', source['created_at']), ('id', source['id']),
+#               ('text', source['text']), ('user', source['user']['name'])]
+#     filtered_tweet = defaultdict(None, fields)
+#     return filtered_tweet
 
 
-def write_to_file(tweetStream):
-    """ Writes tweets to text file
+def crawling(stream):
+    """ Creates an array of tweet data in json form from the stream
     """
     tweets = []
-    filename = str(os.getcwd()) + config['tweet']['file']
-    for line in tweetStream:
+
+    for line in stream:
         if 'text' in line:
             if re.search(retweets_check, line['text']) is None:
                 uid = line['id']
@@ -90,12 +92,10 @@ def write_to_file(tweetStream):
                 created_at = line['created_at']
                 tweet = TweetModel(uid, text, user, created_at)
                 tweets.append(tweet)
-                # \r\n used as newline delimiting tweets
-                log.debug("%s tweets processed" % (tweets.count()))
+                log.debug("%s tweets processed" % (len(tweets)))
         else:
             log.debug("%r" % (line))
-    with open(filename, mode='a', newline='\r\n') as output:
-        output.write(json.dumps(tweets))
+    return tweets
 
 
 def crawl_tweets():
@@ -103,13 +103,12 @@ def crawl_tweets():
         Not working so far
     """
 
+    log.debug("Activating Twitter REST API")
     stream = Twitter(auth=authKeys, domain="search.twitter.com",
                      api_version="1.1", secure=True)
     stream_iter = stream.search.tweets(
         q=config['tweet']['keywords'], lang='en')
-    log.debug("Activating Twitter REST API")
-    write_to_file(stream_iter)
-    log.debug("Closing twitter stream")
+    return stream_iter
 
 
 def stream_tweets():
@@ -119,13 +118,12 @@ def stream_tweets():
     # filename = str(os.getcwd()) + "/outData/output{:%d%m%y}.txt".format(datetime.date.today())
     # Using default Public Stream and stopwords for filter keywords, english
     # tweets only
+    log.debug("Activating Twitter Stream API")
     stream = TwitterStream(
         auth=authKeys, domain="stream.twitter.com", secure=True)
     stream_iter = stream.statuses.filter(
         track=(config['tweet']['keywords']), language='en')
-    log.debug("Activating Twitter Stream API")
-    write_to_file(stream_iter)
-    log.debug("Closing twitter stream")
+    return stream_iter
 
 
 def main():
@@ -135,16 +133,22 @@ def main():
     log.debug("Starting Program")
     while switch:
         try:
-            crawl_method(config['tweet']['type'])
+            stream = crawl_method(config['tweet']['type'])
+            tweets = crawling(stream)
+            with open(filename, mode='a', newline='\r\n') as output:
+                output.write(json.dumps(tweets))
         except (KeyboardInterrupt, SystemExit):
             log.error("Forced Stop")
             switch = False
             break
-        except (TwitterHTTPError, TwitterError, SocketError) as e:
-            log.error("Caught Error %s" % str(e))
+        except (TwitterHTTPError, TwitterError, SocketError) as error:
+            log.error("Caught Error %s" % str(error))
             log.warn("Sleep for 2 seconds")
             time.sleep(2)
             continue
+        finally:
+            with open(filename, mode='a', newline='\r\n') as output:
+                output.write(json.dumps(tweets))
     log.debug("End of Program")
 
 

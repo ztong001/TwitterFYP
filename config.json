@@ -10,5 +10,6 @@
         "keywords": "a,the,I,you,year",
         "file": "/outData/tweetdata.txt",
         "testjsonl": "/outData/test.jsonl"
-    }
+    },
+    "db_name": "/db/outdata.db"
 }
