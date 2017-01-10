@@ -9,6 +9,6 @@
         "type": "stream",
         "keywords": "a,the,I,you,year",
         "file": "/outData/tweetdata.txt",
-        "testjson": "/outData/test.json"
+        "testjsonl": "/outData/test.jsonl"
     }
 }

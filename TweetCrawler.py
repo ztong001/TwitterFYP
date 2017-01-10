@@ -28,8 +28,9 @@ from socket import error as SocketError
 from collections import defaultdict
 from logbook import Logger, StreamHandler, FileHandler
 from twitter import Twitter, TwitterHTTPError, TwitterError
-from twitter.stream import TwitterStream, Timeout, Hangup, HeartbeatTimeout
+from twitter.stream import TwitterStream
 from twitter.oauth import OAuth
+from TweetModel import TweetModel
 
 # Logging for debugging purposes, errors are logged in an separate file
 StreamHandler(sys.stdout, encoding='utf-8').push_application()
@@ -53,7 +54,7 @@ authKeys = OAuth(consumer_key=credentials['CONSUMER_KEY'],
                  token_secret=credentials['ACCESS_TOKEN_SECRET'])
 
 # Regex used to filter out retweets
-retweets_re = re.compile(r'^RT\s')
+retweets_check = re.compile(r'^RT\s')
 
 
 def crawl_method(crawlType):
@@ -75,29 +76,26 @@ def filter_tweet(source):
     return filtered_tweet
 
 
-def write_to_txt(tweetStream):
+def write_to_file(tweetStream):
     """ Writes tweets to text file
     """
-    number = 0
+    tweets = []
     filename = str(os.getcwd()) + config['tweet']['file']
-    with open(filename, 'a') as output:
-        for line in tweetStream:
-            if line is Timeout:
-                log.warn("Timeout")
-            elif line is Hangup:
-                log.warn("Hangup")
-            elif line is HeartbeatTimeout:
-                log.warn("HeartbeatTimeout")
-            elif 'text' in line:
-                if re.search(retweets_re, line['text']) is None:
-                    tweet = filter_tweet(line)
-                    output.write(json.dumps(tweet, sort_keys=True))
-                    # \r\n used as newline delimiting tweets
-                    output.write("\r\n")
-                    number += 1
-                    log.debug("%s tweets processed" % (number))
-            else:
-                log.debug("%r" % (line))
+    for line in tweetStream:
+        if 'text' in line:
+            if re.search(retweets_check, line['text']) is None:
+                uid = line['id']
+                text = line['text']
+                user = line['user']['name']
+                created_at = line['created_at']
+                tweet = TweetModel(uid, text, user, created_at)
+                tweets.append(tweet)
+                # \r\n used as newline delimiting tweets
+                log.debug("%s tweets processed" % (tweets.count()))
+        else:
+            log.debug("%r" % (line))
+    with open(filename, mode='a', newline='\r\n') as output:
+        output.write(json.dumps(tweets))
 
 
 def crawl_tweets():
@@ -110,7 +108,7 @@ def crawl_tweets():
     stream_iter = stream.search.tweets(
         q=config['tweet']['keywords'], lang='en')
     log.debug("Activating Twitter REST API")
-    write_to_txt(stream_iter)
+    write_to_file(stream_iter)
     log.debug("Closing twitter stream")
 
 
@@ -126,7 +124,7 @@ def stream_tweets():
     stream_iter = stream.statuses.filter(
         track=(config['tweet']['keywords']), language='en')
     log.debug("Activating Twitter Stream API")
-    write_to_txt(stream_iter)
+    write_to_file(stream_iter)
     log.debug("Closing twitter stream")
 
 
