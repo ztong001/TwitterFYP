@@ -9,6 +9,7 @@
         "type": "stream",
         "keywords": "a,the,I,you,year",
         "file": "/outData/tweetdata.txt",
+        "test": "/outData/test.txt",
         "testjsonl": "/outData/test.jsonl"
     },
     "db_name": "/db/outdata.db"

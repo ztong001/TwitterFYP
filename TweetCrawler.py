@@ -117,8 +117,10 @@ if __name__ == '__main__':
                             tweets.append(tweet)
                             output.write(json.dumps(
                                 tweet.to_dict(), sort_keys=True))
-                            output.write('\r\n')
+                            # output.write('\r\n')
                             log.debug("%s tweets processed" % (len(tweets)))
+                    if len(tweets) == 20:
+                        break
                     else:
                         log.debug("%r" % (line))
         except (KeyboardInterrupt, SystemExit):
@@ -127,7 +129,7 @@ if __name__ == '__main__':
             break
         except (TwitterHTTPError, TwitterError, SocketError) as error:
             log.error("Caught Error %s" % str(error))
-            log.warn("Sleep for 2 seconds")
-            time.sleep(2)
+            log.warn("Sleep for 90 seconds")
+            time.sleep(90)
             continue
     log.debug("End of Program")
