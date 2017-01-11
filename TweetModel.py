@@ -10,3 +10,7 @@ class TweetModel:
         self.text = text
         self.user = user
         self.created_at = created_at
+
+    def to_dict(self):
+        return {
+            "id": self.uid, "text": self.text, "user": self.user, "created_at": self.created_at}

@@ -68,36 +68,6 @@ def crawl_method(crawlType):
         print("Invalid crawling type")
 
 
-# def filter_tweet(source):
-#     """ This function filters out the specific fields needed within the
-#         Twitter stream and returns a json object from the filtered structure
-#     """
-#     fields = [('created_at', source['created_at']), ('id', source['id']),
-#               ('text', source['text']), ('user', source['user']['name'])]
-#     filtered_tweet = defaultdict(None, fields)
-#     return filtered_tweet
-
-
-def crawling(stream):
-    """ Creates an array of tweet data in json form from the stream
-    """
-    tweets = []
-
-    for line in stream:
-        if 'text' in line:
-            if re.search(retweets_check, line['text']) is None:
-                uid = line['id']
-                text = line['text']
-                user = line['user']['name']
-                created_at = line['created_at']
-                tweet = TweetModel(uid, text, user, created_at)
-                tweets.append(tweet)
-                log.debug("%s tweets processed" % (len(tweets)))
-        else:
-            log.debug("%r" % (line))
-    return tweets
-
-
 def crawl_tweets():
     """ REST API implementation of crawling existing tweets and saving them into a file.
         Not working so far
@@ -126,7 +96,7 @@ def stream_tweets():
     return stream_iter
 
 
-def main():
+if __name__ == '__main__':
     """The core function for the entire workflow
     """
     switch = True
@@ -134,9 +104,21 @@ def main():
     while switch:
         try:
             stream = crawl_method(config['tweet']['type'])
-            tweets = crawling(stream)
+            tweets = []
             with open(filename, mode='a', newline='\r\n') as output:
-                output.write(json.dumps(tweets))
+                for line in stream:
+                    if 'text' in line:
+                        if re.search(retweets_check, line['text']) is None:
+                            uid = line['id']
+                            text = line['text']
+                            user = line['user']['name']
+                            created_at = line['created_at'].isoformat()
+                            tweet = TweetModel(uid, text, user, created_at)
+                            tweets.append(tweet)
+                            output.write(tweet.to_dict())
+                            log.debug("%s tweets processed" % (len(tweets)))
+                    else:
+                        log.debug("%r" % (line))
         except (KeyboardInterrupt, SystemExit):
             log.error("Forced Stop")
             switch = False
@@ -150,7 +132,3 @@ def main():
             with open(filename, mode='a', newline='\r\n') as output:
                 output.write(json.dumps(tweets))
     log.debug("End of Program")
-
-
-if __name__ == '__main__':
-    main()

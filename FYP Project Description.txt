@@ -8,5 +8,3 @@ Components
 2) Classifier - NLTK, Evolving lexicon, scikit-learn
 
 pipreqs used for requirements.txt
-
-mongoimport --db <db-name> --collection <coll-name> --file <filename> --jsonArray
