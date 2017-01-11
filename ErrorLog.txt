@@ -60,3 +60,9 @@ urllib.error.URLError: <urlopen error [Errno 11001] getaddrinfo failed>
 [2017-01-10 14:56:51.956190] ERROR: Twitter Logger: Forced Stop
 [2017-01-10 16:09:00.150850] ERROR: Twitter Logger: Forced Stop
 [2017-01-11 01:05:17.281271] ERROR: Twitter Logger: Forced Stop
+[2017-01-11 02:28:32.110384] ERROR: Twitter Logger: Forced Stop
+[2017-01-11 02:30:54.907118] ERROR: Twitter Logger: Forced Stop
+[2017-01-11 02:31:24.106197] ERROR: Twitter Logger: Forced Stop
+[2017-01-11 02:33:07.111924] ERROR: Twitter Logger: Forced Stop
+[2017-01-11 02:33:29.073499] ERROR: Twitter Logger: Forced Stop
+[2017-01-11 02:38:21.183292] ERROR: Twitter Logger: Forced Stop

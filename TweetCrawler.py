@@ -105,17 +105,19 @@ if __name__ == '__main__':
         try:
             stream = crawl_method(config['tweet']['type'])
             tweets = []
-            with open(filename, mode='a', newline='\r\n') as output:
+            with open(filename, mode='a') as output:
                 for line in stream:
                     if 'text' in line:
                         if re.search(retweets_check, line['text']) is None:
                             uid = line['id']
                             text = line['text']
                             user = line['user']['name']
-                            created_at = line['created_at'].isoformat()
+                            created_at = line['created_at']
                             tweet = TweetModel(uid, text, user, created_at)
                             tweets.append(tweet)
-                            output.write(tweet.to_dict())
+                            output.write(json.dumps(
+                                tweet.to_dict(), sort_keys=True))
+                            output.write('\r\n')
                             log.debug("%s tweets processed" % (len(tweets)))
                     else:
                         log.debug("%r" % (line))
@@ -128,7 +130,4 @@ if __name__ == '__main__':
             log.warn("Sleep for 2 seconds")
             time.sleep(2)
             continue
-        finally:
-            with open(filename, mode='a', newline='\r\n') as output:
-                output.write(json.dumps(tweets))
     log.debug("End of Program")
