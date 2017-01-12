@@ -105,7 +105,7 @@ if __name__ == '__main__':
         try:
             stream = crawl_method(config['tweet']['type'])
             tweets = []
-            with open(filename, mode='a') as output:
+            with open(filename, mode='w', newline='\r\n') as output:
                 for line in stream:
                     if 'text' in line:
                         if re.search(retweets_check, line['text']) is None:
@@ -115,11 +115,11 @@ if __name__ == '__main__':
                             created_at = line['created_at']
                             tweet = TweetModel(uid, text, user, created_at)
                             tweets.append(tweet)
-                            output.write(json.dumps(
-                                tweet.to_dict(), sort_keys=True))
-                            # output.write('\r\n')
+                            json.dump(tweet.to_dict(), output, sort_keys=True)
+                            output.write('\r\n')
                             log.debug("%s tweets processed" % (len(tweets)))
                     if len(tweets) == 20:
+                        switch = False
                         break
                     else:
                         log.debug("%r" % (line))

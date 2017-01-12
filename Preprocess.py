@@ -10,15 +10,15 @@ with open(config_filename) as f:
     config = json.load(f)
 tokenizer = TweetTokenizer(strip_handles=True, reduce_len=True)
 db_name = str(os.getcwd()) + config['db_name']
-filename = str(os.getcwd()) + config['tweet']['test']
+filename = str(os.getcwd()) + config['tweet']['testjsonl']
 filename1 = str(os.getcwd()) + "/outdata/tweetdata1.txt"
 # connect = sqlite3.connect(db_name)
 # query = connect.cursor()
 contents = open(filename, 'r', newline='\r\n').read()
-data = [item for item in contents.strip().split('\r\n')]
+data = [item.strip() for item in contents.strip().split('\r\n')]
 print(type(data))
 for line in data:
-    print("^" + line + "$")
+    # print("^" + line + "$")
     tweet = json.loads(line)
     text = tweet.get('text')
     try:
@@ -28,7 +28,8 @@ for line in data:
         # (int(tweet.get('id')), tweet.get('user'), tweet.get('text'), tweet.get('created_at')))
         # connect.commit()
         pass
-    except UnicodeEncodeError:
+    except UnicodeEncodeError as error:
+        print(str(error))
         continue
     except json.decoder.JSONDecodeError as error:
         print(str(error))
