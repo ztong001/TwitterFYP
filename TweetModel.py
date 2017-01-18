@@ -12,5 +12,7 @@ class TweetModel:
         self.created_at = created_at
 
     def to_dict(self):
+        """Returns a dictionary representation of the Tweet
+        """
         return {
             "id": self.uid, "text": self.text, "user": self.user, "created_at": self.created_at}
