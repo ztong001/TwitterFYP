@@ -5,6 +5,7 @@ import re
 import string
 import sys
 # import sqlite3
+import nltk
 from nltk.corpus import stopwords, wordnet
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import TweetTokenizer
@@ -40,7 +41,7 @@ def transform_apostrophe(word, pos_tag):
         word = "are"
     elif word == "'ve":
         word = "have"
-    elif word == "'s" and posTag == "VBZ":
+    elif word == "'s" and pos_tag == "VBZ":
         word = "is"
     return word
 
@@ -49,10 +50,6 @@ db_name = str(os.getcwd()) + config['db_name']
 filename = str(os.getcwd()) + config['tweet']['testjsonl']
 # connect = sqlite3.connect(db_name)
 # query = connect.cursor()
-with open(filename, 'r', newline='\r\n') as contents:
-    data = [json.loads(item.strip())
-            for item in contents.read().strip().split('\r\n')]
-data = [line.get('text') for line in data]
 
 
 def preprocess_tweets(data, stop_words):
@@ -63,17 +60,17 @@ def preprocess_tweets(data, stop_words):
     for sentence in processed_data:
         # Remove links
         sentence = [
-            word for word in sentence if not re.match(r"^http\S+", word)]
+            str(word) for word in sentence if not re.search(r"^http\S+", str(word))]
         tweet_text = " ".join(sentence)
         tweet_list.append(tweet_text)
 
     # Lemmatization
-    for i in range(len(tweet_list)):
+    for i, tweet in enumerate(tweet_list):
         tweet = tweet_list[i]
         tokens = tokenizer.tokenize(tweet)
 
         preprocessed_string = []
-        for (word, pos_tag) in pos_tag(tokens):
+        for (word, pos_tag) in nltk.pos_tag(tokens):
             word = transform_apostrophe(word, pos_tag)
             # Skip if it is stopwords
             if word in stop_words:
@@ -88,12 +85,25 @@ def preprocess_tweets(data, stop_words):
         tweet_list[i] = " ".join(preprocessed_string)
 
     # Remove punctuation
-    for i in range(len(tweet_list)):
-        sentence = tweet_list[i]
-        sentence = sentence.encode('utf-8').translate(None, string.punctuation)
-        tweet_list[i] = sentence
+    tweet_list = [sentence.encode(
+        'utf-8').translate(None, string.punctuation) for sentence in tweet_list]
 
     return tweet_list
 
+
+def preprocessing(file):
+    """Open the source file and perform the preprocessing"""
+    with open(file, 'r', newline='\r\n') as contents:
+        data = [json.loads(item.strip())
+                for item in contents.read().strip().split('\r\n')]
+    data = [line.get('text').encode('ascii', 'ignore') for line in data]
+
+    # preprocess
+    stop_words = stopwords.words('english')
+    tweet_list = preprocess_tweets(data, stop_words)
+
+    for i in tweet_list:
+        print(i)
+
 if __name__ == "__main__":
-    preprocess_tweets(data, stopwords)
+    preprocessing(filename)
