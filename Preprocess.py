@@ -3,7 +3,6 @@ import json
 import os
 import re
 import string
-import sys
 # import sqlite3
 import nltk
 from nltk.corpus import stopwords, wordnet
@@ -45,7 +44,8 @@ def transform_apostrophe(word, pos_tag):
         word = "is"
     return word
 
-tokenizer = TweetTokenizer(strip_handles=True, reduce_len=True)
+tokenizer = TweetTokenizer(
+    strip_handles=True, reduce_len=True, preserve_case=False)
 db_name = str(os.getcwd()) + config['db_name']
 filename = str(os.getcwd()) + config['tweet']['testjsonl']
 # connect = sqlite3.connect(db_name)
@@ -53,15 +53,15 @@ filename = str(os.getcwd()) + config['tweet']['testjsonl']
 
 
 def preprocess_tweets(data, stop_words):
-    # Split sentence into lowercase words
-    processed_data = [line.lower().split() for line in data]
+    # Split sentence into words
+    processed_data = [line.split() for line in data]
 
     tweet_list = []
     for sentence in processed_data:
         # Remove links
         sentence = [
-            str(word) for word in sentence if not re.search(r"^http\S+", str(word))]
-        tweet_text = " ".join(sentence)
+            word.decode(encoding='utf-8') for word in sentence if not re.search(r"^http\S+", str(word))]
+        tweet_text = ' '.join(sentence)
         tweet_list.append(tweet_text)
 
     # Lemmatization
@@ -85,8 +85,8 @@ def preprocess_tweets(data, stop_words):
         tweet_list[i] = " ".join(preprocessed_string)
 
     # Remove punctuation
-    tweet_list = [sentence.encode(
-        'utf-8').translate(None, string.punctuation) for sentence in tweet_list]
+    tweet_list = [re.sub('[%s]' % re.escape(
+        string.punctuation), '', sentence) for sentence in tweet_list]
 
     return tweet_list
 
@@ -96,14 +96,13 @@ def preprocessing(file):
     with open(file, 'r', newline='\r\n') as contents:
         data = [json.loads(item.strip())
                 for item in contents.read().strip().split('\r\n')]
-    data = [line.get('text').encode('ascii', 'ignore') for line in data]
+    data = [line.get('text').encode('utf-8', 'ignore') for line in data]
 
     # preprocess
     stop_words = stopwords.words('english')
     tweet_list = preprocess_tweets(data, stop_words)
 
-    for i in tweet_list:
-        print(i)
+    # TODO: Write to CSV
 
 if __name__ == "__main__":
     preprocessing(filename)
