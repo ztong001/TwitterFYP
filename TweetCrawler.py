@@ -105,7 +105,7 @@ if __name__ == '__main__':
         try:
             stream = crawl_method(config['tweet']['type'])
             tweets = []
-            with open(filename, mode='w', newline='\r\n') as output:
+            with open(filename, mode='wb', newline='\r\n') as output:
                 for line in stream:
                     if 'text' in line:
                         if re.search(retweets_check, line['text']) is None:

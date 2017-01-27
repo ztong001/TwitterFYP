@@ -1,9 +1,12 @@
-"""Preprocessing procedure"""
+"""Preprocessing procedure
+    TODO: Decode and translate emojis with \U0001f3ad and equivalent
+"""
 import json
 import os
 import re
+import sys
 import string
-# import sqlite3
+import csv
 import nltk
 from nltk.corpus import stopwords, wordnet
 from nltk.stem import WordNetLemmatizer
@@ -48,19 +51,19 @@ tokenizer = TweetTokenizer(
     strip_handles=True, reduce_len=True, preserve_case=False)
 db_name = str(os.getcwd()) + config['db_name']
 filename = str(os.getcwd()) + config['tweet']['testjsonl']
+csv_name = str(os.getcwd()) + config['test_csv']
 # connect = sqlite3.connect(db_name)
 # query = connect.cursor()
 
 
 def preprocess_tweets(data, stop_words):
     # Split sentence into words
-    processed_data = [line.split() for line in data]
+    processed_data = [line.strip() for line in data]
 
     tweet_list = []
     for sentence in processed_data:
         # Remove links
-        sentence = [
-            word.decode(encoding='utf-8') for word in sentence if not re.search(r"^http\S+", str(word))]
+        sentence = [re.sub(r'^http\S+', '', word) for word in sentence]
         tweet_text = ' '.join(sentence)
         tweet_list.append(tweet_text)
 
@@ -73,10 +76,10 @@ def preprocess_tweets(data, stop_words):
         for (word, pos_tag) in nltk.pos_tag(tokens):
             word = transform_apostrophe(word, pos_tag)
             # Skip if it is stopwords
-            if word in stop_words:
-                continue
-            elif pos_tag != None and pos_tag in [".", "TO", "IN", "DT", "UH", "WDT", "WP", "WP$", "WRB"]:
-                continue
+            # if word in stop_words:
+            #     continue
+            # elif pos_tag != None and pos_tag in [".", "TO", "IN", "DT", "UH", "WDT", "WP", "WP$", "WRB"]:
+            #     continue
 
             if wordnet_pos_code(pos_tag) != "":
                 word = lemmatizer.lemmatize(word, wordnet_pos_code(pos_tag))
@@ -96,13 +99,21 @@ def preprocessing(file):
     with open(file, 'r', newline='\r\n') as contents:
         data = [json.loads(item.strip())
                 for item in contents.read().strip().split('\r\n')]
-    data = [line.get('text').encode('utf-8', 'ignore') for line in data]
+    data = [line.get('text') for line in data]
 
     # preprocess
     stop_words = stopwords.words('english')
     tweet_list = preprocess_tweets(data, stop_words)
 
-    # TODO: Write to CSV
+    for sentence in tweet_list:
+        try:
+            print(repr(sentence))
+        except UnicodeEncodeError as e:
+            print("Tweet throws %s" % (str(e)))
+            continue
+    # with open(csv_name, 'w') as csv_file:
+    #     mywriter = csv.writer(csv_file, delimiter='\t', quoting=csv.QUOTE_ALL)
+    #     mywriter.writerows(tweet_list)
 
 if __name__ == "__main__":
     preprocessing(filename)

@@ -8,3 +8,8 @@ Components
 2) Classifier - NLTK, Evolving lexicon, scikit-learn
 
 pipreqs used for requirements.txt
+
+Research NLP techniques
+POS tags
+Dependency Parser
+Sentiment Dictionary
