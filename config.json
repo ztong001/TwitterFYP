@@ -7,9 +7,8 @@
     },
     "tweet": {
         "type": "stream",
-        "keywords": "a,the,I,you,year",
-        "file": "/outData/tweetdata.txt",
-        "test": "/outData/test.txt",
+        "keywords": "a,the,I,you,trump",
+        "file": "/outData/tweetdata.jsonl",
         "testjsonl": "/outData/test.jsonl"
     },
     "test_csv": "/outData/test.csv",

@@ -25,7 +25,6 @@ import os
 import sys
 import re
 from socket import error as SocketError
-from collections import defaultdict
 from logbook import Logger, StreamHandler, FileHandler
 from twitter import Twitter, TwitterHTTPError, TwitterError
 from twitter.stream import TwitterStream
@@ -105,7 +104,7 @@ if __name__ == '__main__':
         try:
             stream = crawl_method(config['tweet']['type'])
             tweets = []
-            with open(filename, mode='wb', newline='\r\n') as output:
+            with open(filename, mode='w+', newline='\r\n') as output:
                 for line in stream:
                     if 'text' in line:
                         if re.search(retweets_check, line['text']) is None:
@@ -118,9 +117,9 @@ if __name__ == '__main__':
                             json.dump(tweet.to_dict(), output, sort_keys=True)
                             output.write('\r\n')
                             log.debug("%s tweets processed" % (len(tweets)))
-                    if len(tweets) == 20:
-                        switch = False
-                        break
+                    # if len(tweets) == 20:
+                    #     switch = False
+                    #     break
                     else:
                         log.debug("%r" % (line))
         except (KeyboardInterrupt, SystemExit):

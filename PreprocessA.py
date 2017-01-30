@@ -15,26 +15,37 @@ with open(config_filename) as f:
 tokenizer = TweetTokenizer(strip_handles=True, preserve_case=False)
 filename = str(os.getcwd()) + config['tweet']['testjsonl']
 csv_name = str(os.getcwd()) + config['test_csv']
-emoji_re = re.compile(r'(\\)(U000)(1|0)(\w|\d){4}')
+emoji_re = re.compile(u'[\U00001000-\U0001FFFF]')
+http_re = re.compile(r'^http\S+')
 
 
 def emoji_translate(char):
     if char in emoji_map:
-        return emoji_map.get(char)
+        caught = emoji_map.get(char)
+        print(caught)
+        return caught
     else:
+        print("not caught")
         return ""
 
 
 def preprocess_tweets(data):
     # Split sentence into words
-    processed_data = [line.strip() for line in data]
+    print(type(data))
     tokenized = []
-    for sentence in processed_data:
+    counter = 0
+    for sentence in data:
+        print(type(sentence))
         if re.search(emoji_re, sentence) is not None:
             char = re.search(emoji_re, sentence).group()
-            print("caught letter %s" % (char))
-            sentence.replace(char, emoji_translate(char))
+            sentence = sentence.replace(char, emoji_translate(char))
+            counter += 1
+            print(counter)
         try:
+            sentence = sentence.encode('ascii', 'ignore')
+            # Remove links
+            sentence = [re.sub(r'^http\S+', '', word) for word in sentence]
+            sentence = ' '.join(sentence)
             tokens = tokenizer.tokenize(sentence)
             tokenized.append(tokens)
         except UnicodeEncodeError as e:
@@ -45,7 +56,7 @@ def preprocess_tweets(data):
 
 def preprocessing(file):
     """Open the source file and perform the preprocessing"""
-    with open(file, 'r', encoding='utf-8', newline='\r\n') as contents:
+    with open(file, 'r', newline='\r\n') as contents:
         data = [json.loads(item.strip())
                 for item in contents.read().strip().split('\r\n')]
     data = [line.get('text') for line in data]
@@ -54,9 +65,12 @@ def preprocessing(file):
     stop_words = stopwords.words('english')
     tweet_list = preprocess_tweets(data)
 
-    with open(csv_name, 'w') as csv_file:
-        mywriter = csv.writer(csv_file, delimiter='\t')
-        mywriter.writerows(tweet_list)
+    for tweet in tweet_list:
+        print(repr(tweet))
+
+    # with open(csv_name, 'w') as csv_file:
+    #     mywriter = csv.writer(csv_file, delimiter='\t')
+    #     mywriter.writerows(tweet_list)
 
 if __name__ == "__main__":
     preprocessing(filename)
