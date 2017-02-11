@@ -1,13 +1,12 @@
-"""Preprocessing procedure
-    TODO: Decode and translate emojis with \U0001f3ad and equivalent
-"""
-import json
+"""Preprocessing procedure with POS tagging and tokenisation"""
 import os
-import re
 import sys
-import string
+import json
 import csv
+import string
+import re
 import nltk
+from emoji import emoji_map
 from nltk.corpus import stopwords, wordnet
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import TweetTokenizer
@@ -17,6 +16,13 @@ with open(config_filename) as f:
     config = json.load(f)
 
 lemmatizer = WordNetLemmatizer()
+tokenizer = TweetTokenizer(
+    strip_handles=True, preserve_case=False, reduce_len=True)
+filename = str(os.getcwd()) + config['tweet']['test']
+csv_name = str(os.getcwd()) + config['test_csv']
+emoji_re = re.compile(u'[\U00001000-\U0001FFFF]')
+http_re = re.compile(r'http\S+')
+apostrophe_re = re.compile(r'^[A-Za-z](\')[A-Za-z]')
 
 
 def wordnet_pos_code(tag):
@@ -35,85 +41,86 @@ def wordnet_pos_code(tag):
 
 
 def transform_apostrophe(word, pos_tag):
-    if word == "n't":
-        word = "not"
-    elif word == "'ll":
-        word = "will"
-    elif word == "'re":
-        word = "are"
-    elif word == "'ve":
-        word = "have"
-    elif word == "'s" and pos_tag == "VBZ":
-        word = "is"
+    if "n't" in word:
+        word = word.strip("n't") + " not"
+    elif "'m" in word:
+        word = word.strip("'m") + " am"
+    elif "'ll" in word:
+        word = word.strip("'ll") + " will"
+    elif "'re" in word:
+        word = word.strip("'re") + " are"
+    elif "'ve" in word:
+        word = word.strip("'ve") + " have"
+    elif "'s" in word and pos_tag == "VBZ":
+        word = word.strip("'s") + " is"
     return word
 
-tokenizer = TweetTokenizer(
-    strip_handles=True, reduce_len=True, preserve_case=False)
-db_name = str(os.getcwd()) + config['db_name']
-filename = str(os.getcwd()) + config['tweet']['testjsonl']
-csv_name = str(os.getcwd()) + config['test_csv']
-# connect = sqlite3.connect(db_name)
-# query = connect.cursor()
+
+def emoji_translate(char):
+    """Translate emoji unicode to short-text descriptions"""
+    if char in emoji_map:
+        caught = emoji_map.get(char)
+        print(caught)
+        return caught
+    else:
+        print("not caught")
+        return ""
 
 
-def preprocess_tweets(data, stop_words):
-    # Split sentence into words
-    processed_data = [line.strip() for line in data]
-
-    tweet_list = []
-    for sentence in processed_data:
+def preprocess_tweet(sentence, stop_words):
+    """Function to tokenise and preprocess a single tweet"""
+    # if re.search(emoji_re, sentence) is not None:
+    #     char = re.search(emoji_re, sentence).group()
+    #     sentence = sentence.replace(char, emoji_translate(char))
+    try:
         # Remove links
-        sentence = [re.sub(r'^http\S+', '', word) for word in sentence]
-        tweet_text = ' '.join(sentence)
-        tweet_list.append(tweet_text)
+        result = re.sub(http_re, '', sentence)
+        result = re.sub(emoji_re, '', result)
+        result = result.encode('ascii', 'ignore')
+        tokens = tokenizer.tokenize(result)
 
-    # Lemmatization
-    for i, tweet in enumerate(tweet_list):
-        tweet = tweet_list[i]
-        tokens = tokenizer.tokenize(tweet)
-
+        # TODO: Optimise POS tagging
         preprocessed_string = []
         for (word, pos_tag) in nltk.pos_tag(tokens):
             word = transform_apostrophe(word, pos_tag)
-            # Skip if it is stopwords
+            # # Skip if it is stopwords
             # if word in stop_words:
             #     continue
             # elif pos_tag != None and pos_tag in [".", "TO", "IN", "DT", "UH", "WDT", "WP", "WP$", "WRB"]:
             #     continue
-
             if wordnet_pos_code(pos_tag) != "":
-                word = lemmatizer.lemmatize(word, wordnet_pos_code(pos_tag))
+                word = lemmatizer.lemmatize(
+                    word, wordnet_pos_code(pos_tag))
             preprocessed_string.append(word)
+            # tokenized[i] = " ".join(preprocessed_string)
 
-        tweet_list[i] = " ".join(preprocessed_string)
-
-    # Remove punctuation
-    tweet_list = [re.sub('[%s]' % re.escape(
-        string.punctuation), '', sentence) for sentence in tweet_list]
-
-    return tweet_list
+        # Remove punctuation
+        tokens = [s.translate(str.maketrans('', '', string.punctuation))
+                  for s in preprocessed_string]
+    except UnicodeEncodeError as error:
+        print("Tweet throws %s" % (str(error)))
+    return tokens
 
 
 def preprocessing(file):
     """Open the source file and perform the preprocessing"""
-    with open(file, 'r', newline='\r\n') as contents:
+    with open(file, 'r', newline='\r\n', encoding='utf8') as contents:
         data = [json.loads(item.strip())
                 for item in contents.read().strip().split('\r\n')]
-    data = [line.get('text') for line in data]
+    print("Number of tweets: {}".format(len(data)))
 
     # preprocess
-    stop_words = stopwords.words('english')
-    tweet_list = preprocess_tweets(data, stop_words)
+    stop_words = set(stopwords.words('english'))
+    tweet_list = [preprocess_tweet(
+        line.get('text'), stop_words) for line in data]
+    # Filter empty strings
+    for tweet in tweet_list:
+        tweet = " ".join(tweet)
+        print(tweet)
 
-    for sentence in tweet_list:
-        try:
-            print(repr(sentence))
-        except UnicodeEncodeError as e:
-            print("Tweet throws %s" % (str(e)))
-            continue
-    # with open(csv_name, 'w') as csv_file:
-    #     mywriter = csv.writer(csv_file, delimiter='\t', quoting=csv.QUOTE_ALL)
-    #     mywriter.writerows(tweet_list)
+    with open(csv_name, 'w') as csv_file:
+        mywriter = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
+        mywriter.writerows(tweet_list)
 
 if __name__ == "__main__":
     preprocessing(filename)

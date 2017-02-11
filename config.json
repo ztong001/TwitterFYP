@@ -6,10 +6,10 @@
         "ACCESS_TOKEN_SECRET": "gzjXPpiaQ6xCPiQgeyhIzCafbKBfO9RbXIuMjvRcsgEGU"
     },
     "tweet": {
-        "type": "stream",
+        "type": "rest",
         "keywords": "a,the,I,you,trump",
         "file": "/outData/tweetdata.jsonl",
-        "testjsonl": "/outData/test.jsonl"
+        "test": "/outData/test.jsonl"
     },
     "test_csv": "/outData/test.csv",
     "db_name": "/db/outdata.db"

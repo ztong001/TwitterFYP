@@ -1,1 +1,14 @@
 [2017-01-29 13:03:14.483334] ERROR: Twitter Logger: Forced Stop
+[2017-02-02 11:46:00.523858] ERROR: Twitter Logger: Forced Stop
+[2017-02-04 14:43:42.314775] ERROR: Twitter Logger: Forced Stop
+[2017-02-06 10:22:02.514759] ERROR: Twitter Logger: Caught Error Twitter sent status 404 for URL: 1.1/search/tweets.json using parameters: (lang=en&oauth_consumer_key=IyV94QBnm4UZRO8oS8UuKkKbE&oauth_nonce=3004647545473358054&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1486376519&oauth_token=1418392116-ObuGLOBPQkovNJ8OPaPkxEix29vAk4VdwEioo93&oauth_version=1.0&q=a%2Cthe%2CI%2Cyou%2Ctrump&oauth_signature=eEHaT7LrFACcLPPaw6LKMhl%2FUUw%3D)
+details: {'errors': [{'message': 'Sorry, that page does not exist', 'code': 34}]}
+[2017-02-06 10:22:39.351385] ERROR: Twitter Logger: Caught Error Twitter sent status 404 for URL: 1.1/search/tweets.json using parameters: (lang=en&oauth_consumer_key=IyV94QBnm4UZRO8oS8UuKkKbE&oauth_nonce=7147752417524588862&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1486376558&oauth_token=1418392116-ObuGLOBPQkovNJ8OPaPkxEix29vAk4VdwEioo93&oauth_version=1.0&q=a%2Cthe%2CI%2Cyou%2Ctrump&oauth_signature=RiyBZvKbiIrnQ0cieSqhsC1AGjI%3D)
+details: {'errors': [{'code': 34, 'message': 'Sorry, that page does not exist'}]}
+[2017-02-06 10:23:21.818728] ERROR: Twitter Logger: Caught Error Twitter sent status 404 for URL: 1.1/search/tweets.json using parameters: (lang=en&oauth_consumer_key=IyV94QBnm4UZRO8oS8UuKkKbE&oauth_nonce=8151265624428162699&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1486376601&oauth_token=1418392116-ObuGLOBPQkovNJ8OPaPkxEix29vAk4VdwEioo93&oauth_version=1.0&q=a%2Cthe%2CI%2Cyou%2Ctrump&oauth_signature=MTsJgAAavX7yjknzD0xm3E3C1HY%3D)
+details: {'errors': [{'message': 'Sorry, that page does not exist', 'code': 34}]}
+[2017-02-06 10:24:35.705566] ERROR: Twitter Logger: Caught Error Twitter sent status 404 for URL: 1.1/search/tweets.json using parameters: (lang=en&oauth_consumer_key=IyV94QBnm4UZRO8oS8UuKkKbE&oauth_nonce=14098421625585182214&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1486376675&oauth_token=1418392116-ObuGLOBPQkovNJ8OPaPkxEix29vAk4VdwEioo93&oauth_version=1.0&q=a%2Cthe%2CI%2Cyou%2Ctrump&oauth_signature=BbKey6u%2BFy5xoZ4MRtX6pWMMEcU%3D)
+details: {'errors': [{'code': 34, 'message': 'Sorry, that page does not exist'}]}
+[2017-02-06 10:24:50.441699] ERROR: Twitter Logger: Caught Error Twitter sent status 404 for URL: 1.1/search/tweets.json using parameters: (lang=en&oauth_consumer_key=IyV94QBnm4UZRO8oS8UuKkKbE&oauth_nonce=7064688420064795220&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1486376689&oauth_token=1418392116-ObuGLOBPQkovNJ8OPaPkxEix29vAk4VdwEioo93&oauth_version=1.0&q=a%2Cthe%2CI%2Cyou%2Ctrump&oauth_signature=LTzuV75DhjjMgpaNENYzTFTWDPc%3D)
+details: {'errors': [{'code': 34, 'message': 'Sorry, that page does not exist'}]}
+[2017-02-11 09:01:45.308731] ERROR: Twitter Logger: Forced Stop

@@ -27,7 +27,7 @@ import re
 from socket import error as SocketError
 from logbook import Logger, StreamHandler, FileHandler
 from twitter import Twitter, TwitterHTTPError, TwitterError
-from twitter.stream import TwitterStream
+from twitter.stream import TwitterStream, Timeout, HeartbeatTimeout, Hangup
 from twitter.oauth import OAuth
 from TweetModel import TweetModel
 
@@ -46,7 +46,7 @@ log = Logger("Twitter Logger")
 log.debug("Loading credentials")
 
 # Data output filename here
-filename = str(os.getcwd()) + config['tweet']['testjsonl']
+filename = str(os.getcwd()) + config['tweet']['file']
 
 # OAuth authentication details here
 authKeys = OAuth(consumer_key=credentials['CONSUMER_KEY'],
@@ -73,8 +73,7 @@ def crawl_tweets():
     """
 
     log.debug("Activating Twitter REST API")
-    stream = Twitter(auth=authKeys, domain="search.twitter.com",
-                     api_version="1.1", secure=True)
+    stream = Twitter(auth=authKeys, api_version="1.1", secure=True)
     stream_iter = stream.search.tweets(
         q=config['tweet']['keywords'], lang='en')
     return stream_iter
@@ -104,7 +103,7 @@ if __name__ == '__main__':
         try:
             stream = crawl_method(config['tweet']['type'])
             tweets = []
-            with open(filename, mode='w+', newline='\r\n') as output:
+            with open(filename, mode='a') as output:
                 for line in stream:
                     if 'text' in line:
                         if re.search(retweets_check, line['text']) is None:
@@ -117,11 +116,17 @@ if __name__ == '__main__':
                             json.dump(tweet.to_dict(), output, sort_keys=True)
                             output.write('\r\n')
                             log.debug("%s tweets processed" % (len(tweets)))
-                    # if len(tweets) == 20:
-                    #     switch = False
-                    #     break
+                    if len(tweets) == 100:
+                        switch = False
+                        break
+                    elif line is Timeout:
+                        log.debug("-- Timeout --")
+                    elif line is HeartbeatTimeout:
+                        log.debug("-- Heartbeat Timeout --")
+                    elif line is Hangup:
+                        log.debug("-- Hangup --")
                     else:
-                        log.debug("%r" % (line))
+                        log.debug("Captured: %r" % str(line))
         except (KeyboardInterrupt, SystemExit):
             log.error("Forced Stop")
             switch = False
