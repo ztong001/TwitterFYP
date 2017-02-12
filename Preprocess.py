@@ -1,9 +1,10 @@
-"""Preprocessing procedure with POS tagging and tokenisation"""
+"""preprocessing procedure with POS tagging and tokenisation"""
 import os
 import sys
 import json
 import csv
 import string
+import preprocessor as p
 import re
 import nltk
 from emoji import emoji_map
@@ -23,6 +24,8 @@ csv_name = str(os.getcwd()) + config['test_csv']
 emoji_re = re.compile(u'[\U00001000-\U0001FFFF]')
 http_re = re.compile(r'http\S+')
 apostrophe_re = re.compile(r'^[A-Za-z](\')[A-Za-z]')
+
+p.set_options(p.OPT.URL, p.OPT.MENTION, p.OPT.HASHTAG, p.OPT.EMOJI)
 
 
 def wordnet_pos_code(tag):
@@ -65,6 +68,14 @@ def emoji_translate(char):
     else:
         print("not caught")
         return ""
+
+
+def preprocess_alt(sentence):
+    # sentence = sentence.encode('ascii', 'ignore')
+    tokenized = p.clean(sentence)
+    tokenized = [transform_apostrophe(word, None)
+                 for word in tokenized.split()]
+    return tokenized
 
 
 def preprocess_tweet(sentence, stop_words):
@@ -111,16 +122,17 @@ def preprocessing(file):
 
     # preprocess
     stop_words = set(stopwords.words('english'))
-    tweet_list = [preprocess_tweet(
-        line.get('text'), stop_words) for line in data]
+    tweet_list = [preprocess_alt(line.get('text')) for line in data]
+    # tweet_list = [preprocess_tweet(
+    #     line.get('text'), stop_words) for line in data]
     # Filter empty strings
     for tweet in tweet_list:
         tweet = " ".join(tweet)
         print(tweet)
 
-    with open(csv_name, 'w') as csv_file:
-        mywriter = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
-        mywriter.writerows(tweet_list)
+    # with open(csv_name, 'w') as csv_file:
+    #     mywriter = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
+    #     mywriter.writerows(tweet_list)
 
 if __name__ == "__main__":
     preprocessing(filename)

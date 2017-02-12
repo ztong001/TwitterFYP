@@ -6,8 +6,8 @@
         "ACCESS_TOKEN_SECRET": "gzjXPpiaQ6xCPiQgeyhIzCafbKBfO9RbXIuMjvRcsgEGU"
     },
     "tweet": {
-        "type": "rest",
-        "keywords": "a,the,I,you,trump",
+        "type": "stream",
+        "keywords": "a,the,I,you",
         "file": "/outData/tweetdata.jsonl",
         "test": "/outData/test.jsonl"
     },

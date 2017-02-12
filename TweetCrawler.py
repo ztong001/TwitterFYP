@@ -116,17 +116,15 @@ if __name__ == '__main__':
                             json.dump(tweet.to_dict(), output, sort_keys=True)
                             output.write('\r\n')
                             log.debug("%s tweets processed" % (len(tweets)))
-                    if len(tweets) == 100:
-                        switch = False
-                        break
+                    # if len(tweets) == 100:
+                    #     switch = False
+                    #     break
                     elif line is Timeout:
                         log.debug("-- Timeout --")
                     elif line is HeartbeatTimeout:
                         log.debug("-- Heartbeat Timeout --")
                     elif line is Hangup:
                         log.debug("-- Hangup --")
-                    else:
-                        log.debug("Captured: %r" % str(line))
         except (KeyboardInterrupt, SystemExit):
             log.error("Forced Stop")
             switch = False

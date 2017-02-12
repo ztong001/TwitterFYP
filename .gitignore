@@ -4,3 +4,8 @@
 .jsonl
 .txt
 .json
+.ropeproject
+
+__pycache__/
+*.py[cod]
+*$py.class
