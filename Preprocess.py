@@ -7,10 +7,10 @@ import string
 import preprocessor as p
 import re
 import nltk
-from emoji import emoji_map
 from nltk.corpus import stopwords, wordnet
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import TweetTokenizer
+from replacer import *
 
 config_filename = str(os.getcwd()) + "/config.json"
 with open(config_filename) as f:
@@ -43,38 +43,10 @@ def wordnet_pos_code(tag):
         return ''
 
 
-def transform_apostrophe(word, pos_tag):
-    if "n't" in word:
-        word = word.strip("n't") + " not"
-    elif "'m" in word:
-        word = word.strip("'m") + " am"
-    elif "'ll" in word:
-        word = word.strip("'ll") + " will"
-    elif "'re" in word:
-        word = word.strip("'re") + " are"
-    elif "'ve" in word:
-        word = word.strip("'ve") + " have"
-    elif "'s" in word and pos_tag == "VBZ":
-        word = word.strip("'s") + " is"
-    return word
-
-
-def emoji_translate(char):
-    """Translate emoji unicode to short-text descriptions"""
-    if char in emoji_map:
-        caught = emoji_map.get(char)
-        print(caught)
-        return caught
-    else:
-        print("not caught")
-        return ""
-
-
 def preprocess_alt(sentence):
     # sentence = sentence.encode('ascii', 'ignore')
     tokenized = p.clean(sentence)
-    tokenized = [transform_apostrophe(word, None)
-                 for word in tokenized.split()]
+    tokenized = [replaceApostrophe(replaceRepeat(word)) for word in tokenized]
     return tokenized
 
 

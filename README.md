@@ -7,9 +7,9 @@ Crawling Tweets -> Preprocessing -> Storage -> Training -> Build Classifier -> T
 
 
 TODO:
-- Database component (Currently using txt flat file to store tweets)
 - Sentiment Analysis component (Ensemble classification methods, Training models)
-- Graphical front-end to show the results of the classification(pywebview, chartjs, bootstrap)
+- Develop dynamic sentiment lexicon by referencing custom corpora construction.
+- Graphical front-end to show the results of the classification(pywebview, chartjs, bootstrap) *if possible
 
 Credits:
 - https://mike.verdone.ca/twitter/ - Python Twitter Tools (by Mike Verdone)

@@ -9,7 +9,9 @@
         "type": "stream",
         "keywords": "a,the,I,you",
         "file": "/outData/tweetdata.jsonl",
-        "test": "/outData/test.jsonl"
+        "test": "/outData/test.jsonl",
+        "code": "/outData/codetweets.jsonl",
+        "codewords": "java,js,python,c++"
     },
     "test_csv": "/outData/test.csv",
     "db_name": "/db/outdata.db"
