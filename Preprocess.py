@@ -37,7 +37,7 @@ def lemmatize(token, tag):
     return lemmatizer.lemmatize(token, tag)
 
 
-def preprocess_alt(sentence, stop_words):
+def preprocess(sentence, stop_words):
     """Function to tokenise and preprocess a tweet with tweet-preprocessor"""
     tokens = p.clean(sentence.lower())
     tokens = replacer.replaceAll(tokens)
@@ -57,41 +57,6 @@ def preprocess_alt(sentence, stop_words):
     # return tokens
 
 
-# def preprocess_tweet(sentence, stop_words):
-#     """Function to tokenise and preprocess a single tweet"""
-#     # if re.search(emoji_re, sentence) is not None:
-#     #     char = re.search(emoji_re, sentence).group()
-#     #     sentence = sentence.replace(char, emoji_translate(char))
-#     try:
-#         # Remove links
-#         result = re.sub(http_re, '', sentence)
-#         result = re.sub(emoji_re, '', result)
-#         result = result.encode('ascii', 'ignore')
-#         tokens = tokenizer.tokenize(result)
-
-#         # TODO: Optimise POS tagging
-#         preprocessed_string = []
-#         for (word, pos_tag) in nltk.pos_tag(tokens):
-#             word = transform_apostrophe(word, pos_tag)
-#             # # Skip if it is stopwords
-#             # if word in stop_words:
-#             #     continue
-#             # elif pos_tag != None and pos_tag in [".", "TO", "IN", "DT", "UH", "WDT", "WP", "WP$", "WRB"]:
-#             #     continue
-#             if wordnet_pos_code(pos_tag) != "":
-#                 word = lemmatizer.lemmatize(
-#                     word, wordnet_pos_code(pos_tag))
-#             preprocessed_string.append(word)
-#             # tokenized[i] = " ".join(preprocessed_string)
-
-#         # Remove punctuation
-#         tokens = [s.translate(str.maketrans('', '', string.punctuation))
-#                   for s in preprocessed_string]
-#     except UnicodeEncodeError as error:
-#         print("Tweet throws %s" % (str(error)))
-#     return tokens
-
-
 def preprocessing(file):
     """Open the source file and perform the preprocessing"""
     with open(file, 'r', newline='\r\n', encoding='utf8') as contents:
@@ -101,7 +66,7 @@ def preprocessing(file):
 
     # preprocess
     stop_words = set(stopwords.words('english'))
-    tweet_list = [preprocess_alt(line.get('text'), stop_words)
+    tweet_list = [preprocess(line.get('text'), stop_words)
                   for line in data]
     # Filter empty strings
     for tweet in tweet_list:

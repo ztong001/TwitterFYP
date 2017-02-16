@@ -5,6 +5,7 @@ from sklearn.linear_model import SGDClassifier
 from sklearn.metrics import classification_report as clsr
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cross_validation import train_test_split as tts
+from nltk.corpus import movie_reviews
 
 
 @timeit
@@ -62,3 +63,9 @@ def build_and_evaluate(X, y,
         print("Model written out to {}".format(outpath))
 
     return model
+
+if __name__ == '__main__':
+    X = [reviews.raw(fileid) for fileid in reviews.fileids()]
+    y = [reviews.categories(fileid)[0] for fileid in reviews.fileids()]
+
+    model = build_and_evaluate(X, y, outpath=PATH)
