@@ -1,4 +1,4 @@
-Open-Domain Sentiment Analysis
+Open-Domain Sentiment Analysis 	SCE16-0761
 
 Most studies on sentiment analysis were conducted in a closed domain setting, where the training and test data are assumed to share a similar vocabulary. However, this assumption does not hold in the context of social media, where the vocabulary is evolutional. In other words, there are always new words/phrases appearing in a social media over time. As a result, the sentiment lexicon built offline from the training data may be out of date when being used to make predictions. The objective of this project is to develop an open-domain sentiment analysis framework to address dynamic issue of vocabulary in social media. The proposed framework should be able to expand a sentiment lexicon for a social media dynamically and automatically. Moreover, the proposed framework should be computationally efficient to handle large-scale social posts generated daily by users in the social media.
 
