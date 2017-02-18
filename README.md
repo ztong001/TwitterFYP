@@ -15,3 +15,4 @@ Credits:
 - https://mike.verdone.ca/twitter/ - Python Twitter Tools (by Mike Verdone)
 - https://pypi.python.org/pypi/Logbook - LogBook, Python logging library
 - https://www.nltk.org - Natural Language Toolkit
+- https://github.com/cjhutto/vaderSentiment - VADER Sentiment Analysis tool (within NLTK)

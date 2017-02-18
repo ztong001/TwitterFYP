@@ -1,24 +1,5 @@
 #!/usr/bin/env python
 
-# Copyright (c) 2008 Mike Verdone
-
-# Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
-# documentation files (the "Software"), to deal in the Software without restriction, including without limitation
-# the rights to use,copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
-# and to permit persons to whom the Software is furnished to do so,
-# subject to the following conditions:
-
-# The above copyright notice and this permission notice shall be included
-# in all copies or substantial portions of the Software.
-
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
-# TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,WHETHER IN AN ACTION OF CONTRACT,
-# TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-# SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-# ----------------------------------------------------------------------
-
 import time
 import json
 import os
@@ -29,7 +10,6 @@ from logbook import Logger, StreamHandler, FileHandler
 from twitter import Twitter, TwitterHTTPError, TwitterError
 from twitter.stream import TwitterStream, Timeout, HeartbeatTimeout, Hangup
 from twitter.oauth import OAuth
-from TweetModel import TweetModel
 
 # Logging for debugging purposes, errors are logged in an separate file
 StreamHandler(sys.stdout, encoding='utf-8').push_application()
@@ -58,25 +38,42 @@ authKeys = OAuth(consumer_key=credentials['CONSUMER_KEY'],
 retweets_check = re.compile(r'^RT\s')
 
 
-def crawl_method(crawlType):
-    if crawlType == 'rest':
-        return crawl_tweets()
-    elif crawlType == 'stream':
-        return stream_tweets()
-    else:
-        print("Invalid crawling type")
-
-
-def crawl_tweets():
-    """ REST API implementation of crawling existing tweets and saving them into a file.
-        Not working so far
+class TweetModel:
+    """Data Format for tweet to be analysed
     """
 
-    log.debug("Activating Twitter REST API")
-    stream = Twitter(auth=authKeys, api_version="1.1", secure=True)
-    stream_iter = stream.search.tweets(
-        q=config['tweet']['keywords'], lang='en')
-    return stream_iter
+    def __init__(self, uid, text, user, created_at):
+        self.uid = uid
+        self.text = text
+        self.user = user
+        self.created_at = created_at
+
+    def to_dict(self):
+        """Returns a dictionary representation of the Tweet
+        """
+        return {
+            "id": self.uid, "text": self.text, "user": self.user, "created_at": self.created_at}
+
+
+# def crawl_method(crawlType):
+#     if crawlType == 'rest':
+#         return crawl_tweets()
+#     elif crawlType == 'stream':
+#         return stream_tweets()
+#     else:
+#         print("Invalid crawling type")
+
+
+# def crawl_tweets():
+#     """ REST API implementation of crawling existing tweets and saving them into a file.
+#         Not working so far
+#     """
+
+#     log.debug("Activating Twitter REST API")
+#     rest = Twitter(auth=authKeys, api_version="1.1", secure=True)
+#     stream_iter = rest.search.tweets(
+#         q=config['tweet']['keywords'], lang='en')
+#     return stream_iter
 
 
 def stream_tweets():
@@ -101,21 +98,19 @@ if __name__ == '__main__':
     log.debug("Starting Program")
     while switch:
         try:
-            stream = crawl_method(config['tweet']['type'])
+            # stream = crawl_method(config['tweet']['type'])
+            stream = stream_tweets()
             tweets = []
             with open(filename, mode='a') as output:
                 for line in stream:
                     if 'text' in line:
-                        if re.search(retweets_check, line['text']) is None:
-                            uid = line['id']
-                            text = line['text']
-                            user = line['user']['name']
-                            created_at = line['created_at']
-                            tweet = TweetModel(uid, text, user, created_at)
-                            tweets.append(tweet)
-                            json.dump(tweet.to_dict(), output, sort_keys=True)
-                            output.write('\r\n')
-                            log.debug("%s tweets processed" % (len(tweets)))
+                        # if re.search(retweets_check, line['text']) is None:
+                        tweet = TweetModel(line['id'], line['text'], line[
+                            'user']['name'], line['created_at'])
+                        tweets.append(tweet)
+                        json.dump(tweet.to_dict(), output, sort_keys=True)
+                        output.write('\r\n')
+                        log.debug("%s tweets processed" % (len(tweets)))
                     # if len(tweets) == 100:
                     #     switch = False
                     #     break
