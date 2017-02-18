@@ -7,7 +7,7 @@
     },
     "tweet": {
         "type": "stream",
-        "keywords": "a,the,I,you,kind",
+        "keywords": "a,the,I,you,apple",
         "file": "/outData/tweetdata.jsonl",
         "test": "/outData/test.jsonl",
         "code": "/outData/codetweets.jsonl",

@@ -16,3 +16,4 @@ details: {'errors': [{'code': 34, 'message': 'Sorry, that page does not exist'}]
 [2017-02-11 13:45:06.408501] ERROR: Twitter Logger: Forced Stop
 [2017-02-13 01:07:26.259435] ERROR: Twitter Logger: Forced Stop
 [2017-02-18 06:34:44.103543] ERROR: Twitter Logger: Forced Stop
+[2017-02-18 08:07:20.703188] ERROR: Twitter Logger: Forced Stop
