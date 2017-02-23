@@ -18,4 +18,6 @@ details: {'errors': [{'code': 34, 'message': 'Sorry, that page does not exist'}]
 [2017-02-18 06:34:44.103543] ERROR: Twitter Logger: Forced Stop
 [2017-02-18 08:07:20.703188] ERROR: Twitter Logger: Forced Stop
 [2017-02-23 08:43:27.883458] ERROR: Twitter Logger: Forced Stop
-[2017-02-23 09:49:40.535998] ERROR: Twitter Logger: Caught Error [Errno 2] No such file or directory: 'c:/outData/tweetdata.jsonl'
+[2017-02-23 16:00:43.721164] ERROR: Twitter Logger: Forced Stop
+[2017-02-23 16:37:26.012574] ERROR: Twitter Logger: Caught Error Twitter sent status 404 for URL: 1.1/statuses/user_timeline.json using parameters: (oauth_consumer_key=IyV94QBnm4UZRO8oS8UuKkKbE&oauth_nonce=4122037378587223018&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1487867845&oauth_token=1418392116-ObuGLOBPQkovNJ8OPaPkxEix29vAk4VdwEioo93&oauth_version=1.0&screen_name=ChannelNewsAsia%2CBBC&oauth_signature=%2B3JYjTuHtGO37ZHq1WcypxqSP%2Fk%3D)
+details: {'errors': [{'code': 34, 'message': 'Sorry, that page does not exist.'}]}

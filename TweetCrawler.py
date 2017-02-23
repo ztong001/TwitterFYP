@@ -1,16 +1,20 @@
 # -*- coding: utf-8 -*-
 
-import time
 import json
-from setup import ROOT_DIR, CONFIG_PATH
 import os
-import sys
 import re
+import sys
+import time
+import sqlite3
 from socket import error as SocketError
-from logbook import Logger, StreamHandler, FileHandler
-from twitter import TwitterHTTPError, TwitterError
-from twitter.stream import TwitterStream, Timeout, HeartbeatTimeout, Hangup
+
+from logbook import FileHandler, Logger, StreamHandler
+
+from setup import *
+from twitter import Twitter, TwitterError, TwitterHTTPError
+from twitter.util import printNicely
 from twitter.oauth import OAuth
+from twitter.stream import Hangup, HeartbeatTimeout, Timeout, TwitterStream
 
 # Logging for debugging purposes, errors are logged in an separate file
 StreamHandler(sys.stdout, encoding='utf-8').push_application()
@@ -25,9 +29,6 @@ credentials = config['auth_keys']
 
 log = Logger("Twitter Logger")
 log.debug("Loading credentials")
-
-# Data output filename here
-filename = os.path.join(ROOT_DIR, config['tweet']['file'])
 
 # OAuth authentication details here
 authKeys = OAuth(consumer_key=credentials['CONSUMER_KEY'],
@@ -55,6 +56,21 @@ class TweetModel:
         return {
             "id": self.uid, "text": self.text, "user": self.user, "created_at": self.created_at}
 
+    def to_tuple(self):
+        """Returns a tuple representation of the Tweet
+        """
+        return (self.uid, self.user, self.text, self.created_at)
+
+
+def user_tweets():
+    """ REST API implementation of crawling tweets from a certain user
+    """
+    log.debug("From news")
+    user = config['tweet']['users']
+    rest = Twitter(auth=authKeys)
+    results = rest.statuses.user_timeline(screen_name=user)
+    return results
+
 
 def stream_tweets():
     """ Stream API implementation of crawling real-time tweets and saving them into a file.
@@ -76,30 +92,32 @@ if __name__ == '__main__':
     """
     switch = True
     log.debug("Starting Program")
+    connect = sqlite3.connect(DB_PATH)
+    query = connect.cursor()
+    log.debug("Connecting to Database")
     while switch:
         try:
-            # stream = crawl_method(config['tweet']['type'])
+            log.debug("Opening stream")
             stream = stream_tweets()
             tweets = []
-            with open(filename, mode='a') as output:
-                for line in stream:
-                    if 'text' in line:
-                        # if re.search(retweets_check, line['text']) is None:
+            for line in stream:
+                if 'text' in line:
+                    if re.search(retweets_check, line['text']) is None:
                         tweet = TweetModel(line['id'], line['text'], line[
                             'user']['name'], line['created_at'])
-                        tweets.append(tweet)
-                        json.dump(tweet.to_dict(), output, sort_keys=True)
-                        output.write('\r\n')
+                        tweets.append(tweet.to_tuple())
                         log.debug("%s tweets processed" % (len(tweets)))
-                    # if len(tweets) == 100:
-                    #     switch = False
-                    #     break
-                    elif line is Timeout:
-                        log.debug("-- Timeout --")
-                    elif line is HeartbeatTimeout:
-                        log.debug("-- Heartbeat Timeout --")
-                    elif line is Hangup:
-                        log.debug("-- Hangup --")
+                # if len(tweets) == 100:
+                #     switch = False
+                #     break
+                elif line is Timeout:
+                    log.debug("-- Timeout --")
+                elif line is HeartbeatTimeout:
+                    log.debug("-- Heartbeat Timeout --")
+                elif line is Hangup:
+                    log.debug("-- Hangup --")
+                else:
+                    printNicely("Caught: %r" % (line))
         except (KeyboardInterrupt, SystemExit):
             log.error("Forced Stop")
             switch = False
@@ -109,4 +127,9 @@ if __name__ == '__main__':
             log.warn("Sleep for 90 seconds")
             time.sleep(90)
             continue
+        finally:
+            query.executemany("""INSERT INTO data(id,user,text,created_at) VALUES(?,?,?,?)""",
+                              tweets)
+            log.debug("Storing %s tweets" % (len(tweets)))
+            connect.commit()
     log.debug("End of Program")

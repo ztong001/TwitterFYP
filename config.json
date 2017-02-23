@@ -10,8 +10,7 @@
         "keywords": "a,the,I,you,apple",
         "file": "/outData/tweetdata.jsonl",
         "test": "/outData/test.jsonl",
-        "code": "/outData/codetweets.jsonl",
-        "codewords": "java,js,python,c++"
+        "users": "ChannelNewsAsia"
     },
     "test_csv": "/outData/test.csv",
     "db": "/db/outdata.db"

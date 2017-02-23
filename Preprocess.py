@@ -1,7 +1,8 @@
+# encoding: utf-8
 """preprocessing procedure with POS tagging and tokenisation"""
 import json
 import os
-import re
+import codecs
 import sqlite3
 import string
 
@@ -45,8 +46,8 @@ def preprocess(sentence, stop_words):
     preprocessed_string = []
     for token, tag in pos_tag(tokens):
         # If stopword, ignore token and continue
-        if token in stop_words:
-            continue
+        # if token in stop_words:
+        #     continue
         # If punctuation, ignore token and continue
         if all(char in string.punctuation for char in token):
             continue
@@ -60,6 +61,7 @@ def preprocess(sentence, stop_words):
 
 
 def get_data_from_db(db_name):
+    """Select all the text from the database"""
     connect = sqlite3.connect(DB_PATH)
     print("Connecting to database")
     query = connect.cursor()
@@ -76,10 +78,10 @@ def preprocessing(dfile):
     stop_words = set(stopwords.words('english'))
     tweet_list = [preprocess(str(line), stop_words)
                   for line in data]
-    with open(outfile, 'w') as output:
+    with codecs.open(outfile, mode='w', encoding='utf8') as output:
         for tweet in tweet_list:
             output.write(tweet)
-            output.write('\r\n')
+            output.write('\n')
     print("%d tweets written to file!" % (len(tweet_list)))
 
 if __name__ == "__main__":
