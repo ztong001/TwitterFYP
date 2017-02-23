@@ -9,6 +9,9 @@ Process Flow:
 
 Crawling Tweets -> Preprocessing(Tokenisation/POS-tagging) -> Train model on data -> Build Classifier -> Test on Data
 
+Requirements:
+- Python 3.5 and above. I recommend you to download Anaconda [here](https://www.continuum.io/downloads)
+- pip install requirements.txt
 
 TODO:
 - Sentiment Analysis component (Ensemble classification methods, Training models)

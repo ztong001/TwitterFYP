@@ -1,25 +1,26 @@
 """preprocessing procedure with POS tagging and tokenisation"""
-import os
-import sys
 import json
-import string
-import preprocessor as p
+import os
 import re
+import sqlite3
+import string
+
 from nltk import pos_tag
 from nltk.corpus import stopwords, wordnet
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import TweetTokenizer
-from replacer import ComboReplacer
 
-config_filename = str(os.getcwd()) + "/config.json"
-with open(config_filename) as f:
+import preprocessor as p
+from replacer import ComboReplacer
+from setup import *
+
+with open(CONFIG_PATH) as f:
     config = json.load(f)
 
 lemmatizer = WordNetLemmatizer()
 tokenizer = TweetTokenizer(
     strip_handles=True, preserve_case=False, reduce_len=True)
-filename = str(os.getcwd()) + config['tweet']['test']
-outfile = str(os.getcwd()) + "/outData/preprocessed.txt"
+outfile = os.path.join(ROOT_DIR, "outData/preprocessed.txt")
 replacer = ComboReplacer()
 
 p.set_options(p.OPT.URL, p.OPT.MENTION, p.OPT.HASHTAG, p.OPT.EMOJI)
@@ -44,13 +45,13 @@ def preprocess(sentence, stop_words):
     preprocessed_string = []
     for token, tag in pos_tag(tokens):
         # If stopword, ignore token and continue
-        # if token in stop_words:
-        #     continue
+        if token in stop_words:
+            continue
         # If punctuation, ignore token and continue
         if all(char in string.punctuation for char in token):
             continue
         # Lemmatize the token
-        token = lemmatize(token, tag)
+        # token = lemmatize(token, tag)
         preprocessed_string.append(token)
     tokens = [s.translate(str.maketrans('', '', string.punctuation))
               for s in preprocessed_string]
@@ -58,16 +59,22 @@ def preprocess(sentence, stop_words):
     return tokens
 
 
-def preprocessing(file):
-    """Open the source file and perform the preprocessing"""
-    with open(file, 'r', newline='\r\n', encoding='utf8') as contents:
-        data = [json.loads(item.strip())
-                for item in contents.read().strip().split('\r\n')]
-    print("Number of tweets: {}".format(len(data)))
+def get_data_from_db(db_name):
+    connect = sqlite3.connect(DB_PATH)
+    print("Connecting to database")
+    query = connect.cursor()
+    query.execute("""SELECT text FROM data""")
+    tweets = query.fetchall()
+    print("Tweets from databases: %d tweets" % (len(tweets)))
+    return tweets
 
+
+def preprocessing(dfile):
+    """Open the source file and perform the preprocessing"""
+    data = get_data_from_db(DB_PATH)
     # preprocess
     stop_words = set(stopwords.words('english'))
-    tweet_list = [preprocess(line.get('text'), stop_words)
+    tweet_list = [preprocess(str(line), stop_words)
                   for line in data]
     with open(outfile, 'w') as output:
         for tweet in tweet_list:
@@ -76,4 +83,4 @@ def preprocessing(file):
     print("%d tweets written to file!" % (len(tweet_list)))
 
 if __name__ == "__main__":
-    preprocessing(filename)
+    preprocessing(DATA_PATH)

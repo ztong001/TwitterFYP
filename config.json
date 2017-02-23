@@ -14,5 +14,5 @@
         "codewords": "java,js,python,c++"
     },
     "test_csv": "/outData/test.csv",
-    "db_name": "/db/outdata.db"
+    "db": "/db/outdata.db"
 }

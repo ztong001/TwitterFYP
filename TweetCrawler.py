@@ -1,13 +1,14 @@
-#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import time
 import json
+from setup import ROOT_DIR, CONFIG_PATH
 import os
 import sys
 import re
 from socket import error as SocketError
 from logbook import Logger, StreamHandler, FileHandler
-from twitter import Twitter, TwitterHTTPError, TwitterError
+from twitter import TwitterHTTPError, TwitterError
 from twitter.stream import TwitterStream, Timeout, HeartbeatTimeout, Hangup
 from twitter.oauth import OAuth
 
@@ -17,8 +18,8 @@ FileHandler(filename=(str(os.getcwd()) + "/ErrorLog.txt"), encoding='utf-8',
             level='ERROR').push_application()
 # Either specify a set of keys here or use os.getenv('CONSUMER_KEY') style
 # assignment:
-config_filename = str(os.getcwd()) + "/config.json"
-with open(config_filename) as jsonfile:
+# config_filename = str(os.getcwd()) + "/config.json"
+with open(CONFIG_PATH) as jsonfile:
     config = json.load(jsonfile)
 credentials = config['auth_keys']
 
@@ -26,7 +27,7 @@ log = Logger("Twitter Logger")
 log.debug("Loading credentials")
 
 # Data output filename here
-filename = str(os.getcwd()) + config['tweet']['file']
+filename = os.path.join(ROOT_DIR, config['tweet']['file'])
 
 # OAuth authentication details here
 authKeys = OAuth(consumer_key=credentials['CONSUMER_KEY'],
@@ -53,27 +54,6 @@ class TweetModel:
         """
         return {
             "id": self.uid, "text": self.text, "user": self.user, "created_at": self.created_at}
-
-
-# def crawl_method(crawlType):
-#     if crawlType == 'rest':
-#         return crawl_tweets()
-#     elif crawlType == 'stream':
-#         return stream_tweets()
-#     else:
-#         print("Invalid crawling type")
-
-
-# def crawl_tweets():
-#     """ REST API implementation of crawling existing tweets and saving them into a file.
-#         Not working so far
-#     """
-
-#     log.debug("Activating Twitter REST API")
-#     rest = Twitter(auth=authKeys, api_version="1.1", secure=True)
-#     stream_iter = rest.search.tweets(
-#         q=config['tweet']['keywords'], lang='en')
-#     return stream_iter
 
 
 def stream_tweets():
