@@ -6,11 +6,12 @@ Components
 
 1) Crawler - Research on Twitter Streaming API, Continuous Polling, MongoDB Database to store data
 2) Classifier - NLTK, Evolving lexicon, scikit-learn
+3) Sentiment Lexicon Buffer to capture words with a score so to re-classify and imply their sentiment based on the surrounding words in the tweet.
 
 pipreqs used for requirements.txt
 
-Research NLP techniques
-POS tags
+Research NLP techniques - MultinomialNB, GaussianNB, LinearSVC, SVM, Ensemble Classifier
+POS tags - Penn Treebank Part-Of-Speech Tags
 Dependency Parser
 Sentiment Dictionary
 
