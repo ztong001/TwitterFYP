@@ -1,14 +1,15 @@
 import os
+from setup import DATA_PATH
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from nltk.corpus import twitter_samples
 
 file_in = twitter_samples.strings('tweets.20150430-223406.json')
-test_file = str(os.getcwd()) + "\outData\preprocessed.txt"
 
 
 def vader_analyse(file_input):
-    with open(file_input, newline='\r\n') as inputfile:
+    with open(file_input, encoding='utf8') as inputfile:
         sentences = inputfile.readlines()
+    print("Working on %d tweets" % (len(sentences)))
     sid = SentimentIntensityAnalyzer()
     for line in sentences:
         line = line.strip('\r\n')
@@ -19,4 +20,4 @@ def vader_analyse(file_input):
         print('\n')
 
 if __name__ == '__main__':
-    vader_analyse(test_file)
+    vader_analyse(DATA_PATH)

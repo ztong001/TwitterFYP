@@ -106,6 +106,8 @@ if __name__ == '__main__':
                         tweet = TweetModel(line['id'], line['text'], line[
                             'user']['name'], line['created_at'])
                         tweets.append(tweet.to_tuple())
+                        query.execute("""INSERT INTO data(id,user,text,created_at) VALUES(?,?,?,?)""",
+                                      tweet)
                         log.debug("%s tweets processed" % (len(tweets)))
                 # if len(tweets) == 100:
                 #     switch = False
@@ -128,8 +130,8 @@ if __name__ == '__main__':
             time.sleep(90)
             continue
         finally:
-            query.executemany("""INSERT INTO data(id,user,text,created_at) VALUES(?,?,?,?)""",
-                              tweets)
+            # query.executemany("""INSERT INTO data(id,user,text,created_at) VALUES(?,?,?,?)""",
+            #                   tweets)
             log.debug("Storing %s tweets" % (len(tweets)))
             connect.commit()
     log.debug("End of Program")

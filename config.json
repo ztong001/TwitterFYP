@@ -7,7 +7,7 @@
     },
     "tweet": {
         "type": "stream",
-        "keywords": "a,the,I,you,apple",
+        "keywords": "a,the,I,you,news",
         "file": "/outData/tweetdata.jsonl",
         "test": "/outData/test.jsonl",
         "users": "ChannelNewsAsia"
