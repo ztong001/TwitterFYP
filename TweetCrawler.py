@@ -107,7 +107,7 @@ if __name__ == '__main__':
                             'user']['name'], line['created_at'])
                         tweets.append(tweet.to_tuple())
                         query.execute("""INSERT INTO data(id,user,text,created_at) VALUES(?,?,?,?)""",
-                                      tweet)
+                                      tweet.to_tuple())
                         log.debug("%s tweets processed" % (len(tweets)))
                 # if len(tweets) == 100:
                 #     switch = False
