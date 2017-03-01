@@ -94,7 +94,7 @@ if __name__ == '__main__':
     log.debug("Starting Program")
     connect = sqlite3.connect(DB_PATH)
     query = connect.cursor()
-    log.debug("Connecting to Database")
+    log.debug("Connecting to Database %s" % (str(DB_PATH)))
     while switch:
         try:
             log.debug("Opening stream")
@@ -109,25 +109,29 @@ if __name__ == '__main__':
                         query.execute("""INSERT INTO data(id,user,text,created_at) VALUES(?,?,?,?)""",
                                       tweet.to_tuple())
                         log.debug("%s tweets processed" % (len(tweets)))
-                # if len(tweets) == 100:
-                #     switch = False
-                #     break
+                if len(tweets) == 2999:
+                    switch = False
+                    break
                 elif line is Timeout:
                     log.debug("-- Timeout --")
                 elif line is HeartbeatTimeout:
                     log.debug("-- Heartbeat Timeout --")
                 elif line is Hangup:
                     log.debug("-- Hangup --")
-                else:
+                elif 'timestamp' in line:
                     printNicely("Caught: %r" % (line))
         except (KeyboardInterrupt, SystemExit):
             log.error("Forced Stop")
             switch = False
             break
-        except (TwitterHTTPError, TwitterError, SocketError) as error:
+        except (TwitterHTTPError, TwitterError) as error:
             log.error("Caught Error %s" % str(error))
             log.warn("Sleep for 90 seconds")
             time.sleep(90)
+            continue
+        except (sqlite3.IntegrityError) as db_error:
+            log.error("Caught Error %s" % str(error))
+            time.sleep(5)
             continue
         finally:
             # query.executemany("""INSERT INTO data(id,user,text,created_at) VALUES(?,?,?,?)""",

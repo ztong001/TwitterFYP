@@ -2,7 +2,6 @@
 """preprocessing procedure with POS tagging and tokenisation"""
 import json
 import os
-import codecs
 import sqlite3
 import string
 
@@ -23,7 +22,7 @@ tokenizer = TweetTokenizer(
     strip_handles=True, preserve_case=False, reduce_len=True)
 outfile = os.path.join(ROOT_DIR, "outData/preprocessed.txt")
 replacer = ComboReplacer()
-
+# Filter out URLs, mentions, hashtags and emojis
 p.set_options(p.OPT.URL, p.OPT.MENTION, p.OPT.HASHTAG, p.OPT.EMOJI)
 
 
@@ -39,7 +38,7 @@ def lemmatize(token, tag):
 
 
 def preprocess(sentence, stop_words):
-    """Function to tokenise and preprocess a tweet with tweet-preprocessor"""
+    """Function to clean, tokenise and preprocess a tweet with tweet-preprocessor"""
     cleaned_string = p.clean(sentence)
     replaced_string = replacer.replaceAll(cleaned_string)
     tokens = tokenizer.tokenize(replaced_string)
@@ -78,7 +77,7 @@ def preprocessing(dfile):
     stop_words = set(stopwords.words('english'))
     tweet_list = [preprocess(str(line), stop_words)
                   for line in data]
-    with codecs.open(outfile, mode='w', encoding='utf8') as output:
+    with open(outfile, mode='w', encoding='utf8') as output:
         for tweet in tweet_list:
             output.write(tweet)
             output.write('\n')

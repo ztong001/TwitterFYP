@@ -22,3 +22,16 @@ details: {'errors': [{'code': 34, 'message': 'Sorry, that page does not exist'}]
 [2017-02-23 16:37:26.012574] ERROR: Twitter Logger: Caught Error Twitter sent status 404 for URL: 1.1/statuses/user_timeline.json using parameters: (oauth_consumer_key=IyV94QBnm4UZRO8oS8UuKkKbE&oauth_nonce=4122037378587223018&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1487867845&oauth_token=1418392116-ObuGLOBPQkovNJ8OPaPkxEix29vAk4VdwEioo93&oauth_version=1.0&screen_name=ChannelNewsAsia%2CBBC&oauth_signature=%2B3JYjTuHtGO37ZHq1WcypxqSP%2Fk%3D)
 details: {'errors': [{'code': 34, 'message': 'Sorry, that page does not exist.'}]}
 [2017-02-25 06:31:36.673487] ERROR: Twitter Logger: Forced Stop
+[2017-03-01 03:05:56.644094] ERROR: Twitter Logger: Caught Error [Errno 22] Invalid argument
+[2017-03-01 03:07:27.857711] ERROR: Twitter Logger: Caught Error [Errno 22] Invalid argument
+[2017-03-01 03:08:58.811544] ERROR: Twitter Logger: Caught Error [Errno 22] Invalid argument
+[2017-03-01 03:10:29.754288] ERROR: Twitter Logger: Caught Error [Errno 22] Invalid argument
+[2017-03-01 03:10:49.753753] ERROR: Twitter Logger: Caught Error [Errno 22] Invalid argument
+[2017-03-01 03:12:20.733268] ERROR: Twitter Logger: Caught Error [Errno 22] Invalid argument
+[2017-03-01 03:13:51.682024] ERROR: Twitter Logger: Caught Error [Errno 22] Invalid argument
+[2017-03-01 03:15:22.681559] ERROR: Twitter Logger: Caught Error [Errno 22] Invalid argument
+[2017-03-01 03:16:53.819298] ERROR: Twitter Logger: Caught Error [Errno 22] Invalid argument
+[2017-03-01 03:18:24.588754] ERROR: Twitter Logger: Caught Error [Errno 22] Invalid argument
+[2017-03-01 03:19:55.579039] ERROR: Twitter Logger: Caught Error [Errno 22] Invalid argument
+[2017-03-01 03:21:26.367654] ERROR: Twitter Logger: Caught Error [Errno 22] Invalid argument
+[2017-03-01 03:22:57.165582] ERROR: Twitter Logger: Caught Error [Errno 22] Invalid argument

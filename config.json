@@ -7,7 +7,7 @@
     },
     "tweet": {
         "type": "stream",
-        "keywords": "a,the,I,you,news",
+        "keywords": "a,the,I,you,happy",
         "file": "/outData/tweetdata.jsonl",
         "test": "/outData/test.jsonl",
         "users": "ChannelNewsAsia"
