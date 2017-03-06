@@ -87,7 +87,7 @@ def negated(input_words, include_nt=True):
     """
     Determine if input contains negation words
     """
-    neg_words = [i for i in NEGATE]
+    neg_words = [].extend(NEGATE)
     for word in neg_words:
         if word in input_words:
             return True
