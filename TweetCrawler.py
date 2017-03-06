@@ -109,9 +109,9 @@ if __name__ == '__main__':
                         query.execute("""INSERT INTO data(id,user,text,created_at) VALUES(?,?,?,?)""",
                                       tweet.to_tuple())
                         log.debug("%s tweets processed" % (len(tweets)))
-                if len(tweets) == 2999:
-                    switch = False
-                    break
+                # if len(tweets) == 2999:
+                #     switch = False
+                #     break
                 elif line is Timeout:
                     log.debug("-- Timeout --")
                 elif line is HeartbeatTimeout:
@@ -130,7 +130,7 @@ if __name__ == '__main__':
             time.sleep(90)
             continue
         except (sqlite3.IntegrityError) as db_error:
-            log.error("Caught Error %s" % str(error))
+            log.error("Caught Error %s" % str(db_error))
             time.sleep(5)
             continue
         finally:

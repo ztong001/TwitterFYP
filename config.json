@@ -7,7 +7,7 @@
     },
     "tweet": {
         "type": "stream",
-        "keywords": "a,the,I,you,happy",
+        "keywords": "a,the,I,you,saltbae",
         "file": "/outData/tweetdata.jsonl",
         "test": "/outData/test.jsonl",
         "users": "ChannelNewsAsia"

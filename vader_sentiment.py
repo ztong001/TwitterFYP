@@ -27,7 +27,7 @@ def getdata_from_db():
     query = connect.cursor()
     query.execute(
         """SELECT text FROM data ORDER BY id LIMIT 100; """)
-    tweets = query.fetchall()
+    tweets = [line[0] for line in query.fetchall()]
     print("Tweets from databases: %d tweets" % (len(tweets)))
     return tweets
 
@@ -48,7 +48,7 @@ def vader_analyse(file_input, db=False):
     analyzed_data = []
     sid = SentimentIntensityAnalyzer()
     for line in sentences:
-        text = line[0]
+        text = line.encode('ascii', 'ignore')
         # print(line.encode('ascii', 'ignore'))
         scores = sid.polarity_scores(text)
         analyzed_data.append(

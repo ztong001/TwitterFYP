@@ -45,13 +45,13 @@ def preprocess(sentence, stop_words):
     preprocessed_string = []
     for token, tag in pos_tag(tokens):
         # If stopword, ignore token and continue
-        # if token in stop_words:
-        #     continue
+        if token in stop_words:
+            continue
         # If punctuation, ignore token and continue
         if all(char in string.punctuation for char in token):
             continue
         # Lemmatize the token
-        # token = lemmatize(token, tag)
+        token = lemmatize(token, tag)
         preprocessed_string.append(token)
     tokens = [s.translate(str.maketrans('', '', string.punctuation))
               for s in preprocessed_string]

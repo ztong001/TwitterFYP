@@ -1,7 +1,6 @@
 import logging
 from pprint import pprint
 from time import time
-
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.model_selection import GridSearchCV
