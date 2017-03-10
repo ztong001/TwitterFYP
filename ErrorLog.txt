@@ -35,3 +35,5 @@ details: {'errors': [{'code': 34, 'message': 'Sorry, that page does not exist.'}
 [2017-03-01 03:19:55.579039] ERROR: Twitter Logger: Caught Error [Errno 22] Invalid argument
 [2017-03-01 03:21:26.367654] ERROR: Twitter Logger: Caught Error [Errno 22] Invalid argument
 [2017-03-01 03:22:57.165582] ERROR: Twitter Logger: Caught Error [Errno 22] Invalid argument
+2017-03-10 00:19:41,964 - root - ERROR - Caught Error UNIQUE constraint failed: data.id
+2017-03-10 00:22:58,806 - root - ERROR - Forced Stop

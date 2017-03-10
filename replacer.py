@@ -17,7 +17,7 @@ replacement_patterns = [
     (r'(\w+)\'d', '\g<1> would'),
     (r'&gt;', '>'),
     (r'&lt;', '<'),
-    (r'&amp', 'and'),
+    (r'&amp;', 'and'),
     (u'(\u00b4|\u2018|\u2019)', "'")
 ]
 

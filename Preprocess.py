@@ -10,7 +10,7 @@ from nltk.corpus import stopwords, wordnet
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import TweetTokenizer
 
-import preprocessor as p
+import preprocessor
 from replacer import ComboReplacer
 from setup import *
 
@@ -23,7 +23,8 @@ tokenizer = TweetTokenizer(
 outfile = os.path.join(ROOT_DIR, "outData/preprocessed.txt")
 replacer = ComboReplacer()
 # Filter out URLs, mentions, hashtags and emojis
-p.set_options(p.OPT.URL, p.OPT.MENTION, p.OPT.HASHTAG, p.OPT.EMOJI)
+preprocessor.set_options(preprocessor.OPT.URL, preprocessor.OPT.MENTION,
+                         preprocessor.OPT.HASHTAG, preprocessor.OPT.EMOJI)
 
 
 def lemmatize(token, tag):
@@ -37,9 +38,9 @@ def lemmatize(token, tag):
     return lemmatizer.lemmatize(token, tag)
 
 
-def preprocess(sentence, stop_words):
+def preprocess(sentence, stop_words, lemma=True):
     """Function to clean, tokenise and preprocess a tweet with tweet-preprocessor"""
-    cleaned_string = p.clean(sentence)
+    cleaned_string = preprocessor.clean(sentence)
     replaced_string = replacer.replaceAll(cleaned_string)
     tokens = tokenizer.tokenize(replaced_string)
     preprocessed_string = []
@@ -51,7 +52,8 @@ def preprocess(sentence, stop_words):
         if all(char in string.punctuation for char in token):
             continue
         # Lemmatize the token
-        token = lemmatize(token, tag)
+        if lemma:
+            token = lemmatize(token, tag)
         preprocessed_string.append(token)
     tokens = [s.translate(str.maketrans('', '', string.punctuation))
               for s in preprocessed_string]

@@ -1,14 +1,23 @@
-# -*- coding: utf-8 -*-
+"""Miscellanous scripts for data migrations across formats"""
 import sqlite3
+import os
+import csv
 import json
 import setup
 
 
-def import_json():
-    with open(setup.DATA_PATH, 'r', newline='\r\n', encoding='utf8') as contents:
-        data = [json.loads(item.strip())
-                for item in contents.read().strip().split('\r\n')]
-
+def import_file_to_db(input_file):
+    """Json/CSV/Txt files to DB"""
+    ext = os.path.splitext(input_file)[-1].lower()
+    with open(input_file, 'r', newline='\r\n', encoding='utf8') as contents:
+        if ext == '.json':
+            data = [json.loads(item.strip())
+                    for item in contents.read().strip().split('\r\n')]
+        elif ext == '.csv':
+            data = [item.strip() for item in csv.reader(contents)]
+        elif ext == '.txt':
+            data = [item.strip()
+                    for item in contents.read().strip().split('\r\n')]
     connect = sqlite3.connect(setup.DB_PATH)
     query = connect.cursor()
     for tweet in data:
@@ -17,4 +26,4 @@ def import_json():
     connect.commit()
 
 if __name__ == '__main__':
-    import_json()
+    import_file_to_db(setup.DATA_PATH)

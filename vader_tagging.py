@@ -1,7 +1,16 @@
+"""Data Labelling with Vader sentiment"""
 import sqlite3
-from tablib import Dataset
-from setup import DATA_PATH, DB_PATH
+
+from nltk.corpus import stopwords
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from tablib import Dataset
+
+import preprocessor
+from setup import DATA_PATH, DB_PATH
+
+# Filter out URLs, mentions, hashtags and emojis
+preprocessor.set_options(preprocessor.OPT.URL, preprocessor.OPT.MENTION,
+                         preprocessor.OPT.HASHTAG, preprocessor.OPT.EMOJI)
 
 
 def getlabel(scores):
@@ -17,16 +26,24 @@ def getlabel(scores):
 
 def getdata_from_db(number):
     """Select set num of text entries from the database"""
-    connect = sqlite3.connect(DB_PATH)
     print("Connecting to database")
-    query = connect.cursor()
+    query = sqlite3.connect(DB_PATH).cursor()
     query.execute(
-        "SELECT text FROM data ORDER BY id LIMIT " + str(number) + "; ")
+        "SELECT text FROM data ORDER BY id DESC LIMIT " + str(number) + "; ")
     tweets = [line[0] for line in query.fetchall()]
     print("Tweets from databases: %d tweets" % (len(tweets)))
     return tweets
 
 
+def save_data_to_db(labelled):
+    """Save labelled data to database"""
+    add_query = sqlite3.connect(DB_PATH).cursor()
+    add_query.execute(
+        "CREATE TABLE IF NOT EXISTS labels(text TEXT, label TEXT, score FLOAT)")
+    add_query.executemany("""INSERT INTO labels(text,label,score) VALUES(?,?,?)""",
+                          (labelled))
+    add_query.close()
+    return
 # def getdata_from_file(file_input):
 #     with open(file_input, encoding='utf8') as inputfile:
 #         sentences = inputfile.readlines()
@@ -37,14 +54,15 @@ def vader_analyse(file_input):
     """Labels the dataset with vader sentiment tool"""
     sentences = getdata_from_db(1000)
     print("Working on %d tweets" % (len(sentences)))
-    headers = ('text', 'label')
+    headers = ('text', 'label', 'score')
     analyzed_data = []
     sid = SentimentIntensityAnalyzer()
     for line in sentences:
-        # text = line.encode('ascii', 'ignore')
+        text = preprocessor.clean(line)
         # print(line.encode('ascii', 'ignore'))
-        scores = sid.polarity_scores(line)
-        analyzed_data.append((line, getlabel(scores)))
+        scores = sid.polarity_scores(text)
+        analyzed_data.append((text, getlabel(scores), scores['compound']))
+    save_data_to_db(analyzed_data)
     analyzed = Dataset(*analyzed_data, headers=headers)
     return analyzed
 

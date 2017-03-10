@@ -1,4 +1,4 @@
-"""Feaature extraction from corpus"""
+"""Feature extraction from corpus (mostly bag-of-words approach)"""
 import collections
 from nltk.corpus import stopwords, reuters
 from nltk.collocations import BigramCollocationFinder

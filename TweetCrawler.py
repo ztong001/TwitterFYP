@@ -6,9 +6,7 @@ import re
 import sys
 import time
 import sqlite3
-from socket import error as SocketError
-
-from logbook import FileHandler, Logger, StreamHandler
+import logging
 
 from setup import *
 from twitter import Twitter, TwitterError, TwitterHTTPError
@@ -17,9 +15,18 @@ from twitter.oauth import OAuth
 from twitter.stream import Hangup, HeartbeatTimeout, Timeout, TwitterStream
 
 # Logging for debugging purposes, errors are logged in an separate file
-StreamHandler(sys.stdout, encoding='utf-8').push_application()
-FileHandler(filename=(str(os.getcwd()) + "/ErrorLog.txt"), encoding='utf-8',
-            level='ERROR').push_application()
+log = logging.getLogger()
+log.setLevel(logging.DEBUG)
+ch = logging.StreamHandler(sys.stdout)
+ch.setLevel(logging.DEBUG)
+formatter = logging.Formatter(
+    '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+ch.setFormatter(formatter)
+er = logging.FileHandler("./ErrorLog.txt")
+er.setLevel(logging.ERROR)
+er.setFormatter(formatter)
+log.addHandler(ch)
+log.addHandler(er)
 # Either specify a set of keys here or use os.getenv('CONSUMER_KEY') style
 # assignment:
 # config_filename = str(os.getcwd()) + "/config.json"
@@ -27,7 +34,6 @@ with open(CONFIG_PATH) as jsonfile:
     config = json.load(jsonfile)
 credentials = config['auth_keys']
 
-log = Logger("Twitter Logger")
 log.debug("Loading credentials")
 
 # OAuth authentication details here
