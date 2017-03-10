@@ -1,4 +1,5 @@
-"""Spellchecking algorithm by Peter Norvig, used for words not in wordnet"""
+"""Spellchecking algorithm by Peter Norvig, used for words not in wordnet
+TODO: Integrate wordnet into WORDS"""
 import re
 from collections import Counter
 
