@@ -25,8 +25,8 @@ from os.path import abspath, join, dirname
 import math
 import re
 import string
-
-
+"""Extension module"""
+from extensions import add_to_lexicon, write_to_lexicon
 ##Constants##
 
 # (empirically derived mean sentiment intensity rating increase for booster words)
@@ -220,12 +220,6 @@ class SentimentIntensityAnalyzer(object):
             lex_dict[word] = float(measure)
         return lex_dict
 
-    def add_to_lexicon(self, wordset):
-        """Add new words and sentiment scores to lexicon
-            TODO: wordset structure, determine score of new word """
-        for word in wordset:
-            self.lexicon[word] = word.score
-
     def polarity_scores(self, text):
         """
         Return a float for sentiment strength based on the input text.
@@ -250,17 +244,20 @@ class SentimentIntensityAnalyzer(object):
                 valence, sentitext, item, i, sentiments)
 
         sentiments = self._but_check(words_and_emoticons, sentiments)
-
+        # Write new word and sentiment score to sentiment lexicon
+        write_to_lexicon(self.lexicon, "vader_lexicon.txt")
         return self.score_valence(sentiments, text)
 
     def sentiment_valence(self, valence, sentitext, item, i, sentiments):
+        """
+        Sentiment calculation of each word
+        """
         is_cap_diff = sentitext.is_cap_diff
         words_and_emoticons = sentitext.words_and_emoticons
         item_lowercase = item.lower()
         if item_lowercase in self.lexicon:
             # get the sentiment valence
             valence = self.lexicon[item_lowercase]
-
             # check if sentiment laden word is in ALL CAPS (while others
             # aren't)
             if item.isupper() and is_cap_diff:
@@ -286,13 +283,10 @@ class SentimentIntensityAnalyzer(object):
                     if start_i == 2:
                         valence = self._idioms_check(
                             valence, words_and_emoticons, i)
-
-                        # future work: consider other sentiment-laden idioms
-                        # other_idioms =
-                        # {"back handed": -2, "blow smoke": -2, "blowing smoke": -2,
-                        #  "upper hand": 1, "break a leg": 2,
-                        #  "cooking with gas": 2, "in the black": 2, "in the red": -2,
-                        #  "on the ball": 2,"under the weather": -2}
+        elif item_lowercase not in self.lexicon:
+            # TODO: Determine score of new word through crf
+            # word = some_function(word)
+            # add_to_lexicon(word)
 
             valence = self._least_check(valence, words_and_emoticons, i)
 

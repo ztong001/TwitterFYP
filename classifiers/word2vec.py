@@ -83,6 +83,7 @@ def getAvgFeatureVecs(sentence_list, model, num_features):
 
 def word2vec_classifier():
     data = getdata_from_db(os.path.join(FILE_DIR, '../db/outdata.db'))
+    # data = getdata_csv('')
     documents = []
     for line in data:
         # Wrapper method for tokenizing with

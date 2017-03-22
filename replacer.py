@@ -14,11 +14,7 @@ replacement_patterns = [
     (r'(\w+)\'ve', '\g<1> have'),
     (r'(\w+)\'s', '\g<1> is'),
     (r'(\w+)\'re', '\g<1> are'),
-    (r'(\w+)\'d', '\g<1> would'),
-    (r'&gt;', '>'),
-    (r'&lt;', '<'),
-    (r'&amp;', 'and'),
-    (u'(\u00b4|\u2018|\u2019)', "'")
+    (r'(\w+)\'d', '\g<1> would')
 ]
 
 

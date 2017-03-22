@@ -1,4 +1,3 @@
-from fileio import create_directory
 from matplotlib import pyplot as plt
 from sklearn.metrics import accuracy_score, precision_recall_curve, average_precision_score, f1_score, precision_score, recall_score
 import numpy as np
@@ -59,8 +58,7 @@ def generate_eval_metrics(binarise_result, file_name, y_test):
     f1_measure = f1_score(y_test, binarise_result, average="macro")
 
     # save results in a txt file
-    create_directory('metric_result')
-    with open("metric_result/" + file_name + ".txt", "w") as text_file:
+    with open("result_" + file_name + ".txt", "w") as text_file:
         text_file.write("Accuracy: {0}\n".format(accuracy))
         text_file.write("Precision: {0}\n".format(precision))
         text_file.write("Recall: {0}\n".format(recall))

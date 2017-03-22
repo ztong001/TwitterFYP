@@ -40,9 +40,9 @@ def save_data_to_db(labelled):
     add_query = sqlite3.connect(DB_PATH).cursor()
     add_query.execute(
         "CREATE TABLE IF NOT EXISTS labels(text TEXT, label TEXT, score FLOAT)")
-    add_query.executemany("""INSERT INTO labels(text,label,score) VALUES(?,?,?)""",
-                          (labelled))
-    add_query.close()
+    for entry in labelled:
+        add_query.execute("""INSERT INTO labels(text,label,score) VALUES(?,?,?)""",
+                          (entry))
     return
 # def getdata_from_file(file_input):
 #     with open(file_input, encoding='utf8') as inputfile:
