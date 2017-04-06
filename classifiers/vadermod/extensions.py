@@ -1,6 +1,8 @@
 """Sentiment lexicon extension codes"""
 from inspect import getsourcefile
 from os.path import abspath, join, dirname
+from nltk.tag.perceptron import PerceptronTagger
+from nltk.corpus import stopwords
 
 
 def add_to_lexicon(lexicon, new_word, score):
@@ -38,6 +40,9 @@ def evaluate_sentiment(new_word, sentence):
     1) get sentence, POS tag it, get the word's POStag to identify its word type
     2) get word vector, find similarity with other words in lexicon
     """
-    score = new_word  # placeholder until I can find the proper algorithm
+    if new_word in set(stopwords):
+        return
+    pos_tagger = PerceptronTagger()
+    new_word_pos = dict(pos_tagger.tag(sentence)).get(new_word)
 
     return score

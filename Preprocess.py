@@ -5,17 +5,17 @@ import os
 import sqlite3
 import string
 
+from bs4 import BeautifulSoup
 from nltk import pos_tag
 from nltk.corpus import stopwords, wordnet
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import TweetTokenizer
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 import preprocessor as pre
-from bs4 import BeautifulSoup
 from replacer import ComboReplacer
-from vader_tagging import getlabel, save_data_to_db
 from setup import *
+from vader_tagging import getlabel
 
 with open(CONFIG_PATH) as f:
     config = json.load(f)
@@ -50,8 +50,8 @@ def preprocess(sentence, stop_words, lemma=True):
     preprocessed_string = []
     for token, tag in pos_tag(tokens):
         # If stopword, ignore token and continue
-        if token in stop_words:
-            continue
+        # if token in stop_words:
+        #     continue
         # If punctuation, ignore token and continue
         if all(char in string.punctuation for char in token):
             continue
@@ -76,6 +76,13 @@ def get_data_from_db(db_name):
     return tweets
 
 
+def insert_db(db_name, tweet):
+    connect = sqlite3.connect(db_name)
+    connect.cursor.execute("""INSERT text labels(text,label,score) VALUES(?,?,?)""",
+                           tweet)
+    return
+
+
 def preprocessing(outfile, label=False):
     """Open the source file and perform the preprocessing
         Added vader labelling as label=True"""
@@ -89,7 +96,9 @@ def preprocessing(outfile, label=False):
         analyzed_data = []
         for text in tweet_list:
             scores = sid.polarity_scores(text)
-            analyzed_data.append((text, getlabel(scores), scores['compound']))
+            line = (text, getlabel(scores), scores['compound'])
+            analyzed_data.append(line)
+            insert_db(DB_PATH, line)
         with open(outfile, mode='w', encoding='utf8') as output:
             for tweet in analyzed_data:
                 output.write("{},{},{}".format(tweet[0], tweet[1], tweet[2]))

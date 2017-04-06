@@ -1,5 +1,6 @@
 from matplotlib import pyplot as plt
 from sklearn.metrics import accuracy_score, precision_recall_curve, average_precision_score, f1_score, precision_score, recall_score
+from sklearn.metrics import classification_report
 import numpy as np
 
 class_list = ['pos', 'neg', 'neu']
@@ -7,7 +8,8 @@ class_list = ['pos', 'neg', 'neu']
 
 def evaluate(binarise_result, y_test, y_score, file_name):
     """
-    computes the accuracy, precision and recall. plots the precision and recall curve. saves the plots to the figure folder.
+    computes the accuracy, precision and recall. 
+    plots the precision and recall curve.
     :param binarise_result: list of binarised result after prediction from classifier
     :type binarise_result: list[list[int]]
     :param y_test: list of binarised labels from the test set
@@ -37,10 +39,6 @@ def evaluate(binarise_result, y_test, y_score, file_name):
     average_precision["micro"] = average_precision_score(
         y_test, y_score, average="micro")
 
-    # create directory
-    create_directory('figure')
-    create_directory('figure/' + file_name)
-
     # plots
     plot_precision_recall_curve(
         average_precision, precision, recall, file_name)
@@ -65,6 +63,13 @@ def generate_eval_metrics(binarise_result, file_name, y_test):
         text_file.write("F1 measure: {0}\n".format(f1_measure))
 
 
+def generate_report(result, filename, target):
+    """ save classification results in a report"""
+    with open(filename + "_result.txt", "w") as text_file:
+        text_file.write(classification_report(
+            target, result, target_names=class_list))
+
+
 def plot_precision_recall_curve_all_classes(average_precision,
                                             precision,
                                             recall,
@@ -87,7 +92,7 @@ def plot_precision_recall_curve_all_classes(average_precision,
     plt.ylabel('Precision')
     plt.title('Extension of Precision-Recall curve to multi-class')
     plt.legend(loc="lower right")
-    plt.savefig('figure/' + file_name + '/precision_recall_curve_all.png')
+    plt.savefig('figure_' + file_name + '_precision_recall_curve_all.png')
     if show_plot:
         plt.show()
 
@@ -102,6 +107,6 @@ def plot_precision_recall_curve(average_precision, precision, recall, file_name,
     plt.title(
         'Precision-Recall example: AUC={0:0.2f}'.format(average_precision[0]))
     plt.legend(loc="lower left")
-    plt.savefig('figure/' + file_name + '/precision_recall_curve.png')
+    plt.savefig('figure_' + file_name + '_precision_recall_curve.png')
     if show_plot:
         plt.show()

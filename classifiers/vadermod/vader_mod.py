@@ -25,8 +25,8 @@ from os.path import abspath, join, dirname
 import math
 import re
 import string
-"""Extension module"""
-from extensions import add_to_lexicon, write_to_lexicon
+
+from extensions import add_to_lexicon, write_word_to_lexicon, evaluate_sentiment
 ##Constants##
 
 # (empirically derived mean sentiment intensity rating increase for booster words)
@@ -227,7 +227,7 @@ class SentimentIntensityAnalyzer(object):
         valence.
         """
         sentitext = SentiText(text)
-        #text, words_and_emoticons, is_cap_diff = self.preprocess(text)
+        # text, words_and_emoticons, is_cap_diff = self.preprocess(text)
 
         sentiments = []
         words_and_emoticons = sentitext.words_and_emoticons
@@ -244,8 +244,7 @@ class SentimentIntensityAnalyzer(object):
                 valence, sentitext, item, i, sentiments)
 
         sentiments = self._but_check(words_and_emoticons, sentiments)
-        # Write new word and sentiment score to sentiment lexicon
-        write_to_lexicon(self.lexicon, "vader_lexicon.txt")
+
         return self.score_valence(sentiments, text)
 
     def sentiment_valence(self, valence, sentitext, item, i, sentiments):
@@ -283,13 +282,13 @@ class SentimentIntensityAnalyzer(object):
                     if start_i == 2:
                         valence = self._idioms_check(
                             valence, words_and_emoticons, i)
+            valence = self._least_check(valence, words_and_emoticons, i)
         elif item_lowercase not in self.lexicon:
             # TODO: Determine score of new word through crf
-            # word = some_function(word)
-            # add_to_lexicon(word)
-
-            valence = self._least_check(valence, words_and_emoticons, i)
-
+            score = evaluate_sentiment(item_lowercase, words_and_emoticons)
+            # Write new word and sentiment score to sentiment lexicon
+            write_word_to_lexicon(self.lexicon, item_lowercase,
+                                  score, "vader_lexicon.txt")
         sentiments.append(valence)
         return sentiments
 

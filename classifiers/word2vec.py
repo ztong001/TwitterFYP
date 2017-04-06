@@ -1,18 +1,21 @@
 """Feature extraction using word vectors, then use LinearSVC"""
+import csv
 import logging
 import sqlite3
-import os
 import sys
-import csv
+from inspect import getsourcefile
+from os.path import abspath, dirname, join
+
 import numpy as np
 from gensim.models import Doc2Vec
 from gensim.models.doc2vec import LabeledSentence
 from gensim.utils import tokenize
+from sklearn.externals import joblib
 from sklearn.model_selection import train_test_split
+from sklearn.multiclass import OneVsRestClassifier
 from sklearn.preprocessing import Imputer, label_binarize
 from sklearn.svm import LinearSVC
-from sklearn.multiclass import OneVsRestClassifier
-from sklearn.externals import joblib
+
 from evaluation import *
 
 log = logging.getLogger()
@@ -23,8 +26,6 @@ formatter = logging.Formatter(
     '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 ch.setFormatter(formatter)
 log.addHandler(ch)
-
-FILE_DIR = os.path.dirname(os.path.realpath('__file__'))
 
 
 def getdata_from_db(database_path, number='max'):
@@ -41,11 +42,6 @@ def getdata_from_db(database_path, number='max'):
         tweets = [].append((line[0], line[1]))
     log.info("Tweets from databases: %d tweets" % (len(tweets)))
     return tweets
-
-
-def getdata_csv(csv_file):
-    with open(csv_file, mode='r', encoding='utf8') as contents:
-        data = [item[0:1] for item in csv.reader(contents)]
 
 
 def makeFeatureVec(list_word, model, num_features):
@@ -77,13 +73,13 @@ def getAvgFeatureVecs(sentence_list, model, num_features):
         if counter % 50. == 0:
             print("Sentence %d of %d" % (counter, len(sentence_list)))
         av_vector_list[counter] = makeFeatureVec(review, model, num_features)
-        counter = counter + 1
+        counter += 1
     return av_vector_list
 
 
 def word2vec_classifier():
-    data = getdata_from_db(os.path.join(FILE_DIR, '../db/outdata.db'))
-    # data = getdata_csv('')
+    DB_PATH = join(dirname(abspath(getsourcefile(lambda: 0))), "outdata.db")
+    data = getdata_from_db(DB_PATH)
     documents = []
     for line in data:
         # Wrapper method for tokenizing with
@@ -119,12 +115,11 @@ def word2vec_classifier():
     joblib.dump(model, 'model/%s.pkl' % 'd2v_linsvc')
 
     # evaluation
-    # label_score = classifier_fitted.decision_function(test_vec)
-    # binarise_result = label_binarize(result, classes=class_list)
-    # binarise_labels = label_binarize(label_list, classes=class_list)
+    label_score = classifier_fitted.decision_function(test_vec)
+    binarise_result = label_binarize(result, classes=class_list)
+    binarise_labels = label_binarize(class_list, classes=class_list)
 
-    # evaluate(binarise_result, binarise_labels[
-    #          index_value:], label_score, 'w2v_linsvc')
+    generate_eval_metrics(binarise_result, 'w2v_linsvc', binarise_labels)
 
 
 if __name__ == "__main__":

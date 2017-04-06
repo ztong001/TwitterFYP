@@ -4,13 +4,12 @@ import sqlite3
 from nltk.corpus import stopwords
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from tablib import Dataset
-
-import preprocessor
+import preprocessor as pre
 from setup import DATA_PATH, DB_PATH
 
 # Filter out URLs, mentions, hashtags and emojis
-preprocessor.set_options(preprocessor.OPT.URL, preprocessor.OPT.MENTION,
-                         preprocessor.OPT.HASHTAG, preprocessor.OPT.EMOJI)
+pre.set_options(pre.OPT.URL, pre.OPT.MENTION,
+                pre.OPT.HASHTAG, pre.OPT.EMOJI)
 
 
 def getlabel(scores):
@@ -44,10 +43,6 @@ def save_data_to_db(labelled):
         add_query.execute("""INSERT INTO labels(text,label,score) VALUES(?,?,?)""",
                           (entry))
     return
-# def getdata_from_file(file_input):
-#     with open(file_input, encoding='utf8') as inputfile:
-#         sentences = inputfile.readlines()
-#     return sentences
 
 
 def vader_analyse(file_input):
@@ -58,8 +53,7 @@ def vader_analyse(file_input):
     analyzed_data = []
     sid = SentimentIntensityAnalyzer()
     for line in sentences:
-        text = preprocessor.clean(line)
-        # print(line.encode('ascii', 'ignore'))
+        text = pre.preprocess(line)
         scores = sid.polarity_scores(text)
         analyzed_data.append((text, getlabel(scores), scores['compound']))
     save_data_to_db(analyzed_data)
