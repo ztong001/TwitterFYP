@@ -287,7 +287,7 @@ class SentimentIntensityAnalyzer(object):
             # TODO: Determine score of new word through crf
             score = evaluate_sentiment(item_lowercase, words_and_emoticons)
             # Write new word and sentiment score to sentiment lexicon
-            write_word_to_lexicon(self.lexicon, item_lowercase,
+            write_word_to_lexicon(item_lowercase,
                                   score, "vader_lexicon.txt")
         sentiments.append(valence)
         return sentiments

@@ -40,9 +40,23 @@ def evaluate_sentiment(new_word, sentence):
     1) get sentence, POS tag it, get the word's POStag to identify its word type
     2) get word vector, find similarity with other words in lexicon
     """
+    score = [0, 0]
     if new_word in set(stopwords):
         return
     pos_tagger = PerceptronTagger()
     new_word_pos = dict(pos_tagger.tag(sentence)).get(new_word)
 
     return score
+
+
+def label_sentiment(scores):
+    """
+    Returns the sentiment label pos/neu/neg for the tweet
+    """
+    main_score = scores.get('compound')
+    if main_score > 0.1:
+        return 'pos'
+    elif main_score < -0.1:
+        return 'neg'
+    else:
+        return 'neu'

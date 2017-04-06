@@ -78,8 +78,10 @@ def get_data_from_db(db_name):
 
 def insert_db(db_name, tweet):
     connect = sqlite3.connect(db_name)
-    connect.cursor.execute("""INSERT text labels(text,label,score) VALUES(?,?,?)""",
-                           tweet)
+    query = connect.cursor()
+    query.execute("""INSERT INTO labels  VALUES(?,?,?)""",
+                  tweet)
+    print("Tweet inserted in DB")
     return
 
 
