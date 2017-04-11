@@ -34,6 +34,7 @@ def evaluate_sentiment(new_word, sentence, lexicon):
     3) normalized similarity weightage * score of old words to find new word score
     4) Do it for both positive and negative score lexicon
     """
+    print(new_word)
     stop_words = set(stopwords.words('english'))
     if new_word in stop_words:
         return [0, 0]

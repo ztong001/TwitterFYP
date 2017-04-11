@@ -71,7 +71,7 @@ def get_data_from_db(db_name, num):
     print("Connecting to database")
     query = connect.cursor()
     query.execute(
-        """SELECT text FROM data ORDER BY id DESC LIMIT """ + str(num))
+        """SELECT text FROM data LIMIT """ + str(num))
     tweets = query.fetchall()
     print("Tweets from databases: %d tweets" % (len(tweets)))
     return tweets

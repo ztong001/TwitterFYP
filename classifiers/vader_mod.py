@@ -473,13 +473,18 @@ class SentimentIntensityAnalyzer(object):
 
 if __name__ == "__main__":
     datapath = r"c:\Users\ZackTong\Desktop\TwitterFYP\outData\preprocessed.csv"
-    dataset = csv.reader(open(datapath, encoding='utf8'))
-    headers = next(dataset)[1:]
-    sid = SentimentIntensityAnalyzer()
-    scores = []
-    for i_text in dataset:
-        entry = i_text[0]
-        score = sid.polarity_scores(entry)
-        scores.append((entry, score['compound'], label_sentiment(score)))
+    with open(datapath, encoding="utf8") as dataset:
+        dialect = csv.Sniffer().sniff(dataset.read(1024), delimiters="\t")
+        dataset.seek(0)
+        reader = csv.reader(dataset, dialect)
+        headers = next(dataset)[1:]
+        sid = SentimentIntensityAnalyzer()
+        score_set = []
+        for entry in dataset:
+            print(entry)
+            score = sid.polarity_scores(entry)
+            score_set.append(
+                (entry, score['compound'], label_sentiment(score)))
     with open("vader_analysed.csv", mode='w', encoding='utf8') as fp:
-        fp.writelines(scores)
+        for line in score_set:
+            fp.write(str(line), end='\n')
