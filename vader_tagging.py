@@ -53,7 +53,7 @@ def vader_analyse(file_input):
     analyzed_data = []
     sid = SentimentIntensityAnalyzer()
     for line in sentences:
-        text = pre.preprocess(line)
+        text = pre.clean(line)
         scores = sid.polarity_scores(text)
         analyzed_data.append((text, getlabel(scores), scores['compound']))
     save_data_to_db(analyzed_data)

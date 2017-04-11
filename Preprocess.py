@@ -23,7 +23,7 @@ with open(CONFIG_PATH) as f:
 lemmatizer = WordNetLemmatizer()
 tokenizer = TweetTokenizer(
     strip_handles=True, preserve_case=False, reduce_len=True)
-outfile = os.path.join(ROOT_DIR, "outData/preprocessed.txt")
+# outfile = os.path.join(ROOT_DIR, "outData/preprocessed.txt")
 replacer = ComboReplacer()
 # Filter out URLs, mentions, hashtags and emojis
 pre.set_options(pre.OPT.URL, pre.OPT.MENTION,
@@ -65,12 +65,13 @@ def preprocess(sentence, stop_words, lemma=True):
     return tokens
 
 
-def get_data_from_db(db_name):
-    """Select all the text from the database"""
+def get_data_from_db(db_name, num):
+    """Select a certain amount of tweets from the database"""
     connect = sqlite3.connect(DB_PATH)
     print("Connecting to database")
     query = connect.cursor()
-    query.execute("""SELECT text FROM data""")
+    query.execute(
+        """SELECT text FROM data ORDER BY id DESC LIMIT """ + str(num))
     tweets = query.fetchall()
     print("Tweets from databases: %d tweets" % (len(tweets)))
     return tweets
@@ -81,29 +82,28 @@ def insert_db(db_name, tweet):
     query = connect.cursor()
     query.execute("""INSERT INTO labels  VALUES(?,?,?)""",
                   tweet)
-    print("Tweet inserted in DB")
     return
 
 
 def preprocessing(outfile, label=False):
     """Open the source file and perform the preprocessing
         Added vader labelling as label=True"""
-    data = get_data_from_db(DB_PATH)
+    data = get_data_from_db(DB_PATH, 1000)
     # preprocess
     stop_words = set(stopwords.words('english'))
-    tweet_list = [preprocess(str(line), stop_words)
+    tweet_list = [preprocess(str(line), stop_words, False)
                   for line in data]
     if label:
         sid = SentimentIntensityAnalyzer()
-        analyzed_data = []
+        analyzed_data = [('text', 'label', 'score')]
         for text in tweet_list:
             scores = sid.polarity_scores(text)
-            line = (text, getlabel(scores), scores['compound'])
+            line = (text, scores['compound'], getlabel(scores))
             analyzed_data.append(line)
-            insert_db(DB_PATH, line)
+            # insert_db(DB_PATH, line)
         with open(outfile, mode='w', encoding='utf8') as output:
             for tweet in analyzed_data:
-                output.write("{},{},{}".format(tweet[0], tweet[1], tweet[2]))
+                output.write("{}\t{}\t{}".format(tweet[0], tweet[1], tweet[2]))
                 output.write('\n')
     else:
         with open(outfile, mode='w', encoding='utf8') as output:

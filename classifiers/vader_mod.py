@@ -26,7 +26,8 @@ import math
 import re
 import string
 
-from extensions import add_to_lexicon, write_word_to_lexicon, evaluate_sentiment
+import csv
+from extensions import *
 ##Constants##
 
 # (empirically derived mean sentiment intensity rating increase for booster words)
@@ -284,11 +285,13 @@ class SentimentIntensityAnalyzer(object):
                             valence, words_and_emoticons, i)
             valence = self._least_check(valence, words_and_emoticons, i)
         elif item_lowercase not in self.lexicon:
-            # TODO: Determine score of new word through crf
-            score = evaluate_sentiment(item_lowercase, words_and_emoticons)
+            n_score = evaluate_sentiment(
+                item_lowercase, words_and_emoticons, self.lexicon)
             # Write new word and sentiment score to sentiment lexicon
-            write_word_to_lexicon(item_lowercase,
-                                  score, "vader_lexicon.txt")
+            if n_score != [0, 0]:
+                add_to_lexicon(self.lexicon, item_lowercase, n_score)
+                write_word_to_lexicon(
+                    item_lowercase, n_score, "vader_lexicon.txt")
         sentiments.append(valence)
         return sentiments
 
@@ -467,3 +470,16 @@ class SentimentIntensityAnalyzer(object):
              "compound": round(compound, 4)}
 
         return sentiment_dict
+
+if __name__ == "__main__":
+    datapath = r"c:\Users\ZackTong\Desktop\TwitterFYP\outData\preprocessed.csv"
+    dataset = csv.reader(open(datapath, encoding='utf8'))
+    headers = next(dataset)[1:]
+    sid = SentimentIntensityAnalyzer()
+    scores = []
+    for i_text in dataset:
+        entry = i_text[0]
+        score = sid.polarity_scores(entry)
+        scores.append((entry, score['compound'], label_sentiment(score)))
+    with open("vader_analysed.csv", mode='w', encoding='utf8') as fp:
+        fp.writelines(scores)
