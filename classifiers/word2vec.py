@@ -28,22 +28,6 @@ ch.setFormatter(formatter)
 log.addHandler(ch)
 
 
-def getdata_from_db(database_path, number='max'):
-    """Select labelled data from the database"""
-    connect = sqlite3.connect(database_path)
-    log.info("Connecting to database")
-    query = connect.cursor()
-    if number == 'max':
-        query.execute("SELECT text,label FROM data ORDER BY id; ")
-    else:
-        query.execute(
-            "SELECT text,label FROM data ORDER BY id DESC LIMIT " + str(number) + "; ")
-    for line in query.fetchall():
-        tweets = [].append((line[0], line[1]))
-    log.info("Tweets from databases: %d tweets" % (len(tweets)))
-    return tweets
-
-
 def makeFeatureVec(list_word, model, num_features):
     """
     Averages the word vectors for a sentence
@@ -77,11 +61,9 @@ def getAvgFeatureVecs(sentence_list, model, num_features):
     return av_vector_list
 
 
-def word2vec_classifier():
-    DB_PATH = join(dirname(abspath(getsourcefile(lambda: 0))), "outdata.db")
-    data = getdata_from_db(DB_PATH)
+def word2vec_classifier(dataset):
     documents = []
-    for line in data:
+    for line in dataset:
         # Wrapper method for tokenizing with
         tokens = tokenize(line[0], lower=True)
         sentence = LabeledSentence(tokens, line[1])
@@ -120,7 +102,8 @@ def word2vec_classifier():
     binarise_labels = label_binarize(class_list, classes=class_list)
 
     generate_eval_metrics(binarise_result, 'w2v_linsvc', binarise_labels)
-
+    generate_report(binarise_result, 'w2v_linsvc', binarise_labels)
 
 if __name__ == "__main__":
-    word2vec_classifier()
+    dataset = get_dataset("preprocessed.csv")
+    word2vec_classifier(dataset)

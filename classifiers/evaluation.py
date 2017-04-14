@@ -1,9 +1,25 @@
+import csv
+from inspect import getsourcefile
+from os.path import abspath, dirname, join
 from matplotlib import pyplot as plt
 from sklearn.metrics import accuracy_score, precision_recall_curve, average_precision_score, f1_score, precision_score, recall_score
 from sklearn.metrics import classification_report
 import numpy as np
 
 class_list = ['pos', 'neg', 'neu']
+
+
+def get_dataset(filepath):
+    """
+    Gets labelled dataset for sentiment analysis evaluation
+    returns a dictionary (text,scores,label) with /t delimiters
+    """
+    full_filepath = join(dirname(abspath(getsourcefile(lambda: 0))), filepath)
+    with open(full_filepath, encoding='utf8') as dataset:
+        dialect = csv.Sniffer().sniff(dataset.read(1024), delimiters="\t")
+        dataset.seek(0)
+        tweet_data = list(list(rec) for rec in csv.reader(dataset, dialect))
+    return tweet_data
 
 
 def evaluate(binarise_result, y_test, y_score, file_name):
@@ -49,14 +65,14 @@ def evaluate(binarise_result, y_test, y_score, file_name):
     generate_eval_metrics(binarise_result, file_name, y_test)
 
 
-def generate_eval_metrics(binarise_result, file_name, y_test):
-    accuracy = accuracy_score(np.array(y_test), np.array(binarise_result))
-    precision = precision_score(y_test, binarise_result, average="macro")
-    recall = recall_score(y_test, binarise_result, average="macro")
-    f1_measure = f1_score(y_test, binarise_result, average="macro")
+def generate_eval_metrics(result, file_name, y_test):
+    accuracy = accuracy_score(np.array(y_test), np.array(result))
+    precision = precision_score(y_test, result, average="macro")
+    recall = recall_score(y_test, result, average="macro")
+    f1_measure = f1_score(y_test, result, average="macro")
 
     # save results in a txt file
-    with open("result_" + file_name + ".txt", "w") as text_file:
+    with open(file_name + "_result.txt", "w") as text_file:
         text_file.write("Accuracy: {0}\n".format(accuracy))
         text_file.write("Precision: {0}\n".format(precision))
         text_file.write("Recall: {0}\n".format(recall))
@@ -67,7 +83,7 @@ def generate_report(result, filename, target):
     """ save classification results in a report"""
     with open(filename + "_result.txt", "w") as text_file:
         text_file.write(classification_report(
-            target, result, target_names=class_list))
+            target, result, labels=class_list))
 
 
 def plot_precision_recall_curve_all_classes(average_precision,

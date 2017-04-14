@@ -71,7 +71,7 @@ def get_data_from_db(db_name, num):
     print("Connecting to database")
     query = connect.cursor()
     query.execute(
-        """SELECT text FROM data LIMIT """ + str(num))
+        """SELECT text FROM data ORDER BY id DESC LIMIT """ + str(num))
     tweets = query.fetchall()
     print("Tweets from databases: %d tweets" % (len(tweets)))
     return tweets
@@ -95,7 +95,7 @@ def preprocessing(outfile, label=False):
                   for line in data]
     if label:
         sid = SentimentIntensityAnalyzer()
-        analyzed_data = [('text', 'label', 'score')]
+        analyzed_data = []
         for text in tweet_list:
             scores = sid.polarity_scores(text)
             line = (text, scores['compound'], getlabel(scores))
