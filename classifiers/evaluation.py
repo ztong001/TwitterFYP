@@ -14,8 +14,10 @@ def get_dataset(filepath):
     Gets labelled dataset for sentiment analysis evaluation
     returns a dictionary (text,scores,label) with /t delimiters
     """
-    full_filepath = join(dirname(abspath(getsourcefile(lambda: 0))), filepath)
-    with open(full_filepath, encoding='utf8') as dataset:
+    # full_filepath = join(dirname(abspath(getsourcefile(lambda: 0))),
+    # filepath)
+    fpath = "c:\\Users\\ZackTong\\Desktop\\TwitterFYP\\outData\\" + filepath
+    with open(fpath, encoding='utf8') as dataset:
         dialect = csv.Sniffer().sniff(dataset.read(1024), delimiters="\t")
         dataset.seek(0)
         tweet_data = list(list(rec) for rec in csv.reader(dataset, dialect))
@@ -26,16 +28,34 @@ def evaluate(binarise_result, y_test, y_score, file_name):
     """
     computes the accuracy, precision and recall. 
     plots the precision and recall curve.
-    :param binarise_result: list of binarised result after prediction from classifier
-    :type binarise_result: list[list[int]]
-    :param y_test: list of binarised labels from the test set
-    :type y_test: list[list[int]]
-    :param y_score: distance of each sample from the decision boundary for each class
-    :type y_score:list
-    :param file_name: directory name for saving all figures from the plots
-    :type file_name: str
-    :return:
-    :rtype:
+    :
+        param binarise_result:
+            list of binarised result after prediction from classifier
+    :
+        type binarise_result:
+            list[list[int]]
+    :
+        param y_test:
+            list of binarised labels from the test set
+    :
+        type y_test:
+            list[list[int]]
+    :
+        param y_score:
+            distance of each sample from the decision boundary for each class
+    :
+        type y_score:
+            list
+    :
+        param file_name:
+            directory name for saving all figures from the plots
+    :
+        type file_name:
+            str
+    :
+        return:
+    :
+        rtype:
     """
     num_class = y_test.shape[1]
 
@@ -82,8 +102,9 @@ def generate_eval_metrics(result, file_name, y_test):
 def generate_report(result, filename, target):
     """ save classification results in a report"""
     with open(filename + "_result.txt", "w") as text_file:
+        print("Writing text file")
         text_file.write(classification_report(
-            target, result, labels=class_list))
+            target, result, target_names=class_list))
 
 
 def plot_precision_recall_curve_all_classes(average_precision,

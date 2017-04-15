@@ -7,7 +7,7 @@ from nltk.classify.scikitlearn import SklearnClassifier
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.model_selection import train_test_split
 from evaluation import *
-from features import bag_of_words
+from features import bag_of_non_stopwords
 
 
 log = logging.getLogger()
@@ -20,7 +20,7 @@ ch.setFormatter(formatter)
 log.addHandler(ch)
 
 
-def label_feats_from_data(data, feature_detector=bag_of_words):
+def label_feats_from_data(data, feature_detector):
     label_feats = collections.defaultdict(list)
     for label in data[1]:
         feats = feature_detector(data[0])
@@ -30,7 +30,7 @@ def label_feats_from_data(data, feature_detector=bag_of_words):
 
 def mnb_classifier(dataset):
 
-    label_feats = label_feats_from_data(dataset)
+    label_feats = label_feats_from_data(dataset, bag_of_non_stopwords)
     train_feats, test_feats = train_test_split(
         label_feats, train_size=0.7, test_size=0.3)
     mnb_classify = SklearnClassifier(MultinomialNB())
@@ -41,5 +41,5 @@ def mnb_classifier(dataset):
 
 
 if __name__ == "__main__":
-    dataset = get_dataset("preprocessed.csv")
-    mnb_classifier(dataset)
+    data_set = get_dataset("preprocessed.csv")
+    mnb_classifier(data_set)

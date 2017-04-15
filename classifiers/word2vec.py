@@ -101,7 +101,7 @@ def word2vec_classifier(dataset):
     binarise_result = label_binarize(result, classes=class_list)
     binarise_labels = label_binarize(class_list, classes=class_list)
 
-    generate_eval_metrics(binarise_result, 'w2v_linsvc', binarise_labels)
+    # generate_eval_metrics(binarise_result, 'w2v_linsvc', binarise_labels)
     generate_report(binarise_result, 'w2v_linsvc', binarise_labels)
 
 if __name__ == "__main__":

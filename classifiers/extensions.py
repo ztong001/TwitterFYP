@@ -1,5 +1,5 @@
 """Sentiment lexicon extension codes"""
-import csv
+# import csv
 from functools import reduce
 from inspect import getsourcefile
 from itertools import chain
@@ -9,7 +9,7 @@ from nltk.corpus import stopwords, wordnet
 from nltk.sentiment.vader import BOOSTER_DICT, NEGATE
 from nltk.tokenize import TweetTokenizer
 
-from evaluation import get_dataset
+# from evaluation import get_dataset
 
 
 class LexiconEnhancer(object):
@@ -122,22 +122,22 @@ def label_sentiment(scores):
     else:
         return 'neu'
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
-    dataset = get_dataset('preprocessed.csv')
-    tweets = [item[0] for item in dataset]
-    enhancer = LexiconEnhancer()
+#     dataset = get_dataset('preprocessed.csv')
+#     tweets = [item[0] for item in dataset]
+#     enhancer = LexiconEnhancer()
 
-    c_words = enhancer.mine_candidates(tweets)
-    print("Mining complete: {} candidate words".format(len(c_words)))
-    n_grams_set = []
-    for w in c_words:
-        n_grams = enhancer.find_correlated(tweets, w)
-        if enhancer.evaluate_candidates(n_grams):
-            n_grams_set.append(n_grams)
-    wordpath = join(
-        dirname(abspath(getsourcefile(lambda: 0))), "wordlist.txt")
-    print("Writing to file")
-    with open(wordpath, 'w', encoding='utf8') as wordlist:
-        for w in c_words:
-            wordlist.write(w + '\n')
+#     c_words = enhancer.mine_candidates(tweets)
+#     print("Mining complete: {} candidate words".format(len(c_words)))
+#     n_grams_set = []
+#     for w in c_words:
+#         n_grams = enhancer.find_correlated(tweets, w)
+#         if enhancer.evaluate_candidates(n_grams):
+#             n_grams_set.append(n_grams)
+#     wordpath = join(
+#         dirname(abspath(getsourcefile(lambda: 0))), "wordlist.txt")
+#     print("Writing to file")
+#     with open(wordpath, 'w', encoding='utf8') as wordlist:
+#         for w in c_words:
+#             wordlist.write(w + '\n')

@@ -26,8 +26,6 @@ import math
 import re
 import string
 
-import csv
-from extensions import *
 ##Constants##
 
 # (empirically derived mean sentiment intensity rating increase for booster words)
@@ -284,14 +282,7 @@ class SentimentIntensityAnalyzer(object):
                         valence = self._idioms_check(
                             valence, words_and_emoticons, i)
             valence = self._least_check(valence, words_and_emoticons, i)
-        # elif item_lowercase not in self.lexicon:
-        #     n_score = evaluate_sentiment(
-        #         item_lowercase, words_and_emoticons, self.lexicon)
-        #     # Write new word and sentiment score to sentiment lexicon
-        #     if n_score != [0, 0]:
-        #         add_to_lexicon(self.lexicon, item_lowercase, n_score)
-        #         write_word_to_lexicon(
-        #             item_lowercase, n_score, "vader_lexicon.txt")
+
         sentiments.append(valence)
         return sentiments
 
@@ -470,21 +461,3 @@ class SentimentIntensityAnalyzer(object):
              "compound": round(compound, 4)}
 
         return sentiment_dict
-
-# if __name__ == "__main__":
-#     datapath = r"c:\Users\ZackTong\Desktop\TwitterFYP\outData\preprocessed.csv"
-#     with open(datapath, encoding="utf8") as dataset:
-#         dialect = csv.Sniffer().sniff(dataset.read(1024), delimiters="\t")
-#         dataset.seek(0)
-#         reader = csv.reader(dataset, dialect)
-#         headers = next(dataset)[1:]
-#         sid = SentimentIntensityAnalyzer()
-#         score_set = []
-#         for entry in dataset:
-#             print(entry)
-#             score = sid.polarity_scores(entry)
-#             score_set.append(
-#                 (entry, score['compound'], label_sentiment(score)))
-#     with open("vader_analysed.csv", mode='w', encoding='utf8') as fp:
-#         for line in score_set:
-#             fp.write(str(line), end='\n')

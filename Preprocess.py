@@ -88,7 +88,7 @@ def insert_db(db_name, tweet):
 def preprocessing(outfile, label=False):
     """Open the source file and perform the preprocessing
         Added vader labelling as label=True"""
-    data = get_data_from_db(DB_PATH, 1000)
+    data = get_data_from_db(DB_PATH, 5000)
     # preprocess
     stop_words = set(stopwords.words('english'))
     tweet_list = [preprocess(str(line), stop_words, False)
@@ -98,7 +98,7 @@ def preprocessing(outfile, label=False):
         analyzed_data = []
         for text in tweet_list:
             scores = sid.polarity_scores(text)
-            line = (text, scores['compound'], getlabel(scores))
+            line = (text, getlabel(scores), scores['compound'])
             analyzed_data.append(line)
             # insert_db(DB_PATH, line)
         with open(outfile, mode='w', encoding='utf8') as output:
