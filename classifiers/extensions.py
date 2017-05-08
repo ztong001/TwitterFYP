@@ -1,15 +1,15 @@
 """Sentiment lexicon extension codes"""
-# import csv
+
 from functools import reduce
 from inspect import getsourcefile
 from itertools import chain
 from os.path import abspath, dirname, join
 
-from nltk.corpus import stopwords, wordnet
+from nltk.corpus import stopwords
+from nltk.corpus import wordnet as wn
+from nltk.corpus import wordnet_ic as wnic
 from nltk.sentiment.vader import BOOSTER_DICT, NEGATE
 from nltk.tokenize import TweetTokenizer
-
-# from evaluation import get_dataset
 
 
 class LexiconEnhancer(object):
@@ -30,10 +30,9 @@ class LexiconEnhancer(object):
             (word, measure) = line.strip().split('\t')[0:2]
             self.lex_dict[word] = float(measure)
 
-    def write_word_to_lexicon(self, lexicon_file):
+    def write_to_lexicon(self, lexicon_file):
         """
-        Similar to write_to_lexicon(), with difference that it writes the new word and scores
-        back to the file directly
+        Writes the new words and scores back to the lexicon
         """
         lexicon_full_filepath = join(
             dirname(abspath(getsourcefile(lambda: 0))), lexicon_file)
@@ -42,17 +41,17 @@ class LexiconEnhancer(object):
                 fp.write("{}\t{}\t{}\n".format(
                     word[0], word[1], word[2]))
 
-    def mine_candidates(self, corpus):
+    def mine_candidates(self, sentence):
         """
-        Detect potential new words in the corpus(list of tokens)
+        Detect potential new words in the list of tokens. Single tweet
         """
         tokenizer = TweetTokenizer()
-        tokens_corpus = [tokenizer.tokenize(entry) for entry in corpus]
+        tokens = tokenizer.tokenize(sentence)
         known_words = [chain(stopwords.words(
             'english')), NEGATE, list(BOOSTER_DICT.keys()), list(self.lex_dict.keys())]
-        unique_words = set(chain.from_iterable(tokens_corpus))
-        candidates = [
-            word.lower() for word in unique_words if word not in known_words and word.isdigit() is False and len(word) > 1]
+        unique_words = set(tokens)
+        candidates = [word.lower() for word in unique_words if word not in
+                      known_words and word.isdigit() is False and len(word) > 1]
         return candidates
 
     @staticmethod
@@ -63,23 +62,22 @@ class LexiconEnhancer(object):
         """
         return len(correlated) >= 3
 
-    def find_correlated(self, corpus, new_word):
+    def find_correlated(self, sentence, new_word):
         """
         Find correlated words for a single new word
         returns List correlated, where index 0 is the word itself
         """
         lexicon_words = list(self.lex_dict.keys())
         correlated = [new_word]
-        for sentence in corpus:
-            if new_word in sentence and sentence.index(new_word) in range(1, len(sentence) - 1):
-                w_index = sentence.index(new_word)
-                if set(lexicon_words) & set(sentence[0:w_index]) != []:
-                    co_left = set(lexicon_words).intersection(
-                        set(sentence[0:w_index]))
-                if set(lexicon_words) & set(sentence[w_index:]) != []:
-                    co_right = set(lexicon_words).intersection(
-                        set(sentence[w_index:]))
-                correlated.extend([co_left, co_right])
+        if new_word in sentence and sentence.index(new_word) in range(1, len(sentence) - 1):
+            w_index = sentence.index(new_word)
+            if set(lexicon_words) & set(sentence[0:w_index]) != []:
+                co_left = set(lexicon_words).intersection(
+                    set(sentence[0:w_index]))
+            if set(lexicon_words) & set(sentence[w_index:]) != []:
+                co_right = set(lexicon_words).intersection(
+                    set(sentence[w_index:]))
+            correlated.extend([co_left, co_right])
         return correlated
 
     def evaluate_sentiment(self, new_word, n_gram):
@@ -89,8 +87,7 @@ class LexiconEnhancer(object):
         2) normalized similarity weightage * score of old words to find new word score
         3) Do it for both positive and negative score lexicon
         """
-        print(new_word)
-        print(n_gram)
+        print(new_word, n_gram)
         lexicon = self.lex_dict
         word_scores = {word: lexicon[word]
                        for word in n_gram if word in lexicon}
@@ -99,8 +96,7 @@ class LexiconEnhancer(object):
         # word_scores[word][2]
         for word in word_scores:
             word_scores[word].append(
-                wordnet.wup_similarity(new_word, word))
-            print(word, word_scores[word])
+                wn.lin_similarity(word[1], word[2], wnic.ic('ic-bnc-add1.dat')))
         similarity_total = sum([word[2] for word in word_scores])
         # word[0] is positive score, word[1] is negative score
         pos_score = reduce((lambda x, y: x * y),

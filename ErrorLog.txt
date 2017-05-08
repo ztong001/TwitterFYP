@@ -41,3 +41,16 @@ details: {'errors': [{'code': 34, 'message': 'Sorry, that page does not exist.'}
 2017-03-12 10:32:15,896 - root - ERROR - Caught Error UNIQUE constraint failed: data.id
 2017-03-12 10:48:12,518 - root - ERROR - Caught Error UNIQUE constraint failed: data.id
 2017-03-12 10:51:48,316 - root - ERROR - Forced Stop
+2017-04-29 18:11:08,905 - root - ERROR - Forced Stop
+2017-04-29 18:15:17,640 - root - ERROR - Caught Error UNIQUE constraint failed: data.id
+2017-04-29 18:17:17,550 - root - ERROR - Caught Error UNIQUE constraint failed: data.id
+2017-04-29 18:19:00,362 - root - ERROR - Forced Stop
+2017-04-29 18:25:10,234 - root - ERROR - Forced Stop
+2017-04-29 20:46:15,561 - root - ERROR - Caught Error UNIQUE constraint failed: data.id
+2017-04-29 20:47:16,124 - root - ERROR - Caught Error UNIQUE constraint failed: data.id
+2017-04-29 20:51:15,433 - root - ERROR - Caught Error UNIQUE constraint failed: data.id
+2017-04-29 20:55:16,456 - root - ERROR - Caught Error UNIQUE constraint failed: data.id
+2017-04-29 20:57:13,161 - root - ERROR - Caught Error UNIQUE constraint failed: data.id
+2017-04-29 21:18:15,084 - root - ERROR - Caught Error UNIQUE constraint failed: data.id
+2017-04-29 21:21:17,559 - root - ERROR - Caught Error UNIQUE constraint failed: data.id
+2017-04-29 21:22:04,392 - root - ERROR - Forced Stop

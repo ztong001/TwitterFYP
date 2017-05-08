@@ -3,5 +3,5 @@
     "python.formatting.provider": "autopep8",
     "files.autoSave": "onWindowChange",
     "editor.formatOnSave": true,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 0
 }

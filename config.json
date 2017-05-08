@@ -7,10 +7,9 @@
     },
     "tweet": {
         "type": "stream",
-        "keywords": "the,I,you,bae,lit",
+        "keywords": "bae,lit,fk,meme,dank,lmfao,rawr,rekt",
         "file": "/outData/tweetdata.jsonl",
-        "test": "/outData/test.jsonl",
-        "users": "ChannelNewsAsia"
+        "test": "/outData/test.jsonl"
     },
     "test_csv": "/outData/test.csv",
     "db": "/db/outdata.db"
